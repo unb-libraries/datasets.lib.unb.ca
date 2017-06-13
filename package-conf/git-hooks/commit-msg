@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#
+# To enable this hook, developers should place it in .git/hooks/.
+#
+# You may adapt the message length check. Currently checking it's longer than 15 characters.
+
+regex="^[A-Z]\{2,\}\-[0-9]\+ [^ ].\{15,\}"
+msg_test=`grep -e ''"$regex"'' "$1"`
+if [ "$msg_test" == "" ]; then
+  echo "Invalid commit message. Include the JIRA project code and issue number. Ensure actual message is at least 15 characters."
+  echo "Valid example: PMPOR-135 Add the new picture field to the article feature."
+  exit 1;
+fi

@@ -1,0 +1,48 @@
+name: datasets.lib.unb.ca Profile
+type: profile
+description: 'Install datasets.lib.unb.ca.'
+version: 8.x-1.0
+core: 8.x
+
+dependencies:
+  # Minimal Install.
+  - node
+  - block
+  - dblog
+  - page_cache
+  - dynamic_page_cache
+
+  # Standard Install.
+  - history
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - taxonomy
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+
+themes:
+  - seven
+  - bartik

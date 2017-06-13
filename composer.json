@@ -1,0 +1,21 @@
+{
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "name": "unblibraries/datasets.lib.unb.ca",
+  "description": "Provision/scaffolding for developing drupal instance.",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/unb-libraries/dockworker.git"
+    }
+  ],
+  "require-dev": {
+    "unblibraries/dockworker": "master",
+    "twbs/bootstrap-sass": "^3.3.7"
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "vendor/bin/dockworker git:setup-hooks"
+    ]
+  }
+}

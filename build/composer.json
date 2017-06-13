@@ -1,0 +1,113 @@
+{
+    "authors": [
+        {
+            "name": "UNB Libraries libsupport@unb.ca",
+            "role": "Creator"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "source"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "description": "Project definition for datasets.lib.unb.ca",
+    "extra": {
+        "enable-patching": true,
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ]
+        }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "name": "unblibraries/datasets.lib.unb.ca",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "file",
+                    "url": "https://malsup.github.io/jquery.cycle.all.js"
+                },
+                "name": "malsup/jquery.cycle",
+                "require": {
+                    "composer/installers": "^1.0.20"
+                },
+                "type": "drupal-library",
+                "version": "master"
+            },
+            "type": "package"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/unb-libraries/drupal-dev-libs.git"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2.0",
+        "cweagans/composer-patches": "~1.6.1",
+        "drupal-composer/drupal-scaffold": "~2.2.0",
+        "drupal/config_update": "1.1",
+        "drupal/console": "~1.0",
+        "drupal/core": "8.3.3",
+        "drupal/externalauth": "1.0",
+        "drupal/features": "3.0-beta8",
+        "drupal/field_collection": "1.0-alpha1",
+        "drupal/google_analytics": "~2.1",
+        "drupal/ldap": "~3.0-beta1",
+        "drupal/pathauto": "~1.0-rc1",
+        "drupal/search_api": "~1.0",
+        "drupal/token_filter": "1.0-beta1",
+        "drupal/views_slideshow": "4.5",
+        "drush/drush": "~8.1",
+        "malsup/jquery.cycle": "master",
+        "oomphinc/composer-installers-extender": "1.1.1",
+        "webflo/drupal-finder": "^0.3.0",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+        "unblibraries/drupal-dev-libs": "master"
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ]
+    },
+    "type": "project"
+}
