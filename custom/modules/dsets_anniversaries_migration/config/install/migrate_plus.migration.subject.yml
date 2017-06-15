@@ -1,0 +1,20 @@
+
+# Migration configuration for anniversary subject taxonomy.
+id: subject
+label: Anniversary Subject
+migration_group: datasets
+source:
+  plugin: subject
+  keys:
+    - subject_id
+destination:
+  plugin: entity:taxonomy_term
+  default_bundle: dsets_anniversary_subject
+# Mappings.
+process:
+  name: subject
+  # Dependency on module itself.
+dependencies:
+  enforced:
+    module:
+      - dsets_anniversaries_migration
