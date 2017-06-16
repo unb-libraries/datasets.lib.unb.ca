@@ -5,6 +5,6 @@ description: 'Migrate Anniversaries DB to datasets.lib.unb.ca'
 package: DSETS
 core: 8.x
 dependencies:
-  - drupal:migrate
-  - drupal:migrate_tools
-  - migrate_plus:migrate_plus
+  - migrate
+  - migrate_tools
+  - migrate_plus
