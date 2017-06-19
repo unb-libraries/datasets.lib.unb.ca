@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.dsets_anniversary_event.field_dsets_anniv_event_date
     - field.field.node.dsets_anniversary_event.field_dsets_anniv_event_subject
     - field.field.node.dsets_anniversary_event.field_dsets_anniv_note
+    - field.field.node.dsets_anniversary_event.field_dsets_anniv_old_id
     - field.field.node.dsets_anniversary_event.field_dsets_anniv_source
     - node.type.dsets_anniversary_event
   module:
@@ -45,6 +46,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_dsets_anniv_old_id:
+    weight: 35
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   field_dsets_anniv_source:
     weight: 31

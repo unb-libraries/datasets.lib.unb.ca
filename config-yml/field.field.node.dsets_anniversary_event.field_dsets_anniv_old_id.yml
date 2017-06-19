@@ -1,0 +1,23 @@
+uuid: edaa19f6-dcd8-4b6a-9759-f90adef178cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsets_anniv_old_id
+    - node.type.dsets_anniversary_event
+id: node.dsets_anniversary_event.field_dsets_anniv_old_id
+field_name: field_dsets_anniv_old_id
+entity_type: node
+bundle: dsets_anniversary_event
+label: dsets_anniv_old_id
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

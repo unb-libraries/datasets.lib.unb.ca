@@ -1,0 +1,28 @@
+
+# Migration configuration for anniversaries' event entity.
+id: event
+label: Anniversary Event
+migration_group: datasets
+source:
+  plugin: event
+  key: default
+destination:
+  plugin: entity:node
+# Mappings.
+process:
+  type:
+    plugin: default_value
+    default_value: dsets_anniversary_event
+  title: event
+  field_dsets_anniv_old_id: event_id
+  field_dsets_anniv_event_date: event_date
+  field_dsets_anniv_note: note
+  field_dsets_anniv_source: source
+  # Dependencies
+dependencies:
+  enforced:
+    module:
+      - dsets_anniversaries_migration
+migration_dependencies:
+  required:
+    - subject
