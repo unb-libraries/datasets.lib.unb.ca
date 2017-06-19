@@ -1,0 +1,28 @@
+uuid: 3c98b414-0c10-413a-86f7-1fa5f08d9119
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsets_anniv_event_subject
+    - node.type.dsets_anniversary_event
+    - taxonomy.vocabulary.dsets_anniversary_subject
+id: node.dsets_anniversary_event.field_dsets_anniv_event_subject
+field_name: field_dsets_anniv_event_subject
+entity_type: node
+bundle: dsets_anniversary_event
+label: dsets_anniv_event_subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dsets_anniversary_subject: dsets_anniversary_subject
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

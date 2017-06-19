@@ -1,0 +1,17 @@
+uuid: e79e762f-6897-422c-9728-f5115a8dc56e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'DSETS Anniversary Event'
+type: dsets_anniversary_event
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

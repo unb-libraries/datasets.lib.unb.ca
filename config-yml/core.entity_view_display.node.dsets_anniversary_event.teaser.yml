@@ -1,0 +1,18 @@
+uuid: 8ff485bb-b770-43c3-b4fb-03f28e50e638
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.dsets_anniversary_event
+  module:
+    - user
+id: node.dsets_anniversary_event.teaser
+targetEntityType: node
+bundle: dsets_anniversary_event
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

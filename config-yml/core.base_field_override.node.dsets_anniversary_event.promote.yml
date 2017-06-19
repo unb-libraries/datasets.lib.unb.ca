@@ -1,0 +1,22 @@
+uuid: 59300650-2740-4c43-9fce-b7026c3fc086
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dsets_anniversary_event
+id: node.dsets_anniversary_event.promote
+field_name: promote
+entity_type: node
+bundle: dsets_anniversary_event
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

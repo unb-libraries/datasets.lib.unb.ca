@@ -28,7 +28,7 @@ class Subject extends SqlBase {
   public function fields() {
     $fields = [
       'subject_id'  => $this->t('Subject ID'),
-      'subject'     => $this->t('Subject')
+      'subject'     => $this->t('Subject'),
     ];
 
     return $fields;
@@ -45,4 +45,5 @@ class Subject extends SqlBase {
       ],
     ];
   }
+
 }

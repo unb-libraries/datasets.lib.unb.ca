@@ -1,0 +1,21 @@
+uuid: 03e2e1da-4116-4293-9d96-daa4e8b15d1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsets_anniv_note
+    - node.type.dsets_anniversary_event
+  module:
+    - text
+id: node.dsets_anniversary_event.field_dsets_anniv_note
+field_name: field_dsets_anniv_note
+entity_type: node
+bundle: dsets_anniversary_event
+label: dsets_anniv_note
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
