@@ -3,7 +3,6 @@
 namespace Drupal\dsets_anniversaries_migration\Plugin\migrate\source;
 
 use Drupal\migrate\Plugin\migrate\source\SqlBase;
-use Drupal\migrate\Row;
 
 /**
  * Source plugin for address content.
