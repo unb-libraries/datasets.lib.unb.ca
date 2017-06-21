@@ -50,37 +50,4 @@ class Event extends SqlBase {
     ];
   }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function prepareRow(Row $row) {
-    /**
-     * prepareRow runs after a row is fetched.
-     */
-
-    /**
-     * Process fields that will be translated into taxonomy term indexes.
-     */
-
-    $ev_id = $row->getSourceProperty('event_id');
-
-    $qstring = "SELECT subject_id
-                FROM {event_subjects}
-                WHERE event_id = :ev_id";
-
-    $qsubs = db_query($qstring, array(
-      ':ev_id' => $ev_id
-    ));
-
-    $sub_ids = $qsubs->fetchAll();
-    $sub_refs = array();
-
-    foreach ($sub_ids as $sub_id) {
-      $sub_id_ref = array('target_id' => $sub_id);
-      $sub_refs->appendItem($sub_id_ref);
-    }
-
-    drush_print_r($sub_refs);
-  }
-
 }

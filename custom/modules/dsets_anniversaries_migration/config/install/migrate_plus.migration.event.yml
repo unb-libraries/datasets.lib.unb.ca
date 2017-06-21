@@ -18,6 +18,7 @@ process:
   field_dsets_anniv_event_date: event_date
   field_dsets_anniv_note: note
   field_dsets_anniv_source: source
+  field_dsets_anniv_event_subject: event_subject
   # Dependencies
 dependencies:
   enforced:
