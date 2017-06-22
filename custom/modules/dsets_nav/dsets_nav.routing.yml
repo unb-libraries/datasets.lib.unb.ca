@@ -1,0 +1,14 @@
+page.anniversaries:
+  path: 'anniversaries'
+  defaults:
+    _title: 'Anniversaries'
+  requirements:
+    _permission: 'view published content'
+page.contactlib:
+  path: 'contact'
+  defaults:
+    _title: 'Contact Us'
+page.archives:
+  path: 'https://www.lib.unb.ca/archives/'
+  defaults:
+    _title: 'Archives & Special Collections'

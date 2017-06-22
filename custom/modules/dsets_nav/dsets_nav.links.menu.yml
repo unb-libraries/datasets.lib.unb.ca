@@ -1,0 +1,18 @@
+dsets_nav.anniversaries:
+  title: 'Anniversaries'
+  description: 'Display Anniversaries intro page.'
+  parent: main
+  menu_name: main
+  route_name: page.anniversaries
+dsets_nav.contactlib:
+    title: 'Contact Us'
+    description: 'Display contact form.'
+    parent: main
+    menu_name: main
+    route_name: page.contactlib
+dsets_nav.archives:
+    title: 'Archives & Special Collections'
+    description: 'Navigate to A&SC home page.'
+    parent: main
+    menu_name: main
+    route_name: page.archives

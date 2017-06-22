@@ -1,0 +1,6 @@
+
+name: Datasets Navigation
+type: module
+description: Store main navigation menu links for Datasets.
+core: 8.x
+package: DSETS
