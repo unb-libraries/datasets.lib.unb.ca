@@ -1,11 +1,11 @@
 uuid: 977e6269-f41c-44b6-b5bd-d0c1bd5f9053
-name: 'Archives Datasets'
+name: 'UNB Libraries Archives Datasets'
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
