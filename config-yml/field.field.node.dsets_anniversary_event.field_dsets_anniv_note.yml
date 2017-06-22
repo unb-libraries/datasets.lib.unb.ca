@@ -11,7 +11,7 @@ id: node.dsets_anniversary_event.field_dsets_anniv_note
 field_name: field_dsets_anniv_note
 entity_type: node
 bundle: dsets_anniversary_event
-label: dsets_anniv_note
+label: Note
 description: ''
 required: false
 translatable: false

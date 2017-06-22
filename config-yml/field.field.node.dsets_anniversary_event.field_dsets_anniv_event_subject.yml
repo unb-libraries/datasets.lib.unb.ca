@@ -10,7 +10,7 @@ id: node.dsets_anniversary_event.field_dsets_anniv_event_subject
 field_name: field_dsets_anniv_event_subject
 entity_type: node
 bundle: dsets_anniversary_event
-label: dsets_anniv_event_subject
+label: Subject
 description: ''
 required: false
 translatable: false
