@@ -70,6 +70,7 @@
         }
     ],
     "require": {
+        "drupal/bootstrap": "~3.4",
         "composer/installers": "^1.2.0",
         "cweagans/composer-patches": "~1.6.1",
         "drupal-composer/drupal-scaffold": "~2.2.0",
