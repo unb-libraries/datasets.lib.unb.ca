@@ -47,7 +47,7 @@ ENV DRUPAL_BUILD_TMPROOT ${TMP_DRUPAL_BUILD_DIR}/webroot
 # Deploy the generalized profile and makefile into our specific one.
 RUN /scripts/deployGeneralizedProfile.sh && \
   # Build Drupal tree.
-  /scripts/buildDrupalTree.sh && \
+  /scripts/buildDrupalTree.sh ${COMPOSER_DEPLOY_DEV} && \
   # Install NewRelic.
   /scripts/installNewRelic.sh
 
