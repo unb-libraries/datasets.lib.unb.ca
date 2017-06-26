@@ -26,32 +26,30 @@ RUN apk update && apk --update add rsyslog postfix php7-ldap bash && \
   touch /var/log/nginx/access.log && touch /var/log/nginx/error.log
 
 # Add package conf.
-COPY package-conf/postfix/main.cf /etc/postfix/main.cf
-COPY package-conf/rsyslog/21-logzio-nginx.conf /etc/rsyslog.d/21-logzio-nginx.conf
-COPY package-conf/nginx/app.conf /etc/nginx/conf.d/app.conf
-COPY package-conf/php/app-php.ini /etc/php7/conf.d/zz_app.ini
-COPY package-conf/php/app-php-fpm.conf /etc/php7/php-fpm.d/zz_app.conf
+COPY ./package-conf /package-conf
+RUN mv /package-conf/postfix/main.cf /etc/postfix/main.cf && \
+  mkdir -p /etc/rsyslog.d && \
+  mv /package-conf/rsyslog/21-logzio-nginx.conf /etc/rsyslog.d/21-logzio-nginx.conf && \
+  mv /package-conf/nginx/app.conf /etc/nginx/conf.d/app.conf && \
+  mv /package-conf/php/app-php.ini /etc/php7/conf.d/zz_app.ini && \
+  mv /package-conf/php/app-php-fpm.conf /etc/php7/php-fpm.d/zz_app.conf && \
+  rm -rf /package-conf
 
-# Scripts.
+# Add scripts.
 COPY ./scripts/container /scripts
-RUN curl -OL http://github.com/unb-libraries/docker-drupal-scripts/archive/container.zip && \
-  unzip container.zip && \
-  mv docker-drupal-scripts-container/*.sh /scripts/ && \
-  rm -rf container.zip docker-drupal-scripts-container
+RUN /scripts/DeployUpstreamContainerScripts.sh
 
 # Remove upstream build and replace it with ours.
 RUN /scripts/deleteUpstreamTree.sh
 COPY build/ ${TMP_DRUPAL_BUILD_DIR}
+ENV DRUPAL_BUILD_TMPROOT ${TMP_DRUPAL_BUILD_DIR}/webroot
 
 # Deploy the generalized profile and makefile into our specific one.
-RUN /scripts/deployGeneralizedProfile.sh
-
-# Build Drupal tree.
-ENV DRUPAL_BUILD_TMPROOT ${TMP_DRUPAL_BUILD_DIR}/webroot
-RUN /scripts/buildDrupalTree.sh
-
-# Install Newrelic.
-RUN /scripts/installNewRelic.sh
+RUN /scripts/deployGeneralizedProfile.sh && \
+  # Build Drupal tree.
+  /scripts/buildDrupalTree.sh && \
+  # Install NewRelic.
+  /scripts/installNewRelic.sh
 
 # Copy configuration.
 COPY ./config-yml ${TMP_DRUPAL_BUILD_DIR}/config-yml
