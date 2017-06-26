@@ -3,6 +3,11 @@
   "minimum-stability": "dev",
   "name": "unblibraries/datasets.lib.unb.ca",
   "description": "Provision/scaffolding for developing drupal instance.",
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    }
+  },
   "repositories": [
     {
       "type": "git",
