@@ -26,7 +26,7 @@ LOCAL_USER_GROUP=20
 
 ### 2. Deploy Instance
 ```
-composer install
+composer install --prefer-dist
 ```
 
 ```
