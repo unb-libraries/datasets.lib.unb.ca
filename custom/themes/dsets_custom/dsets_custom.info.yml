@@ -6,6 +6,9 @@ name: 'Datasets'
 description: 'For datasets.lib.unb.ca'
 package: 'DSETS'
 
+libraries:
+  - dsets_custom/global-styling
+
 regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'

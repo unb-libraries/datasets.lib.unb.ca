@@ -1,1 +1,7 @@
-/* Datasets custom CSS */
+/* Datasets custom CSS. */
+
+/* Contact form. */
+
+button#edit-preview {
+  display: none !important;
+}

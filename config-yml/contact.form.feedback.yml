@@ -5,9 +5,9 @@ dependencies: {  }
 _core:
   default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
 id: feedback
-label: 'Website feedback'
+label: 'Contact Archives & Special Collections Staff'
 recipients:
-  - admin@example.com
+  - archives@unb.ca
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
