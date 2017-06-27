@@ -1,0 +1,22 @@
+uuid: 97c10f03-ff96-427a-8c8d-c388dab11614
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - dsets_custom
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: dsets_custom_help
+theme: dsets_custom
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

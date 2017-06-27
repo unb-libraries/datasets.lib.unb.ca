@@ -1,0 +1,22 @@
+uuid: 62baf3f7-c6d6-4efd-8dc9-ecfebc775ce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dsets_custom
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: dsets_custom_content
+theme: dsets_custom
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

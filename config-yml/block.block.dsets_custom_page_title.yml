@@ -1,0 +1,20 @@
+uuid: fdfdd0a8-b3f7-4a8b-9ff5-957eab77957d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dsets_custom
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: dsets_custom_page_title
+theme: dsets_custom
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

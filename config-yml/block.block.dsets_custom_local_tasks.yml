@@ -1,0 +1,22 @@
+uuid: 775c6c72-c770-49dc-bc71-3ef1ccce896e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dsets_custom
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: dsets_custom_local_tasks
+theme: dsets_custom
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

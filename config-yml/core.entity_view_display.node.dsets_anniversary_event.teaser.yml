@@ -15,4 +15,9 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_dsets_anniv_event_date: true
+  field_dsets_anniv_event_subject: true
+  field_dsets_anniv_note: true
+  field_dsets_anniv_old_id: true
+  field_dsets_anniv_source: true
