@@ -1,0 +1,21 @@
+drupalAcctProvisionServer: lib_ldap
+ldapEntryProvisionServer: null
+drupalAcctProvisionTriggers:
+  drupal_on_login: drupal_on_login
+  drupal_on_update_create: drupal_on_update_create
+ldapEntryProvisionTriggers:
+  ldap_on_update_create: '0'
+  ldap_on_login: '0'
+  ldap_on_delete: '0'
+  drupal_on_manual_creation: '0'
+orphanedDrupalAcctBehavior: ldap_user_orphan_do_not_check
+orphanedCheckQty: 100
+orphanedAccountCheckInterval: weekly
+userConflictResolve: 2
+manualAccountConflict: 1
+acctCreation: 4
+ldapUserSyncMappings:
+  drupal: {  }
+  ldap: {  }
+_core:
+  default_config_hash: EF5h9g_BZcwXGICZHc3HiF9BxhEhGo4ZiPFRWTq0Ka4
