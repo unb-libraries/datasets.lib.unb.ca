@@ -9,6 +9,9 @@ page.contactlib:
   defaults:
     _title: 'Contact Us'
 page.archives:
-  path: 'https://www.lib.unb.ca/archives/'
+  path: '/archives'
   defaults:
+    _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:archives'
     _title: 'Archives & Special Collections'
+  requirements:
+    _permission: 'view published content'
