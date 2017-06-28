@@ -1,12 +1,13 @@
-sids: {  }
+sids:
+  lib_ldap: lib_ldap
 authenticationMode: 1
-loginUIUsernameTxt: ''
+loginUIUsernameTxt: 'Enter your UNB login ID'
 loginUIPasswordTxt: ''
 ldapUserHelpLinkUrl: ''
 ldapUserHelpLinkText: ''
-emailOption: 3
+emailOption: 4
 emailUpdate: 1
-emailTemplateHandling: none
+emailTemplateHandling: if_empty
 emailTemplate: '@username@example.com'
 emailTemplateUsageResolveConflict: false
 emailTemplateUsageNeverUpdate: false
@@ -16,7 +17,7 @@ emailTemplateUsagePromptRegex: '.*@example\\.com'
 passwordOption: 3
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
-excludeIfNoAuthorizations: null
+excludeIfNoAuthorizations: 0
 ssoRemoteUserStripDomainName: null
 ssoExcludedPaths: {  }
 ssoExcludedHosts: {  }

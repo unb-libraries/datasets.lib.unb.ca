@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: lib_ldap
-label: 'Library LDAP Proxy'
+label: 'UNB Libraries LDAP'
 type: openldap
 address: 'ldaps://ldap.lib.unb.ca'
 port: 636
@@ -16,8 +16,8 @@ bindpw: null
 basedn: 'dc=lib,cd=unb,dc=ca'
 user_attr: uid
 account_name_attr: ''
-mail_attr: ''
-mail_template: mail
+mail_attr: mail
+mail_template: ''
 picture_attr: ''
 unique_persistent_attr: ''
 unique_persistent_attr_binary: false
