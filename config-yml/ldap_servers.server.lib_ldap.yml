@@ -24,7 +24,7 @@ unique_persistent_attr_binary: false
 user_dn_expression: ''
 testing_drupal_username: ''
 testing_drupal_user_dn: ''
-grp_unused: false
+grp_unused: true
 grp_object_cat: ''
 grp_nested: false
 grp_user_memb_attr_exists: false
@@ -36,4 +36,4 @@ grp_derive_from_dn_attr: ''
 grp_test_grp_dn: ''
 grp_test_grp_dn_writeable: ''
 search_pagination: false
-search_page_size: null
+search_page_size: 500

@@ -8,12 +8,12 @@ ldapUserHelpLinkText: ''
 emailOption: 4
 emailUpdate: 1
 emailTemplateHandling: if_empty
-emailTemplate: '@username@example.com'
+emailTemplate: ''
 emailTemplateUsageResolveConflict: false
 emailTemplateUsageNeverUpdate: false
 emailTemplateUsagePromptUser: false
 emailTemplateUsageRedirectOnLogin: false
-emailTemplateUsagePromptRegex: '.*@example\\.com'
+emailTemplateUsagePromptRegex: ''
 passwordOption: 3
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
