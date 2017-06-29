@@ -15,7 +15,6 @@ module:
   dsets_nav: 0
   dynamic_page_cache: 0
   editor: 0
-  externalauth: 0
   field: 0
   field_ui: 0
   file: 0
@@ -23,9 +22,6 @@ module:
   help: 0
   history: 0
   image: 0
-  ldap_authentication: 0
-  ldap_servers: 0
-  ldap_user: 0
   link: 0
   menu_ui: 0
   node: 0
