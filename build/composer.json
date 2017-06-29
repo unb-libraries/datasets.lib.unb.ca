@@ -90,7 +90,9 @@
         "malsup/jquery.cycle": "master",
         "oomphinc/composer-installers-extender": "1.1.1",
         "webflo/drupal-finder": "^0.3.0",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "drupal/externalauth": "1.0",
+        "drupal/ldap": "3.0-beta2"
     },
     "require-dev": {
         "unblibraries/drupal-dev-libs": "master"
