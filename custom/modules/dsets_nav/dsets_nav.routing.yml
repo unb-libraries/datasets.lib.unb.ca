@@ -3,7 +3,7 @@ page.anniversaries:
   defaults:
     _title: 'Anniversaries'
   requirements:
-    _permission: 'view published content'
+    _permission: 'access content'
 page.contactlib:
   path: 'contact'
   defaults:
@@ -14,4 +14,11 @@ page.archives:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:archives'
     _title: 'Archives & Special Collections'
   requirements:
-    _permission: 'view published content'
+    _permission: 'access content'
+page.home:
+  path: '/intro'
+  defaults:
+    _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:home'
+    _title: 'Introduction'
+  requirements:
+    _permission: 'access content'

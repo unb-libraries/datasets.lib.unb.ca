@@ -17,4 +17,11 @@ class DsetsNavController extends ControllerBase {
     return new TrustedRedirectResponse('https://www.lib.unb.ca/archives/');
   }
 
+  public function home() {
+    $element = array(
+      '#markup' => '<p>Welcome to UNB Libraries Datasets. Please
+      select from the following content sets:</p>',
+    );
+    return $element;
+  }
 }
