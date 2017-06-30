@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Contains sets_nav.module
+ * Contains sets_nav.module.
  */
 
 /**
  * Implements hook_theme().
  */
 function dsets_nav_theme($existing, $type, $theme, $path) {
-  return array(
+  return [
     'dsets_intro' => [
-      'variables' => []
-    ]
-  );
+      'variables' => [],
+    ],
+  ];
 }

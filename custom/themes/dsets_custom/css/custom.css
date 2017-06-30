@@ -2,6 +2,12 @@
 
 /* All forms. */
 
-button#edit-preview {
+#edit-preview {
   display: none;
+}
+
+/* Footer */
+
+#libs-footer-logo {
+  max-width:300px;
 }
