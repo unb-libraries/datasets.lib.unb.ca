@@ -1,9 +1,33 @@
 /* Datasets custom CSS. */
 
+/* Colour.
+ *
+ * red1: cc0000;
+ * red2: 990000;
+ */
+
 /* All forms. */
 
 #edit-preview {
   display: none;
+}
+
+/* Bootstrap global overrides. */
+
+a {
+  color: #cc0000;
+}
+
+a:hover, a:focus {
+  color: #990000;
+}
+
+.btn-primary {
+  background-color: #cc0000;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #990000;
 }
 
 /* Footer */
