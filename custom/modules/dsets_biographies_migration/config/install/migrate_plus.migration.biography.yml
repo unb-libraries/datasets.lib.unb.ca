@@ -1,0 +1,24 @@
+
+# Migration configuration for biography entity.
+id: biography
+label: Biography
+migration_group: datasets
+source:
+  plugin: biography
+  key: default
+destination:
+  plugin: entity:node
+# Mappings.
+process:
+  type:
+    plugin: default_value
+    default_value: dsets_biography
+  title: name
+  field_dsets_bio_illus: illus
+  field_dsets_bio_location: location
+  field_dsets_bio_note: notes
+  # Dependencies
+dependencies:
+  enforced:
+    module:
+      - dsets_biographies_migration

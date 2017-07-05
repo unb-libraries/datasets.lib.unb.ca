@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.dsets_biography.field_dsets_bio_illus
     - field.field.node.dsets_biography.field_dsets_bio_location
-    - field.field.node.dsets_biography.field_dsets_bio_name
     - field.field.node.dsets_biography.field_dsets_bio_note
     - node.type.dsets_biography
   module:
@@ -37,14 +36,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  field_dsets_bio_name:
-    weight: 31
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_dsets_bio_note:
     weight: 34

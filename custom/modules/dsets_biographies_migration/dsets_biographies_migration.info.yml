@@ -1,0 +1,10 @@
+
+type: module
+name: Biographies Migration
+description: 'Migrate Biographies DB to datasets.lib.unb.ca'
+package: DSETS
+core: 8.x
+dependencies:
+  - migrate
+  - migrate_tools
+  - migrate_plus

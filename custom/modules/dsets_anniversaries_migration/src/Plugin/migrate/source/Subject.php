@@ -5,7 +5,7 @@ namespace Drupal\dsets_anniversaries_migration\Plugin\migrate\source;
 use Drupal\migrate\Plugin\migrate\source\SqlBase;
 
 /**
- * Source plugin for address content.
+ * Source plugin for subject content.
  *
  * @MigrateSource(
  *   id = "subject"
