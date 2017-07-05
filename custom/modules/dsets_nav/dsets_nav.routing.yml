@@ -4,6 +4,12 @@ page.anniversaries:
     _title: 'Anniversaries'
   requirements:
     _permission: 'access content'
+page.biographies:
+  path: 'biographies'
+  defaults:
+    _title: 'Biographies'
+  requirements:
+    _permission: 'access content'
 page.contactlib:
   path: 'contact'
   defaults:

@@ -12,7 +12,6 @@ module:
   datetime: 0
   dblog: 0
   devel: 0
-  dsets_biographies_migration: 0
   dsets_nav: 0
   dynamic_page_cache: 0
   editor: 0
@@ -29,9 +28,6 @@ module:
   ldap_user: 0
   link: 0
   menu_ui: 0
-  migrate: 0
-  migrate_plus: 0
-  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0
