@@ -13,7 +13,7 @@ _core:
 id: dsets_custom_account_menu
 theme: dsets_custom
 region: navigation_collapsible
-weight: 11
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

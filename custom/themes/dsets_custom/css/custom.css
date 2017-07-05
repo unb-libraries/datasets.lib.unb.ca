@@ -18,7 +18,8 @@ a {
   color: #cc0000;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #990000;
 }
 
@@ -26,12 +27,13 @@ a:hover, a:focus {
   background-color: #cc0000;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #990000;
 }
 
 /* Footer */
 
 #libs-footer-logo {
-  max-width:300px;
+  max-width: 300px;
 }

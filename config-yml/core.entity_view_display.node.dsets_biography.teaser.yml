@@ -1,0 +1,18 @@
+uuid: a71d33d3-6fba-4e38-8eb0-9ebb186a5d9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.dsets_biography
+  module:
+    - user
+id: node.dsets_biography.teaser
+targetEntityType: node
+bundle: dsets_biography
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

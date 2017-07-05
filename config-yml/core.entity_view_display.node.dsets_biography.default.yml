@@ -1,0 +1,52 @@
+uuid: ffe03270-ee5d-4012-b737-c699ebf773e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dsets_biography.field_dsets_bio_illus
+    - field.field.node.dsets_biography.field_dsets_bio_location
+    - field.field.node.dsets_biography.field_dsets_bio_name
+    - field.field.node.dsets_biography.field_dsets_bio_note
+    - node.type.dsets_biography
+  module:
+    - text
+    - user
+id: node.dsets_biography.default
+targetEntityType: node
+bundle: dsets_biography
+mode: default
+content:
+  field_dsets_bio_illus:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsets_bio_location:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dsets_bio_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dsets_bio_note:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

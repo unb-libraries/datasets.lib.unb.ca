@@ -1,0 +1,19 @@
+uuid: 362b7677-e064-4bcb-a1de-d16058021db8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsets_bio_name
+    - node.type.dsets_biography
+id: node.dsets_biography.field_dsets_bio_name
+field_name: field_dsets_bio_name
+entity_type: node
+bundle: dsets_biography
+label: Name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

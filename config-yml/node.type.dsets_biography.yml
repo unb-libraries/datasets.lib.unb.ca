@@ -1,0 +1,17 @@
+uuid: 4ad3e6d9-1af9-448b-a83e-90fa30466749
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'DSETS Biography'
+type: dsets_biography
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

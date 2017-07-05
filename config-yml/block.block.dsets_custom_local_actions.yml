@@ -9,7 +9,7 @@ _core:
 id: dsets_custom_local_actions
 theme: dsets_custom
 region: header
-weight: 20
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

@@ -1,0 +1,19 @@
+uuid: eb6f7df0-fc89-4cf8-8217-3a0d2ff9ecce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsets_bio_illus
+    - node.type.dsets_biography
+id: node.dsets_biography.field_dsets_bio_illus
+field_name: field_dsets_bio_illus
+entity_type: node
+bundle: dsets_biography
+label: Illus
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

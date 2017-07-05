@@ -1,0 +1,21 @@
+uuid: 00e252ea-42eb-4026-b8f6-346049401544
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsets_bio_location
+    - node.type.dsets_biography
+  module:
+    - text
+id: node.dsets_biography.field_dsets_bio_location
+field_name: field_dsets_bio_location
+entity_type: node
+bundle: dsets_biography
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
