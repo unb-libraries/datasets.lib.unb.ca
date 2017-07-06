@@ -15,14 +15,14 @@ page.contactlib:
   defaults:
     _title: 'Contact Us'
 page.archives:
-  path: '/archives'
+  path: 'archives'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:archives'
     _title: 'Archives & Special Collections'
   requirements:
     _permission: 'access content'
 page.home:
-  path: '/intro'
+  path: 'intro'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:home'
     _title: 'Introduction'

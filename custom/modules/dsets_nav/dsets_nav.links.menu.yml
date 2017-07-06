@@ -10,7 +10,7 @@ dsets_nav.biographies:
   description: 'Display Biographies main page.'
   parent: main
   menu_name: main
-  route_name: page.anniversaries
+  route_name: page.biographies
   weight: 200
 dsets_nav.archives:
     title: 'Archives & Special Collections'
