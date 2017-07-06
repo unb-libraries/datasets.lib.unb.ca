@@ -15,4 +15,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_dsets_bio_illus: true
+  field_dsets_bio_location: true
+  field_dsets_bio_note: true

@@ -4,25 +4,25 @@ dsets_nav.anniversaries:
   parent: main
   menu_name: main
   route_name: page.anniversaries
-  weight: 100
+  weight: 10
 dsets_nav.biographies:
   title: 'Biographies'
   description: 'Display Biographies main page.'
   parent: main
   menu_name: main
   route_name: page.biographies
-  weight: 200
+  weight: 20
 dsets_nav.archives:
     title: 'Archives & Special Collections'
     description: 'Navigate to A&SC home page.'
     parent: main
     menu_name: main
     route_name: page.archives
-    weight: 400
+    weight: 30
 dsets_nav.contactlib:
     title: 'Contact Us'
     description: 'Display contact form.'
     parent: main
     menu_name: main
     route_name: page.contactlib
-    weight: 500
+    weight: 40

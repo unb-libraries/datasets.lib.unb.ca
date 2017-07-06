@@ -14,6 +14,8 @@ page.contactlib:
   path: 'contact'
   defaults:
     _title: 'Contact Us'
+  requirements:
+    _permission: 'access content'
 page.archives:
   path: 'archives'
   defaults:
