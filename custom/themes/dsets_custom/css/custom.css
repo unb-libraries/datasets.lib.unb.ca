@@ -14,6 +14,18 @@
 
 /* Bootstrap global overrides. */
 
+input {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+input:hover,
+input:focus,
+input:active {
+  box-shadow: none !important;
+  border-color: #990000 !important;
+}
+
 a,
 .pagination > li > a,
 .pagination > li > span {
@@ -47,8 +59,11 @@ a:active,
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
-  background-color: #990000;
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #990000 !important;
+  border-color: #990000 !important;
+  outline: none !important;
 }
 
 /* Footer */
