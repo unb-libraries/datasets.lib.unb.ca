@@ -14,17 +14,36 @@
 
 /* Bootstrap global overrides. */
 
-a {
+a,
+.pagination > li > a,
+.pagination > li > span {
   color: #cc0000;
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:active,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > li > a:active,
+.pagination > li > span:hover,
+.pagination > li > span:focus,
+.pagination > li > span:active {
   color: #990000;
 }
 
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
 .btn-primary {
   background-color: #cc0000;
+  border-color: #990000;
 }
 
 .btn-primary:hover,
