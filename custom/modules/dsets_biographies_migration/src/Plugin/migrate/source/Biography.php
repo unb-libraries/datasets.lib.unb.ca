@@ -18,7 +18,7 @@ class Biography extends SqlBase {
    */
   public function query() {
     $query = $this->select('biographies', 'b')
-      ->fields('b', ['biography_id', 'name', 'location', 'illus', 'notes',]);
+      ->fields('b', ['biography_id', 'name', 'location', 'illus', 'notes']);
     return $query;
   }
 
