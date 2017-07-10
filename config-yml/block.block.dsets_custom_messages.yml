@@ -11,7 +11,7 @@ _core:
 id: dsets_custom_messages
 theme: dsets_custom
 region: header
-weight: -7
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

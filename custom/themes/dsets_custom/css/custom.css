@@ -66,6 +66,17 @@ a:active,
   outline: none !important;
 }
 
+/* User account menu */
+
+footer #block-useraccountmenu ul.navbar-right {
+  float: left !important;
+  margin-before: 1em !important;
+}
+
+footer.row {
+  padding-left: 15px;
+}
+
 /* Footer */
 
 #libs-footer-logo {

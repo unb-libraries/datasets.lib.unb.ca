@@ -24,3 +24,11 @@
     </div>
   </div>
 </div>
+
+{% if content %}
+<div id="{{ id }}-wrapper"><footer id="{{ id }}" class="row" role="contentinfo">
+  <div{{ attributes }}>
+    {{ content }}
+  </div>
+</footer><div><!-- /#{{ id }}, /#{{ id }}-wrapper -->
+{% endif %}

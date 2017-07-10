@@ -1,6 +1,6 @@
-uuid: 2ffdf142-a2c1-41ce-acc0-210eacae6354
+uuid: 0f4bb0df-e4cd-4f54-ac23-20fb5a3f0e5f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -8,12 +8,10 @@ dependencies:
     - system
   theme:
     - dsets_custom
-_core:
-  default_config_hash: R2K_qX0ZUMbUL6ie_-S9tZVjvqmlWKlscikgeRv9vhw
-id: dsets_custom_account_menu
+id: useraccountmenu
 theme: dsets_custom
-region: navigation_collapsible
-weight: -7
+region: footer
+weight: 0
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -22,5 +20,5 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 2
+  depth: 0
 visibility: {  }
