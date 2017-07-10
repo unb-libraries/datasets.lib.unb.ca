@@ -158,11 +158,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Illus
+          label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<li>Illus: {{ field_dsets_bio_illus | striptags | raw }}</li>\n"
             make_link: false
             path: ''
             absolute: false
@@ -191,12 +191,12 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
@@ -221,11 +221,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Location
+          label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<li>Location: {{ field_dsets_bio_location | striptags | raw }}</li>'
             make_link: false
             path: ''
             absolute: false
@@ -254,7 +254,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -283,11 +283,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Note:'
+          label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<li>Note: {{ field_dsets_bio_note | striptags | raw }}</li>'
             make_link: false
             path: ''
             absolute: false
@@ -316,7 +316,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -349,7 +349,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<b>{{ title }}</b>\n<ul>\n  <li>Location: {{ field_dsets_bio_location | striptags | trim | raw }}</li>\n  <li>Illus: {{ field_dsets_bio_illus | striptags | trim }}</li>\n  <li>Note: {{ field_dsets_bio_note | striptags | trim }}</li>"
+            text: "<b>{{ title }}</b>\n<ul>\n  {{ field_dsets_bio_location }}\n  {{ field_dsets_bio_illus }}\n  {{ field_dsets_bio_note }}\n</ul>"
             make_link: false
             path: ''
             absolute: false
