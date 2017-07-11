@@ -16,14 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `anniversaries`
---
-
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `anniversaries` /*!40100 DEFAULT CHARACTER SET latin1 */;
-
-USE `anniversaries`;
-
---
 -- Table structure for table `event_subjects`
 --
 
