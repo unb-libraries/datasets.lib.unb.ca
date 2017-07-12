@@ -1,0 +1,6 @@
+
+name: Datasets Anniversaries extra.
+type: module
+description: For custom Anniversaries functionality/overrides.
+core: 8.x
+package: DSETS
