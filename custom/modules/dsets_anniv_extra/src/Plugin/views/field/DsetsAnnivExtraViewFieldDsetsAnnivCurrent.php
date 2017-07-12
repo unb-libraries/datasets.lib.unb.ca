@@ -19,9 +19,13 @@ class DsetsAnnivExtraViewFieldDsetsAnnivCurrent extends FieldPluginBase {
    */
   public function render(ResultRow $values) {
     $anniv = $values->_entity;
-    $anniv_date = $anniv->get('field_dsets_anniv_event_date')->getValue;
-    $anniv_year = $anniv_date->format("Y");
-    $anniv_current = date("Y") - $anniv_year;
+    $anniv_date_field = $anniv->get('field_dsets_anniv_event_date')->getValue();
+    $anniv_date_str = $anniv_date_field[0]['value'];
+    $anniv_year_str = substr($anniv_date_str, 0, 4);
+    $anniv_year_int = (int)$anniv_year_str;
+    $current_year_str = date("Y");
+    $current_year_int = (int)$current_year_str;
+    $anniv_current = $current_year_int - $anniv_year_int;
 
     return $anniv_current;
   }
@@ -33,4 +37,5 @@ class DsetsAnnivExtraViewFieldDsetsAnnivCurrent extends FieldPluginBase {
     // This function exists to override parent query function.
     // Do nothing.
   }
+
 }
