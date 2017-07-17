@@ -12,6 +12,7 @@ module:
   datetime: 0
   dblog: 0
   devel: 0
+  dsets_anniv_extra: 0
   dsets_nav: 0
   dynamic_page_cache: 0
   editor: 0
@@ -23,6 +24,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   ldap_authentication: 0
   ldap_servers: 0
   ldap_user: 0

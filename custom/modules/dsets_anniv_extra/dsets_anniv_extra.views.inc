@@ -13,6 +13,7 @@ use Drupal\views\ViewExecutable;
 function dsets_anniv_extra_views_pre_render(ViewExecutable $view) {
 
   if ($view->storage->id() == 'dsets_browse_anniversaries') {
+    kint($view);
     $target_year = (int) $view->args[0];
     $results = $view->result;
 
