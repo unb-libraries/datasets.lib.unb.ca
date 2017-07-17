@@ -1,0 +1,20 @@
+uuid: 38efb6b9-6fa0-4a91-9bf9-4870e2bb517d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_dsets_anniv_targeted
+field_name: field_dsets_anniv_targeted
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
