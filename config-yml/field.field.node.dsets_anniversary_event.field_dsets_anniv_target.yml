@@ -1,15 +1,15 @@
-uuid: edaa19f6-dcd8-4b6a-9759-f90adef178cc
+uuid: f5e8520f-b8c6-45ae-b8c4-1bf7af0334ef
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_dsets_anniv_old_id
+    - field.storage.node.field_dsets_anniv_target
     - node.type.dsets_anniversary_event
-id: node.dsets_anniversary_event.field_dsets_anniv_old_id
-field_name: field_dsets_anniv_old_id
+id: node.dsets_anniversary_event.field_dsets_anniv_target
+field_name: field_dsets_anniv_target
 entity_type: node
 bundle: dsets_anniversary_event
-label: dsets_anniv_old_id
+label: dsets_anniv_target
 description: ''
 required: false
 translatable: false

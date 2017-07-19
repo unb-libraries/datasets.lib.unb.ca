@@ -1,0 +1,23 @@
+uuid: 897dbe05-9566-44af-9dd4-9990940faf50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dsets_anniv_targeted_x5
+    - node.type.dsets_anniversary_event
+id: node.dsets_anniversary_event.field_dsets_anniv_targeted_x5
+field_name: field_dsets_anniv_targeted_x5
+entity_type: node
+bundle: dsets_anniversary_event
+label: dsets_anniv_targeted_x5
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

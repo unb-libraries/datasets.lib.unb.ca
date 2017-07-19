@@ -5,42 +5,42 @@
  * Contains dsets_anniv_extra.views.inc.
  */
 
-use Drupal\views\ViewExecutable;
+use Drupal\Node\Entity\Node;
 
 /**
  * Implements hook_views_pre_render().
  */
-function dsets_anniv_extra_views_pre_render(ViewExecutable &$view) {
+
+function dsets_anniv_extra_views_pre_render($view) {
 
   if ($view->storage->id() == 'dsets_browse_anniversaries') {
-    $target_year = (int) $view->args[0];
-    $results = $view->result;
+    $target_yr = (int) $view->args[0];
 
-    foreach ($results as $index => $row) {
-      $nid = $row->nid;
-      $node = $row->_entity->load($nid);
+    $events = \Drupal::entityQuery('node')
+      ->condition('type', 'dsets_anniversary_event')
+      ->execute();
 
-      $anniv_date = $node->get('field_dsets_anniv_event_date')
+    foreach ($events as $event) {
+      $node = Node::load($event);
+      $date = $node->get('field_dsets_anniv_event_date')
         ->getValue()[0]['value'];
-      $anniv_year = (int) substr($anniv_date, 0, 4);
-      $anniv_targeted = $target_year - $anniv_year;
+      $year = (int) substr($date, 0, 4);
+      $anniv = ($target_yr - $year > 0 ? $target_yr - $year : 0);
+      $anniv_pre = (int) $node->get('field_dsets_anniv_targeted')
+        ->getValue()[0]['value'];
 
-      if ($anniv_targeted > 0) {
-        $anniv_targeted_x5 = ($anniv_targeted % 5 == 0 ? TRUE : FALSE);
-        $node->get('field_dsets_anniv_targeted')->setValue($anniv_targeted);
+      $anniv_x5 = ($anniv % 5 == 0);
+      $node->get('field_dsets_anniv_target')->setValue($target_yr);
+      $node->get('field_dsets_anniv_targeted')->setValue($anniv);
+      $node->get('field_dsets_anniv_targeted_x5')->setValue($anniv_x5);
 
-        if (!$anniv_targeted_x5) {
-          unset($view->result[$index]);
-        }
-      }
-      else {
-        $node->get('field_dsets_anniv_targeted')->setValue(0);
-      }
-
-      unset($node);
+      $node->save();
     }
+
+    unset($node);
+    unset($event);
+    unset($events);
+
+    drupal_flush_all_caches();
   }
-
-  unset($view);
-
 }
