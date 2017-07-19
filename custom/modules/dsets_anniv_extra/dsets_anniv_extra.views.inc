@@ -10,7 +10,6 @@ use Drupal\Node\Entity\Node;
 /**
  * Implements hook_views_pre_render().
  */
-
 function dsets_anniv_extra_views_pre_render($view) {
 
   if ($view->storage->id() == 'dsets_browse_anniversaries') {
