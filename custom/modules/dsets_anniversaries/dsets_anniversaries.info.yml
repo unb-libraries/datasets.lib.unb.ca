@@ -1,0 +1,5 @@
+name: Datasets Anniversaries module
+type: module
+description: Additional functionality extensions dealing with anniversaries.
+core: 8.x
+package: DSETS

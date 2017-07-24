@@ -1,0 +1,7 @@
+anniversaries.year:
+ path: '/anniversaries-year'
+ defaults:
+   _title: 'Anniversaries For'
+   _form: '\Drupal\dsets_anniversaries\Form\AnnivYearForm'
+ requirements:
+   _permission: 'access content'
