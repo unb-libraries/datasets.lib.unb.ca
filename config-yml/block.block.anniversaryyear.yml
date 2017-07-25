@@ -4,11 +4,12 @@ status: true
 dependencies:
   module:
     - dsets_anniversaries
+    - system
   theme:
     - dsets_custom
 id: anniversaryyear
 theme: dsets_custom
-region: sidebar_first
+region: highlighted
 weight: -6
 provider: null
 plugin: anniv_year_block
@@ -16,5 +17,10 @@ settings:
   id: anniv_year_block
   label: 'Anniversary Year'
   provider: dsets_anniversaries
-  label_display: visible
-visibility: {  }
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/anniversaries*'
+    negate: false
+    context_mapping: {  }

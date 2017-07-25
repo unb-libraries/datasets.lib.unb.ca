@@ -26,10 +26,11 @@ class AnnivYearForm extends FormBase {
     $form['reference_year'] = [
       '#type' => 'textfield',
       '#title' => t('Year:'),
-      '#required' => TRUE,
+      '#required' => FALSE,
     ];
 
     $form['actions']['#type'] = 'actions';
+
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->t('Go'),

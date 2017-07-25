@@ -66,6 +66,12 @@ a:active,
   outline: none !important;
 }
 
+/* Anniversaries For Year form */
+
+form#dsets-anniv-year-form {
+  display: inline-block !important;
+}
+
 /* User account menu */
 
 footer #block-useraccountmenu ul.navbar-right {
