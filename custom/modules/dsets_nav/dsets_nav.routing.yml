@@ -1,29 +1,36 @@
-page.anniversaries:
+anniversaries.all:
   path: 'anniversaries'
   defaults:
     _title: 'Anniversaries'
   requirements:
     _permission: 'access content'
-page.biographies:
+anniversaries.form:
+ path: '/anniversaries-form'
+ defaults:
+   _title: 'Anniversaries For'
+   _form: '\Drupal\dsets_anniversaries\Form\AnnivYearForm'
+ requirements:
+   _permission: 'access content'
+biographies.all:
   path: 'biographies'
   defaults:
     _title: 'Biographies'
   requirements:
     _permission: 'access content'
-page.contactlib:
+dsets.contactlib:
   path: 'contact'
   defaults:
     _title: 'Contact Us'
   requirements:
     _permission: 'access content'
-page.archives:
+dsets.archives:
   path: 'archives'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:archives'
     _title: 'Archives & Special Collections'
   requirements:
     _permission: 'access content'
-page.home:
+dsets.home:
   path: 'intro'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:home'

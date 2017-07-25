@@ -3,26 +3,26 @@ dsets_nav.anniversaries:
   description: 'Display Anniversaries main page.'
   parent: main
   menu_name: main
-  route_name: page.anniversaries
+  route_name: anniversaries.all
   weight: 10
 dsets_nav.biographies:
   title: 'Biographies'
   description: 'Display Biographies main page.'
   parent: main
   menu_name: main
-  route_name: page.biographies
+  route_name: biographies.all
   weight: 20
 dsets_nav.archives:
     title: 'Archives & Special Collections'
     description: 'Navigate to A&SC home page.'
     parent: main
     menu_name: main
-    route_name: page.archives
+    route_name: dsets.archives
     weight: 30
 dsets_nav.contactlib:
     title: 'Contact Us'
     description: 'Display contact form.'
     parent: main
     menu_name: main
-    route_name: page.contactlib
+    route_name: dsets.contactlib
     weight: 40
