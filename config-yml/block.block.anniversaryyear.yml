@@ -1,0 +1,20 @@
+uuid: e43d1ed7-1e44-47c1-a1ee-7e66699eae3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - dsets_anniversaries
+  theme:
+    - dsets_custom
+id: anniversaryyear
+theme: dsets_custom
+region: sidebar_first
+weight: -6
+provider: null
+plugin: anniv_year_block
+settings:
+  id: anniv_year_block
+  label: 'Anniversary Year'
+  provider: dsets_anniversaries
+  label_display: visible
+visibility: {  }

@@ -11,7 +11,6 @@ dependencies:
   module:
     - datetime
     - node
-    - search
     - text
     - user
 id: dsets_browse_anniversaries
@@ -57,7 +56,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 20
+          items_per_page: 50
           offset: 0
           id: 0
           total_pages: null
@@ -588,11 +587,6 @@ display:
           entity_field: type
           plugin_id: bundle
           group: 1
-        keys:
-          id: keys
-          table: node_search_index
-          field: keys
-          plugin_id: search_keywords
       sorts: {  }
       title: 'Browse Anniversaries'
       header: {  }

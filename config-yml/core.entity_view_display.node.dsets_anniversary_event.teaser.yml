@@ -21,3 +21,6 @@ hidden:
   field_dsets_anniv_note: true
   field_dsets_anniv_old_id: true
   field_dsets_anniv_source: true
+  field_dsets_anniv_target: true
+  field_dsets_anniv_targeted: true
+  field_dsets_anniv_targeted_x5: true

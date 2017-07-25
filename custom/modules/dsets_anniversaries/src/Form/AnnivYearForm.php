@@ -49,14 +49,7 @@ class AnnivYearForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-
-    foreach ($form_state->getValues() as $key => $value) {
-      drupal_set_message($key . ': ' . $value);
-    }
-
     $year = $form_state->getValue('reference_year');
-    kint($year);
-
     $response = new RedirectResponse('/anniversaries/' . $year);
     $response->send();
   }
