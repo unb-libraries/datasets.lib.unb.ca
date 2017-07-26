@@ -51,7 +51,7 @@ class AnnivYearForm extends FormBase {
   public function validateForm(array &$form, FormStateInterface $form_state) {
     $year = $form_state->getValue('reference_year');
 
-    if (!is_numeric($year) || (int) $year < 1785) {
+    if ($year != '' and !is_numeric($year) || (int) $year < 1785) {
       $form_state->setErrorByName('reference_year',
         t('Reference Year must be a possitive number larger than 1785.'));
     }
@@ -62,7 +62,7 @@ class AnnivYearForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $year = (int) $form_state->getValue('reference_year');
-    $year = $year == '' ? '2017' : $year;
+    $year = $year == '' ? date('Y') : $year;
     $x5_bool = $form_state->getValue('anniv_x5');
     $x5 = $x5_bool ? 'x5' : 'all';
     $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5);
