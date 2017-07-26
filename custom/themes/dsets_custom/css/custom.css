@@ -103,3 +103,9 @@ footer.row {
 #libs-footer-logo {
   max-width: 300px;
 }
+
+/* Specific */
+
+label[for="edit-title"] {
+  margin-left: 10px !important;
+}
