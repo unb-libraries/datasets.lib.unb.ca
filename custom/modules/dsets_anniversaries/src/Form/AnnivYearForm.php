@@ -25,8 +25,13 @@ class AnnivYearForm extends FormBase {
 
     $form['reference_year'] = [
       '#type' => 'textfield',
-      '#title' => t('Year:'),
+      '#title' => t('Reference Year'),
       '#required' => FALSE,
+    ];
+
+    $form['anniv_x5'] = [
+      '#type' => 'checkbox',
+      '#title' => t('5-year multiples only'),
     ];
 
     $form['actions']['#type'] = 'actions';
@@ -44,14 +49,23 @@ class AnnivYearForm extends FormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
+    $year = $form_state->getValue('reference_year');
+
+    if (!is_numeric($year) || (int) $year < 1785) {
+      $form_state->setErrorByName('reference_year',
+        t('Reference Year must be a possitive number larger than 1785.'));
+    }
   }
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $year = $form_state->getValue('reference_year');
-    $response = new RedirectResponse('/anniversaries/' . $year);
+    $year = (int) $form_state->getValue('reference_year');
+    $year = $year == '' ? '2017' : $year;
+    $x5_bool = $form_state->getValue('anniv_x5');
+    $x5 = $x5_bool ? 'x5' : 'all';
+    $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5);
     $response->send();
   }
 

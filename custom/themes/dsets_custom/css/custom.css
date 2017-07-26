@@ -14,14 +14,16 @@
 
 /* Bootstrap global overrides. */
 
-input {
-  margin-left: 10px !important;
+label {
   margin-right: 10px !important;
 }
 
 input:hover,
 input:focus,
-input:active {
+input:active,
+select:hover,
+select:focus,
+select:active {
   box-shadow: none !important;
   border-color: #990000 !important;
 }
@@ -30,6 +32,10 @@ a,
 .pagination > li > a,
 .pagination > li > span {
   color: #cc0000;
+}
+
+.select-wrapper:after {
+  color: #990000;
 }
 
 a:hover,
@@ -53,11 +59,15 @@ a:active,
   background-color: #cc0000;
   border-color: #cc0000;
 }
+.btn-info,
 .btn-primary {
   background-color: #cc0000;
   border-color: #990000;
 }
 
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
@@ -67,11 +77,16 @@ a:active,
 }
 
 /* Anniversaries For Year form */
-
-form#dsets-anniv-year-form {
-  display: inline-block !important;
+/*
+form#dsets-anniv-year-form .form-control,
+form#dsets-anniv-year-form div {
+  display: inline;
 }
 
+form#dsets-anniv-year-form .form-control {
+  width: 120px;
+}
+*/
 /* User account menu */
 
 footer #block-useraccountmenu ul.navbar-right {
