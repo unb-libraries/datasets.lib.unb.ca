@@ -26,12 +26,15 @@ class AnnivYearForm extends FormBase {
     $form['reference_year'] = [
       '#type' => 'textfield',
       '#title' => t('Reference Year'),
+      '#default_value' => \Drupal::state()->get('dsets_state_year'),
       '#required' => FALSE,
     ];
 
     $form['anniv_x5'] = [
       '#type' => 'checkbox',
       '#title' => t('5-year multiples only'),
+      '#default_value' => \Drupal::state()->get('dsets_state_x5'),
+      '#required' => FALSE,
     ];
 
     $form['actions']['#type'] = 'actions';
@@ -61,10 +64,17 @@ class AnnivYearForm extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $year = (int) $form_state->getValue('reference_year');
-    $year = $year == '' ? date('Y') : $year;
+    $year = $form_state->getValue('reference_year');
+    $year = $year ? $year : date('Y');
+
     $x5_bool = $form_state->getValue('anniv_x5');
     $x5 = $x5_bool ? 'x5' : 'all';
+
+    \Drupal::state()->set('dsets_state_year', $year);
+    \Drupal::state()->set('dsets_state_x5', $x5_bool);
+
+    // kint(\Drupal::request()->query);
+
     $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5);
     $response->send();
   }
