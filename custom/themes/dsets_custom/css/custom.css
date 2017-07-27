@@ -2,8 +2,10 @@
 
 /* Colour.
  *
- * red1: cc0000;
- * red2: 990000;
+ * red1:  cc0000;
+ * red2:  990000;
+ * gray1: f8f8f8;
+ * gray2: e7e7e7;
  */
 
 /* All forms. */
@@ -77,16 +79,24 @@ a:active,
 }
 
 /* Anniversaries For Year form */
-/*
+
+form#dsets-anniv-year-form {
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 20px;
+}
+
 form#dsets-anniv-year-form .form-control,
 form#dsets-anniv-year-form div {
   display: inline;
 }
 
 form#dsets-anniv-year-form .form-control {
-  width: 120px;
+  width: 107px;
 }
-*/
+
 /* User account menu */
 
 footer #block-useraccountmenu ul.navbar-right {
@@ -106,6 +116,7 @@ footer.row {
 
 /* Specific */
 
-label[for="edit-title"] {
+label[for="edit-title"],
+label[for="edit-anniv-x5"] {
   margin-left: 10px !important;
 }

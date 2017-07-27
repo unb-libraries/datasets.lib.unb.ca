@@ -41,7 +41,7 @@ class AnnivYearForm extends FormBase {
 
     $form['actions']['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Go'),
+      '#value' => $this->t('Apply'),
       '#button_type' => 'primary',
     ];
 
@@ -72,8 +72,6 @@ class AnnivYearForm extends FormBase {
 
     \Drupal::state()->set('dsets_state_year', $year);
     \Drupal::state()->set('dsets_state_x5', $x5_bool);
-
-    // kint(\Drupal::request()->query);
 
     $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5);
     $response->send();
