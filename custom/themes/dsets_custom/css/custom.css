@@ -123,3 +123,7 @@ label[for="edit-title"] {
 label[for="edit-anniv-x5"] {
   margin-left: 12px;
 }
+
+table#dsets_intro_table td {
+  padding: 2px 20px;
+}
