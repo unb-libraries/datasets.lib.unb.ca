@@ -10,7 +10,7 @@ Please select from the content below:
       <a href='/anniversaries'>Anniversaries</a>
     </td>
     <td>
-      {% if user.hasPermission('administer nodes') %}
+      {% if 'dsets_contributor' in user.getroles  %}
         <a href='/node/add/dsets_anniversary_event'>[Add New]</a>
       {% endif %}
     </td>
@@ -19,7 +19,7 @@ Please select from the content below:
       <a href='/anniversaries'>Biographies</a>
     </td>
     <td>
-      {% if user.hasPermission('administer nodes') %}
+      {% if 'dsets_contributor' in user.getroles  %}
         <a href='/node/add/dsets_biography'>[Add New]</a>
       {% endif %}
     </td>

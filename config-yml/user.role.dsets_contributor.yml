@@ -1,0 +1,14 @@
+uuid: 82353ab0-cb38-4328-ac06-fe15b37309d0
+langcode: en
+status: true
+dependencies: {  }
+id: dsets_contributor
+label: 'DSETS Contributor'
+weight: 3
+is_admin: null
+permissions:
+  - 'create dsets_anniversary_event content'
+  - 'create dsets_biography content'
+  - 'delete any dsets_anniversary_event content'
+  - 'edit any dsets_anniversary_event content'
+  - 'edit any dsets_biography content'
