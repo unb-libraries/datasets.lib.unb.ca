@@ -8,9 +8,6 @@ dependencies:
     - field.field.node.dsets_anniversary_event.field_dsets_anniv_note
     - field.field.node.dsets_anniversary_event.field_dsets_anniv_old_id
     - field.field.node.dsets_anniversary_event.field_dsets_anniv_source
-    - field.field.node.dsets_anniversary_event.field_dsets_anniv_target
-    - field.field.node.dsets_anniversary_event.field_dsets_anniv_targeted
-    - field.field.node.dsets_anniversary_event.field_dsets_anniv_targeted_x5
     - node.type.dsets_anniversary_event
   module:
     - datetime
@@ -51,34 +48,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_dsets_anniv_target:
-    weight: 7
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_dsets_anniv_targeted:
-    weight: 5
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_dsets_anniv_targeted_x5:
-    weight: 6
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
     region: content
   links:
     weight: 0
