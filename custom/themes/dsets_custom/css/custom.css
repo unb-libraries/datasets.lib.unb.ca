@@ -116,7 +116,10 @@ footer.row {
 
 /* Specific */
 
-label[for="edit-title"],
-label[for="edit-anniv-x5"] {
+label[for="edit-title"] {
   margin-left: 10px !important;
+}
+
+label[for="edit-anniv-x5"] {
+  margin-left: 12px;
 }

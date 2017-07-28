@@ -32,7 +32,7 @@ class AnnivYearForm extends FormBase {
 
     $form['anniv_x5'] = [
       '#type' => 'checkbox',
-      '#title' => t('5-year multiples only'),
+      '#title' => t('Display anniversaries in 5-year increments'),
       '#default_value' => \Drupal::state()->get('dsets_state_x5'),
       '#required' => FALSE,
     ];
@@ -58,6 +58,7 @@ class AnnivYearForm extends FormBase {
       $form_state->setErrorByName('reference_year',
         t('Reference Year must be a possitive number larger than 1785.'));
     }
+
   }
 
   /**
@@ -73,7 +74,14 @@ class AnnivYearForm extends FormBase {
     \Drupal::state()->set('dsets_state_year', $year);
     \Drupal::state()->set('dsets_state_x5', $x5_bool);
 
-    $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5);
+    $args = \Drupal::request()->query->all();
+    $subject = $args['field_dsets_anniv_event_subject_target_id'];
+    $title = $args['title'];
+    $qstring = '?' . 'field_dsets_anniv_event_subject_target_id=' . $subject .
+      '&title=' . $title;
+
+    $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5 .
+      $qstring);
     $response->send();
   }
 
