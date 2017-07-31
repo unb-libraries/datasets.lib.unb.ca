@@ -18,7 +18,7 @@
  */
 #}
 
-{% if title|striptags is divisible by(5) or view.args.1 == 'all' %}
+{% if title|striptags|number_format() is divisible by(5) or view.args.1 == 'all' %}
   {% if title %}
 
     <h3>{{ title }}</h3>

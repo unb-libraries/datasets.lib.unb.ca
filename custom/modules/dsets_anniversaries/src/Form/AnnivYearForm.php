@@ -75,13 +75,17 @@ class AnnivYearForm extends FormBase {
     \Drupal::state()->set('dsets_state_x5', $x5_bool);
 
     $args = \Drupal::request()->query->all();
-    $subject = $args['field_dsets_anniv_event_subject_target_id'];
-    $title = $args['title'];
-    $qstring = '?' . 'field_dsets_anniv_event_subject_target_id=' . $subject .
-      '&title=' . $title;
 
+    $subject = $args['field_dsets_anniv_event_subject_target_id'] ?
+      'field_dsets_anniv_event_subject_target_id=' .
+      $args['field_dsets_anniv_event_subject_target_id'] : '';
+
+    $title = $args['title'] ? '&title=' . $args['title'] : '';
+
+    $qstring = '?' . $subject . $title;
     $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5 .
       $qstring);
+
     $response->send();
   }
 

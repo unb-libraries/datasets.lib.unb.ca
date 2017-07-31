@@ -40,7 +40,12 @@
             "themes/contrib/{$name}": [
                 "type:drupal-theme"
             ]
+        },
+        "patches": {
+          "drupal/core": {
+              "To correct DerivativeDiscoveryDecorator warning": "https://www.drupal.org/files/issues/patch_empty_fix.patch"
         }
+      }
     },
     "license": "MIT",
     "minimum-stability": "dev",

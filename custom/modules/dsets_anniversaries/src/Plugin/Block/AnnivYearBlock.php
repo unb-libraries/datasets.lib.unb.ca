@@ -21,7 +21,7 @@ class AnnivYearBlock extends BlockBase {
   public function build() {
     $form = \Drupal::formBuilder()
       ->getForm('Drupal\dsets_anniversaries\Form\AnnivYearForm');
-
+    $form['#cache']['max-age'] = 0;
     return $form;
   }
 
