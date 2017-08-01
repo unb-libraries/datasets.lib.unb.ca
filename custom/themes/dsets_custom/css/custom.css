@@ -134,8 +134,8 @@ table#dsets_intro_table td {
 
 div#edit-field-dsets-anniv-event-subject-wrapper div.fieldset-wrapper {
   -webkit-columns: 5 200px;
-   -moz-columns: 5 200px;
-        columns: 5 200px;
+  -moz-columns: 5 200px;
+  columns: 5 200px;
 }
 
 div#edit-field-dsets-anniv-note-0-format {
@@ -158,6 +158,7 @@ div.field.field--label-above {
   margin-bottom: 20px;
 }
 
+form.node-dsets-anniversary-event-delete-form.node-confirm-form.confirmation
 div#edit-actions {
   margin-top: 20px;
 }
