@@ -31,3 +31,7 @@ dsets.home:
     _title: 'Introduction'
   requirements:
     _permission: 'access content'
+dsets.user:
+  path: '/user'
+  requirements:
+    _role: 'administration'

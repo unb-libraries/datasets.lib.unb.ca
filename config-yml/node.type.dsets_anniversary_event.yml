@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: 'DSETS Anniversary Event'
+name: 'Anniversary Event'
 type: dsets_anniversary_event
 description: ''
 help: ''

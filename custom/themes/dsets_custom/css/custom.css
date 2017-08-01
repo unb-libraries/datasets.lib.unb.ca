@@ -124,6 +124,40 @@ label[for="edit-anniv-x5"] {
   margin-left: 12px;
 }
 
+a[href="/user"] {
+  display: none !important;
+}
+
 table#dsets_intro_table td {
   padding: 2px 20px;
+}
+
+div#edit-field-dsets-anniv-event-subject-wrapper div.fieldset-wrapper {
+  -webkit-columns: 5 200px;
+   -moz-columns: 5 200px;
+        columns: 5 200px;
+}
+
+div#edit-field-dsets-anniv-note-0-format {
+  display: none;
+}
+
+div#edit-field-dsets-anniv-source-0-format {
+  display: none;
+}
+
+div#edit-field-dsets-bio-location-0-format {
+  display: none;
+}
+
+div.tabbable.tabs-left.vertical-tabs.clearfix {
+  display: none;
+}
+
+div.field.field--label-above {
+  margin-bottom: 20px;
+}
+
+div#edit-actions {
+  margin-top: 20px;
 }

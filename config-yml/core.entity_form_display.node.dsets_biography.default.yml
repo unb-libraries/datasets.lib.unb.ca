@@ -40,7 +40,7 @@ content:
   field_dsets_bio_note:
     weight: 34
     settings:
-      rows: 5
+      rows: 3
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
