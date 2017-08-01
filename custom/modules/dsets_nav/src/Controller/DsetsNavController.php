@@ -21,6 +21,13 @@ class DsetsNavController extends ControllerBase {
   /**
    * {@inheritdoc}
    */
+  public function user() {
+    return new RedirectResponse("/");
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function anniversaries() {
     return new RedirectResponse("/anniversaries/" . date('Y') . "/all");
   }

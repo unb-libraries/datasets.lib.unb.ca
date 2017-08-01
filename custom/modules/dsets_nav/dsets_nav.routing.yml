@@ -32,6 +32,9 @@ dsets.home:
   requirements:
     _permission: 'access content'
 dsets.user:
-  path: '/user'
+  path: '/user/{uid}'
+  defaults:
+    _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:user'
+    _title: 'User'
   requirements:
-    _role: 'administration'
+    _permission: 'access content'
