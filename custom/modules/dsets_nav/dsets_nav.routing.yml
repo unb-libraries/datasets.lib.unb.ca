@@ -38,3 +38,15 @@ dsets.user:
     _title: 'User'
   requirements:
     _permission: 'access content'
+dsets.new_user:
+  path: '/user/register'
+  defaults:
+    _title: 'New User'
+  requirements:
+    _role: 'administrator'
+dsets.reset_password:
+  path: '/user/password'
+  defaults:
+    _title: 'New User'
+  requirements:
+    _role: 'administrator'

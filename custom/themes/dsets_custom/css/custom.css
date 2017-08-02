@@ -128,6 +128,14 @@ a[href="/user"] {
   display: none !important;
 }
 
+a[href="/user/register"] {
+  display: none !important;
+}
+
+a[href="/user/password"] {
+  display: none !important;
+}
+
 table#dsets_intro_table td {
   padding: 2px 20px;
 }
