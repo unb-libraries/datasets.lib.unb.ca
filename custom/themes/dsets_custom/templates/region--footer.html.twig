@@ -5,7 +5,9 @@
 
       <a href={{ front_page }}>Home</a>
       <span>| </span><a href="/anniversaries">Anniversaries</a>
-      <span>| </span><a href="/biographies">Biographies</a>
+      {% if 'dsets_biographies_user' in user.getroles  %}
+        <span>| </span><a href="/biographies">Biographies</a>
+      {% endif %}
       <span>| </span><a href="/archives">Archives</a>
       <span>| </span><a href="/contact">Contact Us</a>
 

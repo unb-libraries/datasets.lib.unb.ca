@@ -1,0 +1,9 @@
+uuid: e15331b3-a5b0-496b-b2a5-b77b4243b25c
+langcode: en
+status: true
+dependencies: {  }
+id: dsets_biographies_user
+label: 'DSETS Biographies User'
+weight: 5
+is_admin: null
+permissions: {  }

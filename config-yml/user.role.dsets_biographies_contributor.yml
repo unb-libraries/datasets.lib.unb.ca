@@ -1,0 +1,9 @@
+uuid: 1efbe4c5-afca-4da7-ae46-d30c2bec4778
+langcode: en
+status: true
+dependencies: {  }
+id: dsets_biographies_contributor
+label: 'DSETS Biographies Contributor'
+weight: 6
+is_admin: null
+permissions: {  }

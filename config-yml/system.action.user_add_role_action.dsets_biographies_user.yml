@@ -1,0 +1,14 @@
+uuid: e960a441-4be9-4508-a6b4-b3ef38c3e059
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dsets_biographies_user
+  module:
+    - user
+id: user_add_role_action.dsets_biographies_user
+label: 'Add the DSETS Biographies User role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dsets_biographies_user

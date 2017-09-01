@@ -1,0 +1,14 @@
+uuid: 1fcf4b6d-3799-47c0-baa5-f7b3bb26a889
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dsets_anniversaries_contributor
+  module:
+    - user
+id: user_remove_role_action.dsets_anniversaries_contributor
+label: 'Remove the DSETS Anniversaries Contributor role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dsets_anniversaries_contributor

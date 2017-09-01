@@ -1,0 +1,14 @@
+uuid: 7abe9e10-a38c-4939-aa0b-6bd36bee6ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dsets_biographies_user
+  module:
+    - user
+id: user_remove_role_action.dsets_biographies_user
+label: 'Remove the DSETS Biographies User role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dsets_biographies_user

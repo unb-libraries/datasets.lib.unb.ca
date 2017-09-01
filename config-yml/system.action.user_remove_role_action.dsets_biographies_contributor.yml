@@ -1,0 +1,14 @@
+uuid: 2041b91f-383d-42a6-b658-e5dd50c33ef3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dsets_biographies_contributor
+  module:
+    - user
+id: user_remove_role_action.dsets_biographies_contributor
+label: 'Remove the DSETS Biographies Contributor role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dsets_biographies_contributor

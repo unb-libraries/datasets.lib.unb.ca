@@ -1,0 +1,14 @@
+uuid: ec04e0a1-15dc-4840-9cf2-7e15ebaec990
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dsets_anniversaries_contributor
+  module:
+    - user
+id: user_add_role_action.dsets_anniversaries_contributor
+label: 'Add the DSETS Anniversaries Contributor role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dsets_anniversaries_contributor

@@ -1,0 +1,14 @@
+uuid: 57399b64-e72f-4b16-8395-d5ff7f628de8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dsets_biographies_contributor
+  module:
+    - user
+id: user_add_role_action.dsets_biographies_contributor
+label: 'Add the DSETS Biographies Contributor role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dsets_biographies_contributor

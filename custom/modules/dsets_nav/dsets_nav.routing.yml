@@ -1,50 +1,48 @@
-anniversaries.all:
+dsets_nav.anniversaries:
   path: '/anniversaries'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:anniversaries'
     _title: 'Anniversaries'
   requirements:
     _permission: 'access content'
-biographies.all:
+dsets_nav.biographies:
   path: '/biographies'
   defaults:
     _title: 'Biographies'
-  requirements:
-    _permission: 'access content'
-dsets.contactlib:
+dsets_nav.contactlib:
   path: '/contact'
   defaults:
     _title: 'Contact Us'
   requirements:
     _permission: 'access content'
-dsets.archives:
+dsets_nav.archives:
   path: '/archives'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:archives'
     _title: 'Archives & Special Collections'
   requirements:
     _permission: 'access content'
-dsets.home:
+dsets_nav.home:
   path: '/intro'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:home'
     _title: 'Introduction'
   requirements:
     _permission: 'access content'
-dsets.user:
+dsets_nav.user:
   path: '/user/{uid}'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:user'
     _title: 'User'
   requirements:
     _permission: 'access content'
-dsets.new_user:
+dsets_nav.new_user:
   path: '/user/register'
   defaults:
     _title: 'New User'
   requirements:
     _role: 'administrator'
-dsets.reset_password:
+dsets_nav.reset_password:
   path: '/user/password'
   defaults:
     _title: 'New User'
