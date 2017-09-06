@@ -23,17 +23,24 @@ class AnnivYearForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
 
+    $path = \Drupal::service('path.current')->getPath();
+
+    preg_match_all('!\d+!', $path, $matches);
+    $year = $matches[0][0];
+
+    $x5 = strpos($path, 'x5') ? true : false;
+
     $form['reference_year'] = [
       '#type' => 'textfield',
       '#title' => t('Reference Year'),
-      '#default_value' => \Drupal::state()->get('dsets_state_year'),
+      '#default_value' => $year,
       '#required' => FALSE,
     ];
 
     $form['anniv_x5'] = [
       '#type' => 'checkbox',
-      '#title' => t('Display anniversaries in 5-year increments'),
-      '#default_value' => \Drupal::state()->get('dsets_state_x5'),
+      '#title' => t('5-year increments'),
+      '#default_value' => $x5,
       '#required' => FALSE,
     ];
 

@@ -80,7 +80,8 @@ a:active,
 
 /* Anniversaries For Year form */
 
-form#dsets-anniv-year-form {
+form#views-exposed-form-dsets-browse-anniversaries-page-1 {
+  margin-top: 20px;
   margin-bottom: 20px;
   background-color: #f8f8f8;
   border: 1px solid #e7e7e7;
@@ -121,10 +122,6 @@ footer.row {
 }
 
 /* Specific */
-
-label[for="edit-title"] {
-  margin-left: 10px !important;
-}
 
 label[for="edit-anniv-x5"] {
   margin-left: 12px;

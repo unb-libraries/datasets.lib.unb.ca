@@ -589,6 +589,131 @@ display:
           entity_field: type
           plugin_id: bundle
           group: 1
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: allwords
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Search
+            description: ''
+            use_operator: false
+            operator: title_op
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              dsets_anniversaries_contributor: '0'
+              dsets_biographies_user: '0'
+              dsets_biographies_contributor: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+        field_dsets_anniv_source_value:
+          id: field_dsets_anniv_source_value
+          table: node__field_dsets_anniv_source
+          field: field_dsets_anniv_source_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: allwords
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_dsets_anniv_source_value_op
+            label: Source
+            description: ''
+            use_operator: false
+            operator: field_dsets_anniv_source_value_op
+            identifier: field_dsets_anniv_source_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              dsets_anniversaries_contributor: '0'
+              dsets_biographies_user: '0'
+              dsets_biographies_contributor: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
+        field_dsets_anniv_note_value:
+          id: field_dsets_anniv_note_value
+          table: node__field_dsets_anniv_note
+          field: field_dsets_anniv_note_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: allwords
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_dsets_anniv_note_value_op
+            label: Note
+            description: ''
+            use_operator: false
+            operator: field_dsets_anniv_note_value_op
+            identifier: field_dsets_anniv_note_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              dsets_anniversaries_contributor: '0'
+              dsets_biographies_user: '0'
+              dsets_biographies_contributor: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: string
         field_dsets_anniv_event_subject_target_id:
           id: field_dsets_anniv_event_subject_target_id
           table: node__field_dsets_anniv_event_subject
@@ -634,46 +759,6 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: allwords
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: title_op
-            label: Event
-            description: ''
-            use_operator: false
-            operator: title_op
-            identifier: title
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
       sorts: {  }
       title: 'Browse Anniversaries'
       header: {  }
@@ -744,6 +829,7 @@ display:
     display_options:
       display_extenders: {  }
       path: anniversaries/%/%
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
