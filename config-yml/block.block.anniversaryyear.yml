@@ -9,8 +9,8 @@ dependencies:
     - dsets_custom
 id: anniversaryyear
 theme: dsets_custom
-region: highlighted
-weight: -6
+region: header
+weight: -1
 provider: null
 plugin: anniv_year_block
 settings:

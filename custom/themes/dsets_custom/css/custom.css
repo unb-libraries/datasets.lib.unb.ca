@@ -78,9 +78,9 @@ a:active,
   outline: none !important;
 }
 
-/* Anniversaries For Year form */
+/* Anniversaries filters form */
 
-form#views-exposed-form-dsets-browse-anniversaries-page-1 {
+div.view-filters.form-group {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #f8f8f8;
@@ -88,6 +88,39 @@ form#views-exposed-form-dsets-browse-anniversaries-page-1 {
   border-radius: 4px;
   padding: 20px;
 }
+
+section#block-exposedformdsets-browse-anniversariespage-1 h2.block-title {
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+div.form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-group,
+div.form-item.js-form-item.form-type-select.js-form-type-select.form-group {
+    display: inline-table;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+div.form-actions.form-group.js-form-wrapper.form-wrapper {
+    display: block;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+form#views-exposed-form-dsets-browse-anniversaries-page-1 label.control-label {
+  width: 50px;
+}
+
+form#views-exposed-form-dsets-browse-anniversaries-page-1 input.form-control {
+  width: 310px;
+}
+
+form#views-exposed-form-dsets-browse-anniversaries-page-1 select.form-control {
+  width: 310px;
+}
+
+/* Anniversaries for Year form */
 
 form#dsets-anniv-year-form .form-control,
 form#dsets-anniv-year-form div {
