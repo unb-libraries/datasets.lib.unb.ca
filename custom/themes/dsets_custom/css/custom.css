@@ -38,6 +38,7 @@ a,
 
 .select-wrapper:after {
   color: #990000;
+  right: 30px !important;
 }
 
 a:hover,
@@ -89,35 +90,68 @@ div.view-filters.form-group {
   padding: 20px;
 }
 
-section#block-exposedformdsets-browse-anniversariespage-1 h2.block-title {
-  margin-top: 0px;
-  margin-left: 20px;
-  font-size: 16px;
+div#anniv-filter-form {
+  display: flex;
 }
 
-div.form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-group,
-div.form-item.js-form-item.form-type-select.js-form-type-select.form-group {
-    display: inline-table;
-    margin-top: 16px;
-    margin-left: 20px;
+div#anniv-filter-form div:nth-child(1) {
+  width: 50%;
+  min-width: 110px;
 }
 
-div.form-actions.form-group.js-form-wrapper.form-wrapper {
-    display: block;
-    margin-top: 16px;
-    margin-left: 20px;
+div#anniv-filter-form div:nth-child(2) {
+  min-width: 110px;
 }
 
-form#views-exposed-form-dsets-browse-anniversaries-page-1 label.control-label {
-  width: 50px;
+div#anniv-filter-form div#edit-actions {
+  margin-top: 20px;
+}
+
+div#anniv-filter-form label,
+div#anniv-filter-form input,
+div#anniv-filter-form select,
+div#anniv-filter-form button {
+  display: inline-table;
+}
+
+div#anniv-filter-form button {
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+div#anniv-filter-form button {
+  margin-top: 5px;
+}
+
+div#anniv-filter-form span {
+  display: none;
 }
 
 form#views-exposed-form-dsets-browse-anniversaries-page-1 input.form-control {
-  width: 310px;
+  width: 98%;
 }
 
 form#views-exposed-form-dsets-browse-anniversaries-page-1 select.form-control {
-  width: 310px;
+  width: 98%;
+}
+
+div#anniv-filter-title h2 {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+div#anniv-filter-form button {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+div#anniv-filter-form button:hover,
+div#anniv-filter-form button:focus,
+div#anniv-filter-form button:active {
+  background-color: #444444 !important;
+  border-color: #444444 !important;
+  outline: none !important;
 }
 
 /* Anniversaries for Year form */
@@ -135,6 +169,10 @@ form#dsets-anniv-year-form .form-control {
 .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
   position: relative;
   top: -1px;
+}
+
+label.control-label.option {
+  margin-left: 10px;
 }
 
 /* User account menu */
