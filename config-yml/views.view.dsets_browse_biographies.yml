@@ -227,7 +227,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<li>Location: {{ field_dsets_bio_location | striptags | raw }}</li>'
+            text: '<li>Location: {{ field_dsets_bio_location }}</li>'
             make_link: false
             path: ''
             absolute: false
@@ -241,16 +241,16 @@ display:
             prefix: ''
             suffix: ''
             target: ''
-            nl2br: false
+            nl2br: true
             max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
+            strip_tags: true
             trim: false
-            preserve_tags: ''
+            preserve_tags: '<li>'
             html: false
           element_type: ''
           element_class: ''
@@ -303,7 +303,7 @@ display:
             prefix: ''
             suffix: ''
             target: ''
-            nl2br: false
+            nl2br: true
             max_length: 0
             word_boundary: true
             ellipsis: true
@@ -351,7 +351,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<b>{{ title }}</b>\n<ul>\n  {{ field_dsets_bio_location }}\n  {{ field_dsets_bio_illus }}\n  {{ field_dsets_bio_note }}\n</ul>"
+            text: "<b>{{ title }}</b>\n<ul>\n  {{ field_dsets_bio_location }}\n  {{ field_dsets_bio_illus }}\n  {{ field_dsets_bio_note }}\n</ul>\n<br>"
             make_link: false
             path: ''
             absolute: false
