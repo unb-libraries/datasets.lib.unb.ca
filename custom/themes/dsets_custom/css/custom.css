@@ -175,6 +175,10 @@ label.control-label.option {
   margin-left: 10px;
 }
 
+label.control-label.option input#edit-anniv-x5 {
+  margin-right: 4px;
+}
+
 /* User account menu */
 
 footer #block-useraccountmenu ul.navbar-right {
@@ -193,10 +197,6 @@ footer.row {
 }
 
 /* Specific */
-
-label[for="edit-anniv-x5"] {
-  margin-left: 12px;
-}
 
 a[href="/user"] {
   display: none !important;
