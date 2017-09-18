@@ -28,7 +28,7 @@ class AnnivYearForm extends FormBase {
     preg_match_all('!\d+!', $path, $matches);
     $year = $matches[0][0];
 
-    $x5 = strpos($path, 'x5') ? true : false;
+    $x5 = strpos($path, 'x5') ? TRUE : FALSE;
 
     $form['reference_year'] = [
       '#type' => 'textfield',
@@ -87,9 +87,9 @@ class AnnivYearForm extends FormBase {
       'field_dsets_anniv_event_subject_target_id=' .
       $args['field_dsets_anniv_event_subject_target_id'] : '';
 
-    $title = $args['title'] ? '&title=' . $args['title'] : '';
+    $search = $args['combine'] ? '&combine=' . $args['combine'] : '';
 
-    $qstring = '?' . $subject . $title;
+    $qstring = '?' . $subject . $search;
     $response = new RedirectResponse('/anniversaries/' . $year . '/' . $x5 .
       $qstring);
 

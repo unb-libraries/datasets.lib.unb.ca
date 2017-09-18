@@ -10,13 +10,13 @@ Please select from the content below:
       <a href='/anniversaries'>Anniversaries</a>
     </td>
     <td>
-      {% if 'dsets_biographies_contributor' in user.getroles  %}
+      {% if 'dsets_anniversaries_contributor' in user.getroles  %}
         <a href='/node/add/dsets_anniversary_event'>[Add New]</a>
       {% endif %}
     </td>
   <tr>
     <td>
-      {% if 'dsets_biographies_user' in user.getroles  %}
+      {% if ('dsets_biographies_contributor' or 'dsets_biographies_user') in user.getroles  %}
       <a href='/biographies'>Biographies</a>
       {% endif %}
     </td>
