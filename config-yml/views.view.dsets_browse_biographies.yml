@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_dsets_bio_location
     - field.storage.node.field_dsets_bio_note
     - node.type.dsets_biography
+    - user.role.dsets_biographies_contributor
     - user.role.dsets_biographies_user
   module:
     - node
@@ -32,6 +33,7 @@ display:
         options:
           role:
             dsets_biographies_user: dsets_biographies_user
+            dsets_biographies_contributor: dsets_biographies_contributor
       cache:
         type: tag
         options: {  }

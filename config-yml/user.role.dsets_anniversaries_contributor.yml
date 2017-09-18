@@ -8,8 +8,5 @@ weight: 4
 is_admin: null
 permissions:
   - 'create dsets_anniversary_event content'
-  - 'create dsets_biography content'
   - 'delete any dsets_anniversary_event content'
-  - 'delete any dsets_biography content'
   - 'edit any dsets_anniversary_event content'
-  - 'edit any dsets_biography content'

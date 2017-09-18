@@ -5,7 +5,7 @@
 
       <a href={{ front_page }}>Home</a>
       <span>| </span><a href="/anniversaries">Anniversaries</a>
-      {% if 'dsets_biographies_user' in user.getroles  %}
+      {% if ('dsets_biographies_contributor' in user.getroles) or ('dsets_biographies_user' in user.getroles) %}
         <span>| </span><a href="/biographies">Biographies</a>
       {% endif %}
       <span>| </span><a href="/archives">Archives</a>

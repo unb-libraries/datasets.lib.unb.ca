@@ -3,9 +3,9 @@ schemas:
   dsets_custom: 8000
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
+  path: themes/custom/dsets_custom/favicon.ico
   url: 'http://192.168.99.100:3090/themes/contrib/bootstrap/favicon.ico'
-  use_default: 0
+  use_default: 1
 features:
   comment_user_picture: 0
   comment_user_verification: 0

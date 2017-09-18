@@ -6,4 +6,9 @@ id: dsets_biographies_contributor
 label: 'DSETS Biographies Contributor'
 weight: 6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'create dsets_biography content'
+  - 'delete any dsets_biography content'
+  - 'delete own dsets_biography content'
+  - 'edit any dsets_biography content'
+  - 'edit own dsets_biography content'

@@ -5,14 +5,16 @@ _core:
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: ''
+  url: 'http://192.168.99.100:3090/themes/contrib/bootstrap/favicon.ico'
   use_default: true
 features:
   comment_user_picture: true
   comment_user_verification: true
-  favicon: true
+  favicon: false
   node_user_picture: true
 logo:
   path: ''
   url: ''
   use_default: true
+table_responsive: '-1'
+table: ''
