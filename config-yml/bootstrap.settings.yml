@@ -6,15 +6,15 @@ favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
   url: 'http://192.168.99.100:3090/themes/contrib/bootstrap/favicon.ico'
-  use_default: true
+  use_default: false
 features:
-  comment_user_picture: true
-  comment_user_verification: true
+  comment_user_picture: false
+  comment_user_verification: false
   favicon: false
-  node_user_picture: true
+  node_user_picture: false
 logo:
   path: ''
   url: ''
-  use_default: true
+  use_default: false
 table_responsive: '-1'
 table: ''
