@@ -2,10 +2,10 @@ schemas:
   bootstrap: 8000
   dsets_custom: 8000
 favicon:
-  mimetype: image/png
-  path: 'public://favicon_1.png'
+  mimetype: image/vnd.microsoft.icon
+  path: themes/custom/dsets_custom/favicon.ico
   url: 'http://192.168.99.100:3090/themes/contrib/bootstrap/favicon.ico'
-  use_default: 1
+  use_default: 0
 features:
   comment_user_picture: 0
   comment_user_verification: 0
