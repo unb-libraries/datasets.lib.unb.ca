@@ -1,0 +1,18 @@
+{#
+/**
+ * Template to display single page site.
+ *
+ * $variables['items'] => Array containing all the page items.
+ * $variables['wrapper'] => Contains the page wrapper id (IMPORTANT: do not change).
+ */
+#}
+
+<div id="{{wrapper}}">
+  {% for item in items %}
+    <div id="{{item.anchor}}" class="single-page-wrapper" data-active-item="{{item.anchor}}" data-menu-item="{{item.hide}}">
+      <div class="single-page">
+        <div>{{item.output}}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
