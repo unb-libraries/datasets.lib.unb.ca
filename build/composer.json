@@ -101,7 +101,9 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "unblibraries/drupal-dev-libs": "master"
+      "unblibraries/drupal-dev-libs": "master",
+      "unblibraries/dockworker": "dev-drupal8",
+      "twbs/bootstrap-sass": "^3.3.7"
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",

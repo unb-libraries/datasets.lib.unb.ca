@@ -1,5 +1,0 @@
-# Schema for the theme setting configuration file of the apla2018_lib_unb_ca theme.
-
-apla2018_lib_unb_ca.settings:
-  type: theme_settings
-  label: 'apla2018_lib_unb_ca settings'
