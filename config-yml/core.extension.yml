@@ -11,6 +11,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dsets_anniversaries: 0
   dsets_nav: 0
   dynamic_page_cache: 0
@@ -53,6 +54,7 @@ theme:
   bartik: 0
   seven: 0
   bootstrap: 0
+  unb_lib_theme: 0
   dsets_custom: 0
 profile: datasets
 _core:

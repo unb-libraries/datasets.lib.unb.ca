@@ -1,15 +1,15 @@
-uuid: a40c0341-8b4a-40e6-b075-c7284a06ce91
+uuid: 52cb5151-c04c-4a69-9cde-4b9f21a84e8e
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - dsets_custom
+    - unb_lib_theme
 _core:
   default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
-id: dsets_custom_content
-theme: dsets_custom
+id: unb_lib_theme_content
+theme: unb_lib_theme
 region: content
 weight: -6
 provider: null

@@ -1,15 +1,15 @@
-uuid: 3c01864b-128e-4576-a79a-8b0850668f50
+uuid: 3c3e84f6-2296-444f-86a5-5164fbf41a25
 langcode: en
 status: false
 dependencies:
   module:
     - search
   theme:
-    - dsets_custom
+    - unb_lib_theme
 _core:
   default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
-id: dsets_custom_search
-theme: dsets_custom
+id: unb_lib_theme_search
+theme: unb_lib_theme
 region: sidebar_second
 weight: -6
 provider: null

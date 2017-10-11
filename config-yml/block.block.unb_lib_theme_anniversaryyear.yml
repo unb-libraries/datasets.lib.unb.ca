@@ -1,4 +1,4 @@
-uuid: e43d1ed7-1e44-47c1-a1ee-7e66699eae3a
+uuid: 906d2c02-12e9-47f1-a17e-6104c99c4d44
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,9 @@ dependencies:
     - dsets_anniversaries
     - system
   theme:
-    - dsets_custom
-id: anniversaryyear
-theme: dsets_custom
+    - unb_lib_theme
+id: unb_lib_theme_anniversaryyear
+theme: unb_lib_theme
 region: header
 weight: -1
 provider: null

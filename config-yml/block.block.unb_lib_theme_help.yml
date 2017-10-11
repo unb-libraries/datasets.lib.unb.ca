@@ -1,15 +1,15 @@
-uuid: ce70b6fa-1000-475c-92a7-dd12f2579995
+uuid: 79617bea-b542-41fa-821d-87c71dea4c59
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - dsets_custom
+    - unb_lib_theme
 _core:
   default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
-id: dsets_custom_help
-theme: dsets_custom
+id: unb_lib_theme_help
+theme: unb_lib_theme
 region: help
 weight: -6
 provider: null

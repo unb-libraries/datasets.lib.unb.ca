@@ -1,4 +1,4 @@
-uuid: 0f4bb0df-e4cd-4f54-ac23-20fb5a3f0e5f
+uuid: e0824521-ba2c-4b67-ad85-4c3abefaf139
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - system
   theme:
-    - dsets_custom
-id: useraccountmenu
-theme: dsets_custom
+    - unb_lib_theme
+id: unb_lib_theme_useraccountmenu
+theme: unb_lib_theme
 region: footer
 weight: 0
 provider: null

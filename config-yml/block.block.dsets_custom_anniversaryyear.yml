@@ -1,0 +1,26 @@
+uuid: 973c40ae-c4f9-4ce6-9b27-8788a75dea94
+langcode: en
+status: true
+dependencies:
+  module:
+    - dsets_anniversaries
+    - system
+  theme:
+    - dsets_custom
+id: dsets_custom_anniversaryyear
+theme: dsets_custom
+region: header
+weight: -1
+provider: null
+plugin: anniv_year_block
+settings:
+  id: anniv_year_block
+  label: 'Anniversary Year'
+  provider: dsets_anniversaries
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/anniversaries*'
+    negate: false
+    context_mapping: {  }
