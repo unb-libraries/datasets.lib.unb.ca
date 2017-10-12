@@ -1,65 +1,8 @@
 // Default variables.
 @import "default-variables";
+@import "fhmm";
+@import "overrides";
+@import "unb-lib";
 
 // Bootstrap Framework.
-@import '../../../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap';
-
-/* Bootstrap global decoration overrides. */
-
-input:hover,
-input:focus,
-input:active,
-select:hover,
-select:focus,
-select:active {
-  box-shadow: none !important;
-  border-color: #990000 !important;
-}
-
-a,
-.pagination > li > a,
-.pagination > li > span {
-  color: #cc0000;
-}
-
-.select-wrapper:after {
-  color: #990000;
-}
-
-a:hover,
-a:focus,
-a:active,
-.pagination > li > a:hover,
-.pagination > li > a:focus,
-.pagination > li > a:active,
-.pagination > li > span:hover,
-.pagination > li > span:focus,
-.pagination > li > span:active {
-  color: #990000;
-}
-
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
-  background-color: #cc0000;
-  border-color: #cc0000;
-}
-.btn-info,
-.btn-primary {
-  background-color: #cc0000;
-  border-color: #990000;
-}
-
-.btn-info:hover,
-.btn-info:focus,
-.btn-info:active,
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-  background-color: #990000 !important;
-  border-color: #990000 !important;
-  outline: none !important;
-}
+@import '../../../../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap';
