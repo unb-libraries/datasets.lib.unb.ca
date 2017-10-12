@@ -132,16 +132,9 @@
         ]
       %}
       <section{{ content_attributes.addClass(content_classes) }}>
+
         {# Breadcrumbs #}
-        <ol class="breadcrumb">
-          <li><a href="//lib.unb.ca"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-          {% if is_front %}
-            <li class="active">Subject &amp; Course Guides</li>
-          {% else %}
-            <li><a href="{{ front_page }}">Subject &amp; Course Guides</a></li>
-            <li class="active">{{ title|striptags }}</li>
-          {% endif %}
-        </ol>
+        {{ page.breadcrumb }}
 
         {# Highlighted #}
         {% if page.highlighted %}
