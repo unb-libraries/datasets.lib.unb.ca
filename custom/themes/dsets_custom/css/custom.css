@@ -20,61 +20,62 @@ label {
   margin-right: 10px !important;
 }
 
-/* Bootstrap global decoration overrides. */
+/* Broad decoration overrides. */
 
-input:hover,
-input:focus,
-input:active,
-select:hover,
-select:focus,
-select:active {
+div[role="main"] input:hover,
+div[role="main"] input:focus,
+div[role="main"] input:active,
+div[role="main"] select:hover,
+div[role="main"] select:focus,
+div[role="main"] select:active {
   box-shadow: none !important;
   border-color: #990000 !important;
 }
 
-a,
-.pagination > li > a,
-.pagination > li > span {
+div[role="main"] a,
+ul.pagination > li > a,
+ul.pagination > li > span {
   color: #cc0000;
 }
 
-.select-wrapper:after {
+div[role="main"] .select-wrapper:after {
   color: #990000;
 }
 
-a:hover,
-a:focus,
-a:active,
-.pagination > li > a:hover,
-.pagination > li > a:focus,
-.pagination > li > a:active,
-.pagination > li > span:hover,
-.pagination > li > span:focus,
-.pagination > li > span:active {
+div[role="main"] a:hover,
+div[role="main"] a:focus,
+div[role="main"] a:active,
+div[role="main"] ul.pagination > li > a:hover,
+div[role="main"] ul.pagination > li > a:focus,
+div[role="main"] ul.pagination > li > a:active,
+div[role="main"] ul.pagination > li > span:hover,
+div[role="main"] ul.pagination > li > span:focus,
+div[role="main"] ul.pagination > li > span:active {
   color: #990000;
 }
 
-.pagination > .active > a,
-.pagination > .active > span,
-.pagination > .active > a:hover,
-.pagination > .active > span:hover,
-.pagination > .active > a:focus,
-.pagination > .active > span:focus {
+div[role="main"] ul.pagination > li.active > a,
+div[role="main"] ul.pagination > li.active > span,
+div[role="main"] ul.pagination > li.active > a:hover,
+div[role="main"] ul.pagination > li.active > span:hover,
+div[role="main"] ul.pagination > li.active > a:focus,
+div[role="main"] ul.pagination > li.active > span:focus {
   background-color: #cc0000;
   border-color: #cc0000;
 }
-.btn-info,
-.btn-primary {
+
+div[role="main"] .btn-info,
+div[role="main"] .btn-primary {
   background-color: #cc0000;
   border-color: #990000;
 }
 
-.btn-info:hover,
-.btn-info:focus,
-.btn-info:active,
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
+div[role="main"] .btn-info:hover,
+div[role="main"] .btn-info:focus,
+div[role="main"] .btn-info:active,
+div[role="main"] .btn-primary:hover,
+div[role="main"] .btn-primary:focus,
+div[role="main"] .btn-primary:active {
   background-color: #990000 !important;
   border-color: #990000 !important;
   outline: none !important;
@@ -100,6 +101,7 @@ div#anniv-filter-form div:nth-child(1) {
   min-width: 110px;
 }
 
+form#views-exposed-form-dsets-browse-anniversaries-page-1
 div#anniv-filter-form div:nth-child(2) {
   min-width: 110px;
 }
@@ -115,13 +117,20 @@ div#anniv-filter-form button {
   display: inline-table;
 }
 
+form#views-exposed-form-dsets-browse-anniversaries-page-1
 div#anniv-filter-form button {
   margin-left: 4px;
   margin-right: 0px;
 }
 
+form#views-exposed-form-dsets-browse-biographies-page-1
 div#anniv-filter-form button {
-  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 0px;
+}
+
+div#anniv-filter-form button {
+  margin-top: 7px;
 }
 
 div#anniv-filter-form span {
@@ -243,4 +252,14 @@ div.field.field--label-above {
 
 form.node-dsets-anniversary-event-delete-form.node-confirm-form.confirmation div#edit-actions {
   margin-top: 20px;
+}
+
+@media (max-width: 418px) {
+  input[data-drupal-selector="edit-dsets-anniv-year-form"] + div#edit-actions
+  > button#edit-submit,
+  div.form-item-anniv-x5.js-form-item-anniv-x5.checkbox label {
+    display: block !important;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
