@@ -16,6 +16,13 @@ function datasets_install() {
   include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
   standard_install();
 
-  \Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();
+  // Remove shortcut set as per https://www.drupal.org/node/2583113
+  if (
+    !empty(\Drupal::entityManager()->getStorage("shortcut_set")->load("default")) &&
+    file_exists('/app/configuration/shortcut.set.default.yml')
+  ) {
+    \Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();
+  }
+
   // Can add code in here to make nodes, terms, etc.
 }
