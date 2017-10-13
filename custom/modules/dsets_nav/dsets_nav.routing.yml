@@ -26,7 +26,7 @@ dsets_nav.home:
   path: '/intro'
   defaults:
     _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:home'
-    _title: 'Introduction'
+    _title: 'UNB Libraries Archives Datasets'
   requirements:
     _permission: 'access content'
 dsets_nav.user:
