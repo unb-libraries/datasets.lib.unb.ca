@@ -21,3 +21,4 @@ regions:
 
 libraries:
   - 'unb_lib_theme/global-styling'
+  - 'unb_lib_theme/custom'
