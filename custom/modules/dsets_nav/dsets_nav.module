@@ -15,3 +15,14 @@ function dsets_nav_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
+
+/**
+ * Implements hook_cron().
+ */
+function guides_core_cron() {
+  $client = \Drupal::httpClient();
+  $res = $client->get('https://lib.unb.ca/core/inc-2015/head-nav.php');
+  $path = \Drupal::service('file_system')->realpath(file_default_scheme() . "://");
+  file_put_contents("{$path}/head-nav.html.twig", $res->getBody());
+  drupal_flush_all_caches();
+}
