@@ -104,6 +104,17 @@
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
+    {# Breadcrumbs #}
+    <ol class="breadcrumb">
+      <li><a href="//lib.unb.ca"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      {% if is_front %}
+        <li class="active">Datasets</li>
+      {% else %}
+        <li><a href="{{ front_page }}">Datasets</a></li>
+        <li class="active">{{ page['#title'] }}</li>
+      {% endif %}
+    </ol>
+
       {# Header #}
       {% if page.header %}
         {% block header %}
@@ -131,9 +142,8 @@
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
+
       <section{{ content_attributes.addClass(content_classes) }}>
-        {# Breadcrumbs #}
-        {{ page.breadcrumb }}
 
         {# Highlighted #}
         {% if page.highlighted %}
