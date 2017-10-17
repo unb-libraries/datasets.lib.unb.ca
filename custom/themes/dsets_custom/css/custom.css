@@ -81,6 +81,13 @@ div[role="main"] .btn-primary:active {
   outline: none !important;
 }
 
+/* Home */
+
+#dsets_intro_table > tbody > tr > td:nth-child(1) {
+  display: list-item;
+  margin-left: 32px;
+}
+
 /* Anniversaries filters form */
 
 div.view-filters.form-group {
@@ -96,7 +103,7 @@ div#anniv-filter-form {
   display: flex;
 }
 
-div#anniv-filter-form div:nth-child(1) {
+div#anniv-filter-form div:nth-child(1):not([valuer=""]) {
   width: 50%;
   min-width: 110px;
 }

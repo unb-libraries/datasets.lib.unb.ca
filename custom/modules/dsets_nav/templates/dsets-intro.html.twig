@@ -7,22 +7,29 @@ Please select from the content below:
 <table id="dsets_intro_table">
   <tr>
     <td>
-      <a href='/anniversaries'>Anniversaries</a>
+      <a href='/anniversaries'>Browse Anniversaries</a>
     </td>
     <td>
       {% if 'dsets_anniversaries_contributor' in user.getroles  %}
         <a href='/node/add/dsets_anniversary_event'>[Add New]</a>
       {% endif %}
     </td>
+  {% if ('dsets_biographies_contributor' in user.getroles) or ('dsets_biographies_user' in user.getroles) %}
   <tr>
     <td>
-      {% if ('dsets_biographies_contributor' in user.getroles) or ('dsets_biographies_user' in user.getroles) %}
-      <a href='/biographies'>Biographies</a>
-      {% endif %}
+      <a href='/biographies'>Browse Biographies</a>
     </td>
     <td>
       {% if 'dsets_biographies_contributor' in user.getroles  %}
         <a href='/node/add/dsets_biography'>[Add New]</a>
       {% endif %}
     </td>
-  </table>
+  </tr>
+  {% endif %}
+</table>
+<br><br>
+
+<p>
+For more information, please visit the <a href='https://lib.unb.ca/archives/'>
+Archives & Special Collections</a> website or <a href='/contact'>Contact Us</a>.
+</p>
