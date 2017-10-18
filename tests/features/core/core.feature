@@ -41,8 +41,23 @@ Feature: Core
 
     Scenario: Browsing existing biographies while not logged in
       Given I am not logged in
+      When I am on "/"
+      Then I should not see "Biographies"
+
+    Scenario: Browsing existing biographies while not logged in
+      Given I am logged in as a user with the "dsets_biographies_user" role
+      When I am on "/"
+      Then I should see "Biographies"
+
+    Scenario: Browsing existing biographies while not logged in
+      Given I am logged in as a user with the "dsets_anniversaries_contributor" role
+      When I am on "/"
+      Then I should not see "Biographies"
+
+    Scenario: Browsing existing biographies while logged in
+      Given I am logged in as a user with the "dsets_biographies_user" role
       When I visit "biographies"
-      Then I should see "Title"
+      Then I should see "Location"
 
     Scenario: Attempt to add an anniversary while not logged in
       Given I am not logged in
@@ -55,16 +70,11 @@ Feature: Core
       Then I should see "You are not authorized to access this page"
 
     Scenario: Add an anniversary while logged in
-      Given I am logged in as a user with the "dsets_contributor" role
+      Given I am logged in as a user with the "dsets_anniversaries_contributor" role
       When I am on "node/add/dsets_anniversary_event"
       Then I should see "Create"
 
-    Scenario: Add an biography while logged in
-      Given I am logged in as a user with the "dsets_contributor" role
+    Scenario: Add a biography while logged in
+      Given I am logged in as a user with the "dsets_biographies_contributor" role
       When I am on "node/add/dsets_biography"
       Then I should see "Create"
-
-    Scenario: Create a term
-      Given I am logged in as a user with the "administrator" role
-      When I am viewing a "tags" term with the name "My tag"
-      Then I should see the heading "My tag"
