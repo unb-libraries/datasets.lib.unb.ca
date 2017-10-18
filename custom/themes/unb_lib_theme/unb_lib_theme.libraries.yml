@@ -7,3 +7,8 @@ custom:
   css:
     theme:
       '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
+      '//fonts.googleapis.com/css?family=Source+Sans+Pro': {type: external }
+
+bootstrap-scripts:
+  js:
+   '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js': {type: external}
