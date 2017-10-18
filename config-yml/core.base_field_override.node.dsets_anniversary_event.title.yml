@@ -1,0 +1,18 @@
+uuid: 0a223029-407c-436d-b614-1f1d916f142a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.dsets_anniversary_event
+id: node.dsets_anniversary_event.title
+field_name: title
+entity_type: node
+bundle: dsets_anniversary_event
+label: Event
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

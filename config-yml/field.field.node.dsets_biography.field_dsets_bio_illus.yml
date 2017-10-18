@@ -9,7 +9,7 @@ id: node.dsets_biography.field_dsets_bio_illus
 field_name: field_dsets_bio_illus
 entity_type: node
 bundle: dsets_biography
-label: Illus
+label: 'Illustration Note'
 description: ''
 required: false
 translatable: false

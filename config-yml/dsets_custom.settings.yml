@@ -1,18 +1,19 @@
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
+  mimetype: image/png
+  path: themes/custom/dsets_custom/favicon.png
   url: 'http://192.168.99.100:3090/themes/custom/unb_lib_theme/favicon.ico'
-  use_default: true
+  use_default: 0
 features:
-  comment_user_picture: false
-  comment_user_verification: false
-  favicon: true
-  node_user_picture: false
+  comment_user_picture: 0
+  comment_user_verification: 0
+  favicon: 1
+  node_user_picture: 0
 logo:
   path: ''
   url: ''
-  use_default: false
+  use_default: 0
 schemas:
   bootstrap: 8000
   unb_lib_theme: 8000
   dsets_custom: 8000
+table: ''
