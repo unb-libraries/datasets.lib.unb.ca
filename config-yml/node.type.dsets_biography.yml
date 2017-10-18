@@ -8,7 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Biograpy
+name: Biography
 type: dsets_biography
 description: ''
 help: ''
