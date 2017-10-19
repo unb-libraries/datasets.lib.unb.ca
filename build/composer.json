@@ -74,7 +74,7 @@
         },
         {
             "type": "git",
-            "url": "https://github.com/unb-libraries/drupal-dev-libs.git"
+            "url": "https://github.com/unb-libraries/drupal-development-libraries.git"
         }
     ],
     "require": {
@@ -100,8 +100,7 @@
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-      "unblibraries/drupal-dev-libs": "master",
-      "twbs/bootstrap-sass": "^3.3.7"
+        "unb-libraries/drupal-development-libraries": "dev-8.x-1.x"
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
