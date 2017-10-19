@@ -94,6 +94,7 @@
         "drupal/search_api": "1.0",
         "drupal/token_filter": "1.0-beta1",
         "drupal/views_slideshow": "4.5",
+        "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
         "malsup/jquery.cycle": "master",
         "oomphinc/composer-installers-extender": "1.1.1",
         "webflo/drupal-finder": "^0.3.0",
