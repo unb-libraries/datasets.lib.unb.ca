@@ -75,6 +75,10 @@
         {
             "type": "git",
             "url": "https://github.com/unb-libraries/drupal-development-libraries.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/unb-libraries/unb_lib_theme.git"
         }
     ],
     "require": {
