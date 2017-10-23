@@ -1,5 +1,0 @@
-# Schema for the theme setting configuration file of the unb_lib_theme theme.
-
-unb_lib_theme.settings:
-  type: theme_settings
-  label: 'unb_lib_theme settings'
