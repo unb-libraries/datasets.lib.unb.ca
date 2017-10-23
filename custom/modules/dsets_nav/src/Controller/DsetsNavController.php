@@ -35,6 +35,15 @@ class DsetsNavController extends ControllerBase {
   /**
    * {@inheritdoc}
    */
+  public function biographies() {
+    if (\Drupal::currentUser()->isAnonymous()) {
+      return new RedirectResponse("/user/login");
+    }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function home() {
     $element = [
       '#theme' => 'dsets_intro',
