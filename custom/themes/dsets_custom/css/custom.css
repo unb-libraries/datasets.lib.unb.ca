@@ -185,7 +185,8 @@ form#dsets-anniv-year-form .form-control {
 .radio input[type="radio"], .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
   position: relative;
-  top: -1px;
+  top: -9px;
+  margin-right: 10px;
 }
 
 label.control-label.option {
@@ -259,6 +260,11 @@ div.field.field--label-above {
 
 form.node-dsets-anniversary-event-delete-form.node-confirm-form.confirmation div#edit-actions {
   margin-top: 20px;
+}
+
+div.form-item.js-form-item.form-type-vertical-tabs.js-form-type-vertical-tabs >
+div {
+  display: none;
 }
 
 @media (max-width: 418px) {
