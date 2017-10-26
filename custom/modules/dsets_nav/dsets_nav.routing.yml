@@ -9,7 +9,6 @@ dsets_nav.biographies:
   path: '/biographies'
   defaults:
     _title: 'Biographies'
-    _controller: '\Drupal\dsets_nav\Controller\DsetsNavController:biographies'
   requirements:
     _permission: 'access content'
 dsets_nav.contactlib:
