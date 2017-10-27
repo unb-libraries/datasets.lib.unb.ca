@@ -1,4 +1,4 @@
-uuid: bf4d7fec-6184-40b2-9948-b68d1ca330b7
+uuid: 8a58468b-72c1-4c72-a54b-c1986b4d42e2
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ label: 'UNB Libraries LDAP'
 type: openldap
 address: 'ldaps://ldap.lib.unb.ca'
 port: 636
-timeout: null
+timeout: 10
 tls: false
 followrefs: null
 weight: null

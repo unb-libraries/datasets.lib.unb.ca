@@ -18,11 +18,6 @@ passwordOption: 3
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
 excludeIfNoAuthorizations: 0
-ssoRemoteUserStripDomainName: null
-ssoExcludedPaths: {  }
-ssoExcludedHosts: {  }
-seamlessLogin: null
-ldapImplementation: null
-cookieExpire: null
+langcode: en
 _core:
-  default_config_hash: PhCAjUcRcM1gIsD2-W5N_sL91XOsCizjWcvXexo8lpA
+  default_config_hash: hSFOSjTAPcCBordJmChil6mui8q7uLwYfc5STlXL0yY
