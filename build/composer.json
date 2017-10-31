@@ -77,6 +77,19 @@
             "url": "https://github.com/unb-libraries/drupal-development-libraries.git"
         },
         {
+            "package": {
+                "name": "drupal/login_return_page",
+                "version": "1.x-dev",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupal.org/sandbox/gnuget/2824414.git",
+                    "type": "git",
+                    "reference": "8.x-1.x"
+                }
+            },
+            "type": "package"
+        },
+        {
             "type": "git",
             "url": "https://github.com/unb-libraries/unb_lib_theme.git"
         }
@@ -94,6 +107,7 @@
         "drupal/field_collection": "1.0-alpha1",
         "drupal/google_analytics": "2.1",
         "drupal/ldap": "dev-3.x",
+        "drupal/login_return_page": "1.x-dev",
         "drupal/pathauto": "1.0-rc1",
         "drupal/search_api": "1.0",
         "drupal/token_filter": "1.0-beta1",

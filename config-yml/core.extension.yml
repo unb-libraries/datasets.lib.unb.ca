@@ -11,6 +11,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dsets_anniversaries: 0
   dsets_nav: 0
   dynamic_page_cache: 0
@@ -27,6 +28,7 @@ module:
   ldap_servers: 0
   ldap_user: 0
   link: 0
+  login_return_page: 0
   menu_ui: 0
   node: 0
   options: 0
