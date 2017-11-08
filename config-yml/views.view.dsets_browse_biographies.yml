@@ -166,7 +166,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: "<li>Illus: {{ field_dsets_bio_illus | striptags | raw }}</li>\n"
+            text: "<li>Illustration Notes: {{ field_dsets_bio_illus | striptags | raw }}</li>\n"
             make_link: false
             path: ''
             absolute: false
