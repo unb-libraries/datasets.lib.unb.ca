@@ -48,11 +48,6 @@ Feature: Core
       When I am on "/"
       Then I should not see "Biographies"
 
-    Scenario: Browsing existing biographies while logged in
-      Given I am logged in as a user with the "dsets_biographies_user" role
-      When I visit "biographies"
-      Then I should see "Location"
-
     Scenario: Attempt to add an anniversary while not logged in
       Given I am not logged in
       When I am on "node/add/dsets_anniversary_event"
