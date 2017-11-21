@@ -49,9 +49,8 @@
         }
     },
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "name": "unblibraries/datasets.lib.unb.ca",
-    "prefer-stable": true,
     "repositories": [
         {
             "type": "composer",
@@ -68,7 +67,7 @@
                     "composer/installers": "^1.0.20"
                 },
                 "type": "drupal-library",
-                "version": "master"
+                "version": "1.0"
             },
             "type": "package"
         },
@@ -115,13 +114,13 @@
         "drupal/views_slideshow": "4.5",
         "drush/drush": "^8.1.15",
         "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
-        "malsup/jquery.cycle": "master",
+        "malsup/jquery.cycle": "1.0",
         "oomphinc/composer-installers-extender": "1.1.1",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
-        "unb-libraries/drupal-development-libraries": "dev-8.x-1.x"
+        "unb-libraries/drupal-development-libraries": "^8.0.0"
     },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
