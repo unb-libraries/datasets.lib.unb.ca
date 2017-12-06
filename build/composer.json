@@ -49,7 +49,7 @@
         }
     },
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "name": "unblibraries/datasets.lib.unb.ca",
     "repositories": [
         {
