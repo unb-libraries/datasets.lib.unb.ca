@@ -78,13 +78,13 @@
         {
             "package": {
                 "name": "drupal/login_return_page",
-                "version": "1.x-dev",
-                "type": "drupal-module",
                 "source": {
-                    "url": "https://git.drupal.org/sandbox/gnuget/2824414.git",
+                    "reference": "8.x-1.x",
                     "type": "git",
-                    "reference": "8.x-1.x"
-                }
+                    "url": "https://git.drupal.org/sandbox/gnuget/2824414.git"
+                },
+                "type": "drupal-module",
+                "version": "1.x-dev"
             },
             "type": "package"
         },
@@ -100,7 +100,7 @@
         "drupal/bootstrap": "3.7",
         "drupal/config_update": "1.1",
         "drupal/console": "~1.0",
-        "drupal/core": "8.4.2",
+        "drupal/core": "8.4.3",
         "drupal/externalauth": "1.0",
         "drupal/features": "3.0-beta8",
         "drupal/field_collection": "1.0-alpha1",
@@ -113,9 +113,9 @@
         "drupal/token_filter": "1.0-beta1",
         "drupal/views_slideshow": "4.5",
         "drush/drush": "^8.1.15",
-        "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
         "malsup/jquery.cycle": "1.0",
         "oomphinc/composer-installers-extender": "1.1.1",
+        "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
     },
