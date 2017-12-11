@@ -95,7 +95,7 @@
     ],
     "require": {
         "composer/installers": "^1.2.0",
-        "cweagans/composer-patches": "~1.6.1",
+        "cweagans/composer-patches": "1.6.3",
         "drupal-composer/drupal-scaffold": "~2.2.0",
         "drupal/bootstrap": "3.7",
         "drupal/config_update": "1.1",
