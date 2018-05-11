@@ -2,7 +2,7 @@
   "license": "MIT",
   "minimum-stability": "stable",
   "name": "unb-libraries/datasets.lib.unb.ca",
-  "description": "Provision/scaffolding for developing drupal instance.",
+  "description": "Scaffold and provision local development for datasets.lib.unb.ca",
   "config": {
     "preferred-install": {
       "*": "dist"
