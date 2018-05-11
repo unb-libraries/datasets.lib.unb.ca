@@ -3,5 +3,7 @@ dockworker:
   instance:
     project_prefix: DSETS
     name: datasets.lib.unb.ca
-    upstream_image: unblibraries/drupal:alpine-nginx-php7-8.x-composer
+    upstream_image:
+      - unblibraries/drupal:alpine-nginx-php7-8.x-composer
+      - mysql:5.7
   options:
