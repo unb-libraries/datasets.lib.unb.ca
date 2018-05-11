@@ -3,6 +3,12 @@
 
 datasets.lib.unb.ca site build repository.
 
+## Build Status
+| Branch | Status |
+|--------|--------|
+| dev | [![Build Status](https://travis-ci.org/unb-libraries/datasets.lib.unb.ca.svg?branch=dev)](https://travis-ci.org/unb-libraries/datasets.lib.unb.ca) |
+| prod | [![Build Status](https://travis-ci.org/unb-libraries/datasets.lib.unb.ca.svg?branch=prod)](https://travis-ci.org/unb-libraries/datasets.lib.unb.ca) |
+
 ## Getting Started
 ### Requirements
 The following packages are required to be globally installed on your development instance:
