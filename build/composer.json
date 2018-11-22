@@ -43,7 +43,7 @@
         },
         "patches": {
             "drupal/core": {
-                "To display exposed filter block titles": "https://www.drupal.org/files/issues/2018-09-12/2720101-72.patch"
+                "To display exposed filter block titles": "https://www.drupal.org/files/issues/2720101-53.patch"
             }
         }
     },
