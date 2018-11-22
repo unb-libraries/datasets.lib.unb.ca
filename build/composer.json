@@ -50,7 +50,7 @@
     },
     "license": "MIT",
     "minimum-stability": "dev",
-    "name": "unb-libraries/datasets.lib.unb.ca-drupal8",
+    "name": "unb-libraries/datasets.lib.unb.ca",
     "repositories": [
         {
             "type": "composer",
