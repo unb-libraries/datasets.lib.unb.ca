@@ -43,13 +43,14 @@
         },
         "patches": {
             "drupal/core": {
+                "To correct DerivativeDiscoveryDecorator warning": "https://www.drupal.org/files/issues/patch_empty_fix.patch",
                 "To display exposed filter block titles": "https://www.drupal.org/files/issues/2720101-53.patch"
             }
         }
     },
     "license": "MIT",
     "minimum-stability": "dev",
-    "name": "unb-libraries/datasets.lib.unb.ca",
+    "name": "unb-libraries/datasets.lib.unb.ca-drupal8",
     "repositories": [
         {
             "type": "composer",
@@ -71,6 +72,10 @@
             "type": "package"
         },
         {
+            "type": "git",
+            "url": "https://github.com/unb-libraries/drupal-development-libraries.git"
+        },
+        {
             "package": {
                 "name": "drupal/login_return_page",
                 "source": {
@@ -82,13 +87,20 @@
                 "version": "1.x-dev"
             },
             "type": "package"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/unb-libraries/unb_lib_theme.git"
         }
     ],
     "require": {
-        "drupal/bootstrap": "3.15",
+        "composer/installers": "^1.2.0",
+        "cweagans/composer-patches": "1.6.3",
+        "drupal-composer/drupal-scaffold": "~2.2.0",
+        "drupal/bootstrap": "3.13",
         "drupal/config_update": "1.1",
         "drupal/console": "~1.0",
-        "drupal/core": "8.6.3",
+        "drupal/core": "8.6.1",
         "drupal/externalauth": "1.1",
         "drupal/features": "3.0-beta8",
         "drupal/google_analytics": "2.3",
@@ -96,9 +108,11 @@
         "drupal/login_return_page": "1.x-dev",
         "drupal/pathauto": "1.0-rc1",
         "drupal/search_api": "1.0",
+        "drush/drush": "^8.1.15",
         "oomphinc/composer-installers-extender": "1.1.1",
         "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
-        "unb-libraries/drupal-builder": "^8.0.0"
+        "webflo/drupal-finder": "^0.3.0",
+        "webmozart/path-util": "^2.3"
     },
     "require-dev": {
         "unb-libraries/drupal-development-libraries": "^8.0.0"
