@@ -88,7 +88,7 @@
     "require": {
         "drupal/bootstrap": "3.15",
         "drupal/config_update": "1.1",
-        "drupal/core": "8.6.3",
+        "drupal/core": "8.6.4",
         "drupal/externalauth": "1.1",
         "drupal/features": "3.0-beta8",
         "drupal/google_analytics": "2.3",
