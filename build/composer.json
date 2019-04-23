@@ -93,7 +93,7 @@
         "drupal/externalauth": "1.1",
         "drupal/features": "3.0-beta8",
         "drupal/google_analytics": "2.4",
-        "drupal/ldap": "3.0-beta5",
+        "drupal/ldap": "3.0-beta6",
         "drupal/login_return_page": "1.x-dev",
         "drupal/pathauto": "1.0-rc1",
         "drupal/search_api": "1.0",
