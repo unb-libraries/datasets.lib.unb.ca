@@ -78,7 +78,7 @@
                 "source": {
                     "reference": "8.x-1.x",
                     "type": "git",
-                    "url": "https://git.drupal.org/sandbox/gnuget/2824414.git"
+                    "url": "https://git.drupalcode.org/sandbox/gnuget-2824414.git"
                 },
                 "type": "drupal-module",
                 "version": "1.x-dev"
