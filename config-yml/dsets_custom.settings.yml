@@ -17,6 +17,6 @@ schemas:
   unb_lib_theme: 8000
   dsets_custom: 8000
 table: ''
-header_uri: 'https://lib.unb.ca/core/inc-2015/head-nav.php?banner=dsets_banner'
+header_uri: 'https://web.lib.unb.ca/core/inc-2015/head-nav.php?banner=dsets_banner'
 header_refresh_seconds: '900'
 header_write_path: /app/html/sites/default/files/head-nav.html.twig
