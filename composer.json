@@ -1,6 +1,7 @@
 {
   "license": "MIT",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "name": "unb-libraries/datasets.lib.unb.ca",
   "description": "Scaffold and provision local development for datasets.lib.unb.ca",
   "config": {
@@ -12,7 +13,7 @@
     "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x"
   },
   "require-dev": {
-    "unb-libraries/dockworker": "^8.0.0"
+    "unb-libraries/dockworker-drupal": "^2.1.0"
   },
   "scripts": {
     "post-update-cmd": [

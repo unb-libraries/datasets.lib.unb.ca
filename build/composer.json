@@ -95,7 +95,9 @@
         "drupal/ldap": "3.0-beta7",
         "drupal/login_return_page": "1.x-dev",
         "drupal/pathauto": "1.0-rc1",
-        "drupal/search_api": "1.0",
+        "drupal/search_api": "1.14",
+        "drupal/search_api_autocomplete": "1.2",
+        "drupal/search_api_solr": "3.4",
         "oomphinc/composer-installers-extender": "1.1.1",
         "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
         "unb-libraries/drupal-builder": "^8.0.0"

@@ -1,15 +1,6 @@
-version: '2'
+version: '3.6'
 
 services:
-  mysql:
-    image: mysql:5.7
-    restart: always
-    command: mysqld --skip-name-resolve --max_allowed_packet=64M
-    env_file:
-      - ./env/mysql.env
-    expose:
-     - "3306"
-
   datasets.lib.unb.ca:
     build:
       context: .
@@ -23,8 +14,55 @@ services:
       - "3090:80"
     env_file:
       - ./env/drupal.env
+    networks:
+      - datasets.lib.unb.ca
     volumes:
       - ./config-yml:/app/configuration
       - ./custom/modules:/app/modules/custom
       - ./custom/themes:/app/themes/custom
       - ./tests:/app/tests
+
+  drupal-mysql-lib-unb-ca:
+    image: mysql:5.7
+    restart: always
+    command: mysqld --skip-name-resolve --max_allowed_packet=64M
+    env_file:
+      - ./env/mysql.env
+    expose:
+      - "3306"
+    networks:
+      - datasets.lib.unb.ca
+
+  drupal-redis-lib-unb-ca:
+    image: redis:5-alpine
+    restart: always
+    expose:
+      - "6379"
+    networks:
+      - datasets.lib.unb.ca
+    env_file:
+      - ./env/redis.env
+
+  drupal-solr-lib-unb-ca:
+    image: unblibraries/solr-drupal:8.x-3.x
+    expose:
+      - "8983"
+    networks:
+      - datasets.lib.unb.ca
+    entrypoint:
+      - docker-entrypoint-multiple.sh
+      - datasets_lib_unb_ca:/solr-conf
+
+  mailhog:
+    image: mailhog/mailhog
+    expose:
+      - "1025"
+      - "8025"
+    ports:
+      - "4090:8025"
+    networks:
+      - datasets.lib.unb.ca
+
+networks:
+  datasets.lib.unb.ca:
+    name: datasets.lib.unb.ca
