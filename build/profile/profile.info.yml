@@ -41,6 +41,7 @@ dependencies:
   - views_ui
 
   # PROFILE_SLUG
+  - redis
 
 themes:
   - seven
