@@ -20,10 +20,6 @@ Feature: Core
       When I am logged in as "Test user"
       Then I should see the link "Log out"
 
-    Scenario: Not logged in
-      Given I am not logged in
-      Then I should see the link "Log in"
-
     Scenario: Browsing existing anniversaries while not logged in
       Given I am not logged in
       When I visit "anniversaries"
