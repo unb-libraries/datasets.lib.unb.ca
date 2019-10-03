@@ -15,7 +15,6 @@ module:
   dsets_nav: 0
   dynamic_page_cache: 0
   editor: 0
-  externalauth: 0
   field: 0
   field_ui: 0
   file: 0
@@ -48,6 +47,7 @@ module:
   user: 0
   views_ui: 0
   menu_link_content: 1
+  externalauth: 10
   views: 10
   datasets: 1000
 theme:

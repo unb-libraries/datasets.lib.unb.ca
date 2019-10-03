@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'DSETS Anniversary Subject'
 vid: dsets_anniversary_subject
 description: ''
-hierarchy: 0
 weight: 0
