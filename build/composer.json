@@ -101,6 +101,8 @@
         "drupal/search_api_autocomplete": "1.2",
         "drupal/search_api_solr": "3.4",
         "oomphinc/composer-installers-extender": "1.1.1",
+        "unb-libraries/calendar_hours": "dev-8.x-1.x",
+        "unb-libraries/alert_scheduler": "dev-8.x-1.x",
         "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
         "unb-libraries/drupal-builder": "^8.0.0"
     },
