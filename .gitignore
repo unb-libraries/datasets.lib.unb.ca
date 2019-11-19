@@ -1,5 +1,5 @@
 .gitkeep
 vendor
 composer.lock
-tests/behat/features/bootstrap
+tests/features/bootstrap
 scripts/local

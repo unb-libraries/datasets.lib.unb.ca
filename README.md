@@ -1,4 +1,4 @@
-![datasets.lib.unb.ca screenshot](screenshot.png "datasets.lib.unb.ca screenshot")
+![datasets.lib.unb.ca screenshot](https://github.com/unb-libraries/datasets.lib.unb.ca/raw/prod/screenshot.png "datasets.lib.unb.ca screenshot")
 # [datasets.lib.unb.ca](https://datasets.lib.unb.ca/) : Instance Repository
 [![Build Status](https://travis-ci.com/unb-libraries/datasets.lib.unb.ca.svg?branch=prod)](https://travis-ci.com/unb-libraries/datasets.lib.unb.ca) [![GitHub license](https://img.shields.io/github/license/unb-libraries/datasets.lib.unb.ca)](https://github.com/unb-libraries/datasets.lib.unb.ca/blob/dev/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/unb-libraries/datasets.lib.unb.ca)
 
@@ -31,7 +31,7 @@ If you work with unb-libraries applications often, you may also consider [instal
 Run ```vendor/bin/dockworker``` to list available dockworker commands for this application.
 
 ## Author / Licensing
-- Developed by [![UNB Libraries](https://github.com/unb-libraries/assets/raw/master/unblibbadge.png "UNB Libraries")](https://datasets.lib.unb.ca/)
+- Developed by [![UNB Libraries](https://github.com/unb-libraries/assets/raw/master/unblibbadge.png "UNB Libraries")](https://lib.unb.ca/)
 - This work is published through our strong commitment to making as much of our development/workflow as possible freely available.
 - Consequently, the contents of this repository [unb-libraries/datasets.lib.unb.ca] are licensed under the [MIT License](http://opensource.org/licenses/mit-license.html). This license explicitly excludes:
    - Any website content, which remains the exclusive property of its author(s).

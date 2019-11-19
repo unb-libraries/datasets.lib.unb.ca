@@ -1,16 +1,11 @@
-FROM unblibraries/drupal:8.x-1.x
+FROM unblibraries/dockworker-drupal:latest
 MAINTAINER UNB Libraries <libsupport@unb.ca>
-
-LABEL name="datasets.lib.unb.ca"
-LABEL vcs-ref=""
-LABEL vcs-url="https://github.com/unb-libraries/datasets.lib.unb.ca"
 
 ENV DRUPAL_SITE_ID datasets
 ENV DRUPAL_SITE_URI datasets.lib.unb.ca
 ENV DRUPAL_SITE_UUID 977e6269-f41c-44b6-b5bd-d0c1bd5f9053
 
-# Deploy upstream scripts, and then override with any local.
-RUN curl -sSL https://raw.githubusercontent.com/unb-libraries/CargoDock/drupal-8.x-1.x/container/deploy.sh | sh
+# Override scripts with any local.
 COPY ./scripts/container /scripts
 
 # Add additional OS packages.
@@ -41,3 +36,20 @@ COPY ./custom/modules ${TMP_DRUPAL_BUILD_DIR}/custom_modules
 ENV DEPLOY_ENV prod
 ENV DRUPAL_DEPLOY_CONFIGURATION TRUE
 ENV DRUPAL_CONFIGURATION_EXPORT_SKIP devel
+
+# Metadata
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
+LABEL ca.unb.lib.generator="drupal8" \
+      com.microscaling.docker.dockerfile="/Dockerfile" \
+      com.microscaling.license="MIT" \
+      org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.description="datasets.lib.unb.ca provide access to various UNB Libraries Archives Datasets." \
+      org.label-schema.name="datasets.lib.unb.ca" \
+      org.label-schema.schema-version="1.0" \
+      org.label-schema.url="https://datasets.lib.unb.ca" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/unb-libraries/datasets.lib.unb.ca" \
+      org.label-schema.vendor="University of New Brunswick Libraries" \
+      org.label-schema.version=$VERSION
