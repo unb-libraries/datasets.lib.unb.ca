@@ -1,0 +1,12 @@
+dsets_nav.add_anniversary:
+  title: 'Add anniversary'
+  description: 'Add anniversary'
+  menu_name: account
+  url: internal:/node/add/dsets_anniversary_event
+  weight: 20
+dsets_nav.add_bio:
+  title: 'Add biography'
+  description: 'Add biography'
+  menu_name: account
+  url: internal:/node/add/dsets_anniversary_event
+  weight: 30
