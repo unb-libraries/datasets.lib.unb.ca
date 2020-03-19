@@ -20,7 +20,6 @@ description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -48,9 +47,9 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Go
           reset_button: true
-          reset_button_label: 'Reset Filters'
+          reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -402,6 +401,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         type:
           id: type
@@ -412,10 +413,13 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        title:
-          id: title
-          table: node_field_data
-          field: title
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        combine:
+          id: combine
+          table: views
+          field: combine
           relationship: none
           group_type: group
           admin_label: ''
@@ -424,12 +428,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: title_op
-            label: Title
+            operator_id: combine_op
+            label: Search
             description: ''
             use_operator: false
-            operator: title_op
-            identifier: title
+            operator: combine_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: combine
             required: false
             remember: false
             multiple: false
@@ -437,6 +443,10 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+              dsets_anniversaries_contributor: '0'
+              dsets_biographies_user: '0'
+              dsets_biographies_contributor: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -449,9 +459,12 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: node
-          entity_field: title
-          plugin_id: string
+          fields:
+            title: title
+            field_dsets_bio_illus: field_dsets_bio_illus
+            field_dsets_bio_location: field_dsets_bio_location
+            field_dsets_bio_note: field_dsets_bio_note
+          plugin_id: combine
       sorts:
         title:
           id: title
