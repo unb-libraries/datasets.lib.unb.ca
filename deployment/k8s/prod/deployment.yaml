@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -13,6 +13,9 @@ metadata:
   name: datasets-lib-unb-ca
   namespace: prod
 spec:
+  selector:
+    matchLabels:
+      uri: datasets.lib.unb.ca
   replicas: 1
   revisionHistoryLimit: 2
   minReadySeconds: 30
