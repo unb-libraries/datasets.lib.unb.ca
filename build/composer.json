@@ -86,7 +86,7 @@
         }
     ],
     "require": {
-        "drupal/bootstrap": "3.21",
+        "drupal/bootstrap": "3.22",
         "drupal/config_update": "1.1",
         "drupal/core": "8.9.0",
         "drupal/externalauth": "1.3",
