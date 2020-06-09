@@ -36,6 +36,8 @@ spec:
         vcsRepository: datasets.lib.unb.ca
         vcsRef: dev
     spec:
+      nodeSelector:
+        deployenv: dev
       containers:
         -
           name: datasets-lib-unb-ca
