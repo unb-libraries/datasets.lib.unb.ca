@@ -18,8 +18,8 @@ services:
       - datasets.lib.unb.ca
     volumes:
       - ./config-yml:/app/configuration
-      - ./custom/modules:/app/modules/custom
-      - ./custom/themes:/app/themes/custom
+      - ./custom/modules:/app/html/modules/custom
+      - ./custom/themes:/app/html/themes/custom
       - ./tests:/app/tests
 
   drupal-mysql-lib-unb-ca:
