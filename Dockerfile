@@ -1,7 +1,6 @@
-FROM unblibraries/drupal:dockworker-2.x
+FROM unblibraries/drupal:8.x-3.x-unblib
 MAINTAINER UNB Libraries <libsupport@unb.ca>
 
-ARG COMPOSER_DEPLOY_DEV=no-dev
 ENV DRUPAL_SITE_ID datasets
 ENV DRUPAL_SITE_URI datasets.lib.unb.ca
 ENV DRUPAL_SITE_UUID 977e6269-f41c-44b6-b5bd-d0c1bd5f9053
