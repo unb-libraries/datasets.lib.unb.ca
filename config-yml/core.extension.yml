@@ -26,9 +26,6 @@ module:
   help: 0
   history: 0
   image: 0
-  ldap_authentication: 0
-  ldap_servers: 0
-  ldap_user: 0
   link: 0
   login_return_page: 0
   menu_ui: 0
