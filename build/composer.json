@@ -96,7 +96,6 @@
         "drupal/features": "3.0-beta8",
         "drupal/google_analytics": "2.5",
         "drupal/health_check": "1.2",
-        "drupal/ldap": "3.0-beta7",
         "drupal/login_return_page": "1.x-dev",
         "drupal/pathauto": "1.6",
         "drupal/redis": "1.4",
