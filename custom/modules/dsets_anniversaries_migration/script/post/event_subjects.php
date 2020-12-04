@@ -25,7 +25,7 @@ foreach ($events as $event) {
               FROM {event_subjects}
               WHERE event_id = :ev_id";
 
-  $qresult = db_query($qstring, [':ev_id' => $ev_id]);
+  $qresult = \Drupal::database()->query($qstring, [':ev_id' => $ev_id]);
   $sub_ids = $qresult->fetchAll();
 
   // Append each subject ID to node reference field.
