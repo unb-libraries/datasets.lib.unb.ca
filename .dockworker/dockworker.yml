@@ -6,6 +6,7 @@ dockworker:
     project_prefix: DSETS
     upstream_images:
       - ghcr.io/unb-libraries/drupal:8.x-3.x-unblib
+    uuid: 3090
   deployment:
     environments:
       - dev
