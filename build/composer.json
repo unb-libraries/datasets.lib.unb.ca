@@ -44,9 +44,6 @@
         "patches": {
             "drupal/core": {
                 "To correct DerivativeDiscoveryDecorator warning": "https://www.drupal.org/files/issues/patch_empty_fix.patch"
-            },
-            "drupal/samlauth": {
-                "samlauth nocache metadata": "/build/patches/samlauth_nocache_metadata.patch"
             }
         }
     },
