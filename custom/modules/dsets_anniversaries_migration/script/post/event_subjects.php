@@ -5,7 +5,7 @@
  * Post-migration script to link anniversary events to their subject(s).
  */
 
- use Drupal\node\Entity\Node;
+use Drupal\node\Entity\Node;
 
 // Fetch events.
 $query = \Drupal::entityQuery('node')
