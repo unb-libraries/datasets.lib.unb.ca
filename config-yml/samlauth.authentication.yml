@@ -36,7 +36,62 @@ user_mail_attribute: mail
 security_assertions_encrypt: false
 security_logout_reuse_sigs: false
 security_signature_algorithm: 'http://www.w3.org/2000/09/xmldsig#rsa-sha1'
-debug_log_saml_out: 0
-debug_log_saml_in: 0
-debug_log_in: 0
-debug_phpsaml: 0
+debug_log_saml_out: false
+debug_log_saml_in: false
+debug_log_in: false
+debug_phpsaml: false
+logout_different_user: false
+local_login_saml_error: true
+drupal_login_roles:
+  authenticated: '0'
+  instruction_tracker_admin: '0'
+  instruction_reporter: '0'
+  calendar_hours_administrator: '0'
+  alert_scheduler_editor: '0'
+  traffic_tracker: '0'
+  oclc_service_alert_admin: '0'
+  lcd_display_event_administrator: '0'
+  lcd_display_slide_administrator: '0'
+  desk_stats_reporter: '0'
+  desk_stats_student_reporter: '0'
+  student_application_reviewer: '0'
+  student_employment_administrator: '0'
+  patron_manager: '0'
+  student_employee: '0'
+  page_counter: '0'
+  wms_tools_user: '0'
+  wms_budget_year_admin: '0'
+  wms_tools_fr_funds: '0'
+  wms_tools_sj_funds: '0'
+  wms_tools_law_funds: '0'
+  director: '0'
+error_redirect_url: ''
+error_throw: false
+metadata_cache_http: true
+map_users_name: true
+map_users_mail: false
+map_users_roles:
+  instruction_tracker_admin: '0'
+  instruction_reporter: '0'
+  calendar_hours_administrator: '0'
+  alert_scheduler_editor: '0'
+  traffic_tracker: '0'
+  oclc_service_alert_admin: '0'
+  lcd_display_event_administrator: '0'
+  lcd_display_slide_administrator: '0'
+  desk_stats_reporter: '0'
+  desk_stats_student_reporter: '0'
+  student_application_reviewer: '0'
+  student_employment_administrator: '0'
+  patron_manager: '0'
+  student_employee: '0'
+  page_counter: '0'
+  wms_tools_user: '0'
+  wms_budget_year_admin: '0'
+  wms_tools_fr_funds: '0'
+  wms_tools_sj_funds: '0'
+  wms_tools_law_funds: '0'
+  director: '0'
+use_proxy_headers: false
+use_base_url: false
+debug_display_error_details: false
