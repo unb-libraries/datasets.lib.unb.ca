@@ -1,11 +1,11 @@
 dockworker:
-  version: '3.0'
+  version: '4'
   application:
     name: datasets.lib.unb.ca
     finish_marker: '99_zz_notify_user_URI'
     project_prefix: DSETS
     upstream_images:
-      - ghcr.io/unb-libraries/drupal:8.x-3.x-unblib
+      - ghcr.io/unb-libraries/drupal:9.x-1.x-unblib
     uuid: 3090
   deployment:
     environments:
@@ -21,3 +21,5 @@ dockworker:
     name: ghcr.io/unb-libraries/datasets.lib.unb.ca
     date_tag_image: true
     repository: ghcr
+drupal:
+  version: 9
