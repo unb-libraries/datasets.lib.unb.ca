@@ -100,7 +100,7 @@
         "oomphinc/composer-installers-extender": "^2",
         "unb-libraries/calendar_hours": "dev-9.x-1.x",
         "unb-libraries/alert_scheduler": "dev-8.x-1.x",
-        "unb-libraries/unb_lib_theme": "dev-8.x-bootstrap-3.x",
+        "unb-libraries/unb_lib_theme": "dev-9.x-bootstrap-3.x",
         "unb-libraries/drupal-builder": "^9",
         "unb-libraries/saml_features": "dev-8.x-1.x"
     },
