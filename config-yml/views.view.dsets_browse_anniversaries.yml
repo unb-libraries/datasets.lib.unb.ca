@@ -528,7 +528,14 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<b>{{ title }}</b>\n<ul>\n  {{ field_dsets_anniv_event_date }}\n  {{ field_dsets_anniv_event_subject }}\n  {{ field_dsets_anniv_source }}\n  {{ field_dsets_anniv_note }}\n</ul>"
+            text: |-
+              <b>{{ title }}</b>
+              <ul>
+                {{ field_dsets_anniv_event_date }}
+                {{ field_dsets_anniv_event_subject }}
+                {{ field_dsets_anniv_source }}
+                {{ field_dsets_anniv_note }}
+              </ul>
             make_link: false
             path: ''
             absolute: false

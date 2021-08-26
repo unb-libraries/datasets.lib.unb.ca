@@ -165,7 +165,8 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: "<li>Illustration Notes: {{ field_dsets_bio_illus | striptags | raw }}</li>\n"
+            text: |
+              <li>Illustration Notes: {{ field_dsets_bio_illus | striptags | raw }}</li>
             make_link: false
             path: ''
             absolute: false
@@ -352,7 +353,14 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<b>{{ title }}</b>\n<ul>\n  {{ field_dsets_bio_location }}\n  {{ field_dsets_bio_illus }}\n  {{ field_dsets_bio_note }}\n</ul>\n<br>"
+            text: |-
+              <b>{{ title }}</b>
+              <ul>
+                {{ field_dsets_bio_location }}
+                {{ field_dsets_bio_illus }}
+                {{ field_dsets_bio_note }}
+              </ul>
+              <br>
             make_link: false
             path: ''
             absolute: false
