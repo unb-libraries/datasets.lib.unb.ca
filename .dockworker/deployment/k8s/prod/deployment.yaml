@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: drupal
-    appMajor: "8"
+    appMajor: "9"
     instance: datasets.lib.unb.ca
     tier: frontend
     uri: datasets.lib.unb.ca
@@ -28,7 +28,7 @@ spec:
     metadata:
       labels:
         app: drupal
-        appMajor: "8"
+        appMajor: "9"
         instance: datasets.lib.unb.ca
         tier: frontend
         uri: datasets.lib.unb.ca
