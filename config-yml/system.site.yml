@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+langcode: en
 uuid: 977e6269-f41c-44b6-b5bd-d0c1bd5f9053
 name: 'UNB Libraries Archives Datasets'
 mail: admin@example.com
@@ -8,8 +11,5 @@ page:
   front: /intro
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
 mail_notification: ''

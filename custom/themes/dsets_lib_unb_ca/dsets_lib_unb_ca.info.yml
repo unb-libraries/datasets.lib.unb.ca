@@ -1,0 +1,28 @@
+core: 8.x
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: unb_lib_theme
+
+name: 'dsets_lib_unb_ca'
+description: 'Theme for datasets.lib.unb.ca'
+package: 'DSETS'
+
+regions:
+  top_header: 'Top Header'
+  header: Header
+  header_form: "Header Form"
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  featured_bottom_third: 'Featured bottom third'
+
+libraries:
+  - 'dsets_lib_unb_ca/global-styling'
