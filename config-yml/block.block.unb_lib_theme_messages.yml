@@ -1,0 +1,22 @@
+uuid: 27217b01-f4af-45fb-8d85-dcdb3c26329d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - unb_lib_theme
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: unb_lib_theme_messages
+theme: unb_lib_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

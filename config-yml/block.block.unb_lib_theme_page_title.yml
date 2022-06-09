@@ -1,0 +1,20 @@
+uuid: 79c117eb-76e7-4628-bbdf-2817b17d0404
+langcode: en
+status: true
+dependencies:
+  theme:
+    - unb_lib_theme
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: unb_lib_theme_page_title
+theme: unb_lib_theme
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 354291e3-c554-46ec-a324-a9c6a61b2930
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - unb_lib_theme
+_core:
+  default_config_hash: NU5A_49mwLHfs5xFzMFrZ850w9pgUolxMS9NNF3vv4c
+id: unb_lib_theme_help
+theme: unb_lib_theme
+region: top_header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

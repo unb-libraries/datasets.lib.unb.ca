@@ -1,0 +1,22 @@
+uuid: 497ccf46-5088-46dd-997e-e07151babff3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dsets_lib_unb_ca
+_core:
+  default_config_hash: XJqWwLt1LDCnazcEN6QkJmCLjk4R0__-8s0OO9xeNjg
+id: dsets_lib_unb_ca_messages
+theme: dsets_lib_unb_ca
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

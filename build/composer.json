@@ -96,7 +96,7 @@
     }
   ],
   "require": {
-    "drupal/bootstrap": "3.24",
+    "drupal/bootstrap_barrio": "5.1.6",
     "drupal/core": "9.3.15",
     "drupal/externalauth": "1.4",
     "drupal/google_analytics": "2.5",
@@ -109,7 +109,9 @@
     "unb-libraries/calendar_hours": "dev-9.x-1.x",
     "unb-libraries/drupal-builder": "^9",
     "unb-libraries/saml_features": "dev-8.x-1.x",
-    "unb-libraries/unb_lib_theme": "dev-9.x-bootstrap-3.x"
+    "unb-libraries/unb_lib_theme": "dev-8.x-4.x",
+    "unb-libraries/alert_scheduler": "dev-8.x-1.x",
+    "unb-libraries/calendar_hours": "dev-9.x-1.x"
   },
   "require-dev": {
     "unb-libraries/drupal-development-libraries": "^8.0.0"

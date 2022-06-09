@@ -1,0 +1,22 @@
+uuid: 3a443e32-d4ec-4800-9862-886047d45f93
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dsets_lib_unb_ca
+_core:
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
+id: dsets_lib_unb_ca_breadcrumbs
+theme: dsets_lib_unb_ca
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

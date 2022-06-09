@@ -13,10 +13,11 @@
   "name": "unb-libraries/datasets.lib.unb.ca",
   "prefer-stable": true,
   "require": {
-    "unb-libraries/unb_lib_theme": "dev-9.x-bootstrap-3.x"
+    "unb-libraries/unb_lib_theme": "dev-8.x-4.x"
   },
   "require-dev": {
-    "unb-libraries/dockworker-drupal": "^5"
+    "unb-libraries/dockworker-drupal": "^5",
+    "twbs/bootstrap": "~4.6.1"
   },
   "scripts": {
     "post-update-cmd": [

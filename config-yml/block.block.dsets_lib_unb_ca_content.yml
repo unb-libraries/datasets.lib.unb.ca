@@ -1,0 +1,22 @@
+uuid: 5728acfa-cee0-4a25-981e-71f794818f0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dsets_lib_unb_ca
+_core:
+  default_config_hash: YRY68JWkaUiGeZlWMv1nzeIgDm0ZZwXYgpqUpLFzwAY
+id: dsets_lib_unb_ca_content
+theme: dsets_lib_unb_ca
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

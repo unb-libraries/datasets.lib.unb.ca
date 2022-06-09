@@ -1,0 +1,20 @@
+uuid: b9101d5a-8943-47c8-a8e6-3130c24ef332
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dsets_lib_unb_ca
+_core:
+  default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
+id: dsets_lib_unb_ca_page_title
+theme: dsets_lib_unb_ca
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: ade4e9cf-6e43-41e8-af44-b614ecada616
+langcode: en
+status: true
+dependencies:
+  theme:
+    - unb_lib_theme
+_core:
+  default_config_hash: QeZBeCilQfeET3GeW6ZtJkEiwROADTZktFgKWwPieD4
+id: unb_lib_theme_secondary_local_tasks
+theme: unb_lib_theme
+region: top_header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
