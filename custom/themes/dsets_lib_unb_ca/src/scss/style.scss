@@ -1,2 +1,37 @@
 /* Import Sass files */
 @import 'import';
+
+// Main container.
+main[role='main'] {
+
+  // Exposed search forms.
+  form[id^='views-exposed-form-dsets-browse'] {
+
+    fieldset {
+      display: inline-flex;
+      width: 45%;
+
+      label {
+        display: inline-block;
+        margin-top: .5rem;
+        margin-right: 1rem;
+      }
+
+      select {
+        width: 100%;
+        width: -webkit-fill-available;
+        width: -moz-available;
+        width: fill-available;
+      }
+    }
+  }
+
+  // Browse Biographies view.
+  .view-dsets-browse-biographies {
+
+    // View content.
+    .view-content.row {
+      display: block;
+    }
+  }
+}
