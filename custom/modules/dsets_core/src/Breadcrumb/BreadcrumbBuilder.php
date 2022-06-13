@@ -38,12 +38,14 @@ class BreadcrumbBuilder implements BreadcrumbBuilderInterface {
     }
     else {
       $links[] = Link::createFromRoute('Datasets', '<front>');
+      $title = \Drupal::service('title_resolver')->getTitle(\Drupal::request(), $route_match->getRouteObject());
+      $links[] = Link::createFromRoute($title, '<none>');
     }
 
     $breadcrumb = new Breadcrumb();
     $breadcrumb->addCacheContexts(['url.path']);
-
     $breadcrumb->setLinks($links);
+
     return $breadcrumb;
   }
 
