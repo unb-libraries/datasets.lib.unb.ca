@@ -1,0 +1,5 @@
+services:
+  dsets_core.breadcrumb:
+   class: Drupal\dsets_core\Breadcrumb\BreadcrumbBuilder
+   tags:
+    - { name: breadcrumb_builder, priority: 100 }

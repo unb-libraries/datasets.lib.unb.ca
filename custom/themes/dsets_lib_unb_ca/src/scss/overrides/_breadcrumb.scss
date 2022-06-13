@@ -1,0 +1,39 @@
+// Breadcrumb fix: NBNP 'Home' breaks convention & links to 'lib.unb.ca'
+ol.breadcrumb {
+  height: 2.4rem;
+  line-height: 1rem;
+  font-size: 1rem;
+
+  a[href="https://lib.unb.ca"] {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    height: 1rem;
+    position: relative;
+    right: 9999px;
+    width: 1rem;
+
+    &:before {
+      font: var(--fa-font-solid);
+      content: "\f015";
+      font-size: 0.85rem;
+      font-weight: 900;
+      position: absolute;
+      right: -9999px;
+      top: 0;
+    }
+  }
+
+  a[href="/"] {
+    right: auto;
+    width: auto;
+
+    &:after {
+      content: '';
+    }
+  }
+
+  .placeholder {
+    margin-left: .25rem;
+  }
+}
