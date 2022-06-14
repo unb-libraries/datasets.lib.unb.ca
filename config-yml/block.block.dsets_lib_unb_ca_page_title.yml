@@ -8,8 +8,8 @@ _core:
   default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
 id: dsets_lib_unb_ca_page_title
 theme: dsets_lib_unb_ca
-region: header
-weight: -30
+region: content
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
