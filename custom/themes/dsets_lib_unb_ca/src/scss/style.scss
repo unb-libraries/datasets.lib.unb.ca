@@ -26,12 +26,13 @@ main[role='main'] {
     }
   }
 
-  // Browse Biographies view.
-  .view-dsets-browse-biographies {
+  // Views.
+  .view {
 
     // View content.
     .view-content.row {
       display: block;
+      margin: 0;
     }
   }
 }
