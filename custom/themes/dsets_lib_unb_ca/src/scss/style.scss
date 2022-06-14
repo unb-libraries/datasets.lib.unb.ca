@@ -9,7 +9,7 @@ main[role='main'] {
 
     fieldset {
       display: inline-flex;
-      width: 45%;
+      width: 36%;
 
       label {
         display: inline-block;
@@ -24,6 +24,18 @@ main[role='main'] {
         width: fill-available;
       }
     }
+
+    .form-actions {
+      display: inline-flex;
+
+      .btn {
+        width: fit-content;
+
+        &:nth-of-type(2) {
+          margin-left: .5rem;
+        }
+      }
+    }
   }
 
   // Views.
@@ -33,6 +45,51 @@ main[role='main'] {
     .view-content.row {
       display: block;
       margin: 0;
+      margin-top: 1rem;
+    }
+
+    // Pagination.
+    .pagination {
+      margin: 2rem;
+      justify-content: center;
+
+      // Page items.
+      .page-item,
+      .pager__item--next,
+      .pager__item--previous {
+        // Links.
+        .page-link {
+          color: #00607a;
+          -webkit-transition: all 0.25s ease-in-out;
+          -moz-transition: all 0.25s ease-in-out;
+          -ms-transition: all 0.25s ease-in-out;
+          -o-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
+          border: 1px solid $gray-medium !important;
+
+          &:focus,
+          &:hover {
+            background: none;
+            box-shadow: none;
+            color: $link-color;
+            background-color: $gray-light;
+          }
+        }
+
+        // Active item.
+        &.active span {
+          background-color: $gray-medium;
+          border: 1px solid $gray-medium !important;
+          color: white;
+
+          &:focus,
+          &:hover {
+            background-color: $gray-medium;
+            border: 1px solid $gray-medium !important;
+            color: white;
+          }
+        }
+      }
     }
   }
 }
