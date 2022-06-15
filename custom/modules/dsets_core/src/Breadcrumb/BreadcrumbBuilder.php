@@ -7,18 +7,71 @@ use Drupal\Core\Breadcrumb\BreadcrumbBuilderInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
-use Drupal\taxonomy\Entity\Term;
+use Drupal\Core\Controller\TitleResolver;
+use Drupal\Core\Http\RequestStack;
+use Drupal\Core\Path\CurrentPathStack;
+use Drupal\Core\Path\PathMatcher;
 
 /**
  * Custom breadcrumb builder.
  */
 class BreadcrumbBuilder implements BreadcrumbBuilderInterface {
+  /**
+   * For services dependency injection.
+   *
+   * @var Drupal\Core\Path\CurrentPathStack
+   */
+  protected $pathCurrent;
+
+  /**
+   * For services dependency injection.
+   *
+   * @var Drupal\Core\Path\PathMatcher
+   */
+  protected $pathMatcher;
+
+  /**
+   * For services dependency injection.
+   *
+   * @var Drupal\Core\Controller\TitleResolver
+   */
+  protected $titleResolver;
+
+  /**
+   * For services dependency injection.
+   *
+   * @var Drupal\Core\Http\RequestStack
+   */
+  protected $requestStack;
+
+  /**
+   * Class constructor.
+   *
+   * @param Drupal\Core\Path\PathMatcher $path_matcher
+   *   For services dependency injection.
+   * @param Drupal\Core\Controller\TitleResolver $title_resolver
+   *   For services dependency injection.
+   * @param Drupal\Core\Path\CurrentPathStack $path_current
+   *   For services dependency injection.
+   * @param Drupal\Core\Http\RequestStack $request_stack
+   *   For services dependency injection.
+   */
+  public function __construct(
+    PathMatcher $path_matcher,
+    TitleResolver $title_resolver,
+    CurrentPathStack $path_current,
+    RequestStack $request_stack) {
+    $this->pathMatcher = $path_matcher;
+    $this->titleResolver = $title_resolver;
+    $this->pathCurrent = $path_current;
+    $this->requestStack = $request_stack;
+  }
 
   /**
    * {@inheritdoc}
    */
   public function applies(RouteMatchInterface $attributes) {
-    if (preg_match('/^\/admin\//', \Drupal::service('path.current')->getPath())) {
+    if (preg_match('/^\/admin\//', $this->pathCurrent->getPath())) {
       return FALSE;
     }
     return TRUE;
@@ -28,17 +81,16 @@ class BreadcrumbBuilder implements BreadcrumbBuilderInterface {
    * {@inheritdoc}
    */
   public function build(RouteMatchInterface $route_match) {
-    $routeName = $route_match->getRouteName();
     $links = [
       new Link('UNB Libraries', Url::fromUri('https://lib.unb.ca')),
     ];
 
-    if (\Drupal::service('path.matcher')->isFrontPage()) {
+    if ($this->pathMatcher->isFrontPage()) {
       $links[] = Link::createFromRoute('Datasets', '<none>');
     }
     else {
       $links[] = Link::createFromRoute('Datasets', '<front>');
-      $title = \Drupal::service('title_resolver')->getTitle(\Drupal::request(), $route_match->getRouteObject());
+      $title = $this->titleResolver->getTitle($this->requestStack->getCurrentRequest(), $route_match->getRouteObject());
       $links[] = Link::createFromRoute($title, '<none>');
     }
 

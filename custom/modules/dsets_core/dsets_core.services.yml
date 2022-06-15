@@ -1,5 +1,6 @@
 services:
   dsets_core.breadcrumb:
    class: Drupal\dsets_core\Breadcrumb\BreadcrumbBuilder
+   arguments: ['@path.matcher', '@title_resolver', '@path.current', '@request_stack']
    tags:
     - { name: breadcrumb_builder, priority: 100 }
