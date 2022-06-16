@@ -1,0 +1,25 @@
+uuid: 59704445-ab3b-4d29-91b6-01288ffde906
+langcode: en
+status: true
+dependencies:
+  module:
+    - dsets_anniversaries
+    - system
+  theme:
+    - dsets_lib_unb_ca
+id: anniversaryyear
+theme: dsets_lib_unb_ca
+region: content
+weight: -3
+provider: null
+plugin: anniv_year_block
+settings:
+  id: anniv_year_block
+  label: 'Anniversary Year'
+  label_display: '0'
+  provider: dsets_anniversaries
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/anniversaries/*'

@@ -38,6 +38,30 @@ main[role='main'] {
     }
   }
 
+  // Anniversary year form.
+  form#dsets-anniv-year-form {
+
+    fieldset,
+    .form-check,
+    .form-actions {
+      display: inline-flex;
+
+      label[for='edit-reference-year'] {
+        margin-top: .5rem;
+        width: 8rem;
+      }
+    }
+
+    .form-check,
+    .form-actions {
+      margin-left: .5rem;
+    }
+
+    #edit-reference-year {
+      width: 4rem;
+    }
+  }
+
   // Views.
   .view {
 

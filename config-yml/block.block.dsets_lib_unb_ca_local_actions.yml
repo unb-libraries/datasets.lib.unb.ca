@@ -9,7 +9,7 @@ _core:
 id: dsets_lib_unb_ca_local_actions
 theme: dsets_lib_unb_ca
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: local_actions_block
 settings:
