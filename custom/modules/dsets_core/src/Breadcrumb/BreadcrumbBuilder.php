@@ -90,6 +90,24 @@ class BreadcrumbBuilder implements BreadcrumbBuilderInterface {
     }
     else {
       $links[] = Link::createFromRoute('Datasets', '<front>');
+      $node = $route_match->getParameter('node') ?? NULL;
+
+      if ($node) {
+
+        switch ($node->bundle()) {
+          case 'dsets_anniversary_event':
+            $links[] = Link::createFromRoute('Browse Anniversaries', 'view.dsets_browse_anniversaries.page_1', [
+              'arg_0' => '0',
+              'arg_1' => '0'
+            ]);
+            break;
+
+          case 'dsets_biography':
+            $links[] = Link::createFromRoute('Browse Biographies', 'view.dsets_browse_biographies.page_1');
+            break;
+        }
+      }
+
       $title = $this->titleResolver->getTitle($this->requestStack->getCurrentRequest(), $route_match->getRouteObject());
       $links[] = Link::createFromRoute($title, '<none>');
     }
