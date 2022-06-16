@@ -1,0 +1,22 @@
+uuid: 4779f156-58ca-428c-a25a-4b514ec0ce11
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: biographies
+label: Biographies
+type: 'canonical_entities:node'
+pattern: 'biographies/[node:title]'
+selection_criteria:
+  0b840b63-0cd6-4c06-88d9-6ce030a2263f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0b840b63-0cd6-4c06-88d9-6ce030a2263f
+    context_mapping:
+      node: node
+    bundles:
+      dsets_biography: dsets_biography
+selection_logic: and
+weight: -5
+relationships: {  }
