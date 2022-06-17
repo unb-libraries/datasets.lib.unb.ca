@@ -98,7 +98,7 @@ class BreadcrumbBuilder implements BreadcrumbBuilderInterface {
           case 'dsets_anniversary_event':
             $links[] = Link::createFromRoute('Browse Anniversaries', 'view.dsets_browse_anniversaries.page_1', [
               'arg_0' => date('Y'),
-              'arg_1' => 'x5'
+              'arg_1' => 'x5',
             ]);
             break;
 
