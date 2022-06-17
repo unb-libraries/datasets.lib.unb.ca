@@ -116,4 +116,26 @@ main[role='main'] {
       }
     }
   }
+
+  // Node content.
+  .node__content {
+    .field__label {
+      font-weight: bold;
+    }
+    time {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Responsive.
+@media (max-width: 992px) {
+  // Exposed search forms.
+  form[id^='views-exposed-form-dsets-browse'] {
+
+    fieldset {
+      width: 100% !important;
+    }
+  }
 }
