@@ -1,12 +1,21 @@
 uuid: e2bc9786-03ba-4e5a-a6de-81d97cf9b3ad
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.dsets_anniversary_event
+  module:
+    - node
+    - system
+    - toolbar
 id: dsets_anniversaries_contributor
 label: 'DSETS Anniversaries Contributor'
 weight: 4
 is_admin: null
 permissions:
+  - 'access content overview'
+  - 'access toolbar'
   - 'create dsets_anniversary_event content'
   - 'delete any dsets_anniversary_event content'
   - 'edit any dsets_anniversary_event content'
+  - 'view the administration theme'

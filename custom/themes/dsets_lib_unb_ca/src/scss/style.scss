@@ -127,6 +127,11 @@ main[role='main'] {
       margin-bottom: 1rem;
     }
   }
+
+  // Static home page.
+  #dsets_intro_table tr:hover {
+    background-color: #e9ecef;
+  }
 }
 
 /* Admin Toolbar Vertical Orientation */

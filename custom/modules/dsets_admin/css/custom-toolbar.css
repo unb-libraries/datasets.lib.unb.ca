@@ -27,7 +27,7 @@
 }
 .toolbar .custom-editor-menu:before {
   /* Add custom menu item icon (eg. site theme favicon) */
-  background-image: url(/themes/custom/voi_lib_unb_ca/images/favicon-16x16.png);
+  background-image: url(/themes/custom/dsets_lib_unb_ca/images/favicon-16x16.png);
   background-repeat: no-repeat;
   background-position: 100% 40%;
 }

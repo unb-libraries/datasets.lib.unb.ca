@@ -1,14 +1,23 @@
 uuid: 1efbe4c5-afca-4da7-ae46-d30c2bec4778
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.dsets_biography
+  module:
+    - node
+    - system
+    - toolbar
 id: dsets_biographies_contributor
 label: 'DSETS Biographies Contributor'
 weight: 6
 is_admin: null
 permissions:
+  - 'access content overview'
+  - 'access toolbar'
   - 'create dsets_biography content'
   - 'delete any dsets_biography content'
   - 'delete own dsets_biography content'
   - 'edit any dsets_biography content'
   - 'edit own dsets_biography content'
+  - 'view the administration theme'

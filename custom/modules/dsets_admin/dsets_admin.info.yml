@@ -1,5 +1,8 @@
 name: DSETS Administration Module
 type: module
 description: Administration functionality for datasets.lib.unb.ca
-core: 8.x
+core_version_requirement: ^8.8 || ^9
 package: DSETS
+
+dependencies:
+  - drupal:admin_toolbar
