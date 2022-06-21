@@ -1,0 +1,16 @@
+dsets_admin.admin:
+  title: 'Datasets'
+  description: 'Manage content admin features.'
+  route_name: <front>
+  parent: system.admin
+  weight: -100
+  options:
+    attributes:
+      class:
+        - custom-editor-menu
+dsets_admin.admin.content:
+  title: 'Content'
+  description: 'Manage site content.'
+  url: internal:/admin/content
+  parent: dsets_admin.admin
+  weight: 10

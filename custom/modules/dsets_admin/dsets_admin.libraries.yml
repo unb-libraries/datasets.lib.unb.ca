@@ -1,0 +1,5 @@
+toolbar-overrides:
+  version: VERSION
+  css:
+    theme:
+      css/custom-toolbar.css: {}

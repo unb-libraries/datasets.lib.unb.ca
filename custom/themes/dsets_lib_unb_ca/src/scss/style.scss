@@ -129,6 +129,14 @@ main[role='main'] {
   }
 }
 
+/* Admin Toolbar Vertical Orientation */
+.toolbar-tray-vertical {
+  .custom-editor-menu {
+    /* Add space between long menu title text and toggle icon */
+    margin-right: .25rem;
+  }
+}
+
 // Responsive.
 @media (max-width: 992px) {
   // Exposed search forms.

@@ -1,0 +1,39 @@
+/* Toolbar Menu Item Styling */
+.toolbar-tab a:focus,
+.toolbar-tab a:hover,
+#toolbar-bar .toolbar-tray a:hover,
+#toolbar-bar .toolbar-tray a:focus {
+  /* Improve hover/focus background/foreground contrast */
+  background: #0062cc; /* BS4 blue variable color */
+  color: #fff;
+}
+#toolbar-bar .toolbar-tray a.is-active {
+  color: #767676;
+  cursor: default;
+  text-decoration: none;
+}
+#toolbar-bar .toolbar-tray a.is-active:focus,
+#toolbar-bar .toolbar-tray a.is-active:hover {
+  background: inherit;
+}
+#toolbar-bar .toolbar-tab > .toolbar-item:hover,
+#toolbar-bar .toolbar-tab > .toolbar-item:focus {
+  /* Improve top-level menu item contrast */
+  background-image: inherit;
+}
+.toolbar .toolbar-tray .menu-item a:focus {
+  /* Override Admin Toolbar light blue focus bg-color */
+  background-color: #0062cc;
+}
+.toolbar .custom-editor-menu:before {
+  /* Add custom menu item icon (eg. site theme favicon) */
+  background-image: url(/themes/custom/voi_lib_unb_ca/images/favicon-16x16.png);
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+}
+
+/* Toolbar Vertical Orientation */
+.toolbar-tray-vertical .custom-editor-menu {
+  /* Add space between long menu title text and toggle icon */
+  margin-right: .25rem;
+}
