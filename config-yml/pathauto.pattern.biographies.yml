@@ -7,12 +7,12 @@ dependencies:
 id: biographies
 label: Biographies
 type: 'canonical_entities:node'
-pattern: 'biographies/[node:title]'
+pattern: 'biography/[node:title]'
 selection_criteria:
-  0b840b63-0cd6-4c06-88d9-6ce030a2263f:
+  631a1dc2-daf0-409c-a5bf-fee012fbc16d:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 0b840b63-0cd6-4c06-88d9-6ce030a2263f
+    uuid: 631a1dc2-daf0-409c-a5bf-fee012fbc16d
     context_mapping:
       node: node
     bundles:

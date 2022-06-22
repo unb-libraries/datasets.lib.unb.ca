@@ -7,12 +7,12 @@ dependencies:
 id: anniversaries
 label: Anniversaries
 type: 'canonical_entities:node'
-pattern: 'anniversaries/[node:title]'
+pattern: 'anniversary/[node:title]'
 selection_criteria:
-  96c3a70b-9e45-4819-a21a-22f513eba430:
+  2d115661-7d42-44a3-a79f-9668dc5c1429:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 96c3a70b-9e45-4819-a21a-22f513eba430
+    uuid: 2d115661-7d42-44a3-a79f-9668dc5c1429
     context_mapping:
       node: node
     bundles:
