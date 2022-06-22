@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains dsets_lib_unb.ca.theme.
+ */
+
+ /**
+ * Implements hook_preprocess_MENU_ID().
+ */
+function dsets_lib_unb_ca_preprocess_menu__toolbar__admin(&$variables) {
+  // If menus is the custom toolbar...
+  if (isset($variables['items']['dsets_admin.admin'])) {
+    // Iterate through items...
+    foreach ($variables['items'] as $key => $value) {
+      // If the user isn't an admin...
+      if(!\Drupal::currentUser()->hasPermission('administer users')) {
+        // And if this isn't the (allowed) Datasets custom menu.
+        if ($value['title'] != 'Datasets') {
+          // Remove all menu options.
+          unset($variables['items'][$key]);
+        }
+      }
+    }
+  }
+}

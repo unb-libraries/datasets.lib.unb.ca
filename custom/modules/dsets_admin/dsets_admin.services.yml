@@ -1,0 +1,5 @@
+services:
+  dsets_admin.dsets_route_subscriber:
+    class: Drupal\dsets_admin\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

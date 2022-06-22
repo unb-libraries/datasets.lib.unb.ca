@@ -15,9 +15,3 @@ function dsets_admin_page_attachments(array &$attachments) {
 
  $attachments['#attached']['library'][] = 'dsets_admin/toolbar-overrides';
 }
-
-/**
-* Implements hook_toolbar_alter().
-*/
-function dsets_admin_toolbar_alter(&$items) {
-}
