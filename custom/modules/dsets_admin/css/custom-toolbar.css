@@ -37,3 +37,10 @@
   /* Add space between long menu title text and toggle icon */
   margin-right: .25rem;
 }
+
+/* Hide default admin toolbar links */
+.toolbar-menu-administration > .toolbar-menu > .menu-item.menu-item--expanded:nth-child(2),
+.toolbar-bar > .toolbar-tab .account,
+.toolbar-bar > .toolbar-tab .account-edit {
+  display: none;
+}

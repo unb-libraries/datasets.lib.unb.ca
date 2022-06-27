@@ -8,9 +8,21 @@ dsets_admin.admin:
     attributes:
       class:
         - custom-editor-menu
+dsets_admin.admin.add.anniversary:
+  title: 'Add new anniversary'
+  description: 'Add new anniversary event.'
+  url: internal:/node/add/dsets_anniversary_event
+  parent: dsets_admin.admin
+  weight: 10
+dsets_admin.admin.add.biography:
+  title: 'Add new biography'
+  description: 'Add new biography.'
+  url: internal:/node/add/dsets_biography
+  parent: dsets_admin.admin
+  weight: 20
 dsets_admin.admin.content:
   title: 'Content'
   description: 'Manage site content.'
   url: internal:/admin/content
   parent: dsets_admin.admin
-  weight: 10
+  weight: 30
