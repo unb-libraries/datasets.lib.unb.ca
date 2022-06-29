@@ -359,8 +359,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: true
-            text: '<li>Subject: {{ field_dsets_anniv_event_subject |striptags | raw }}</li>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -472,14 +472,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: |-
-              <b>{{ title }}</b>
-              <ul>
-                {{ field_dsets_anniv_event_date }}
-                {{ field_dsets_anniv_event_subject }}
-                {{ field_dsets_anniv_source }}
-                {{ field_dsets_anniv_note }}
-              </ul>
+            text: "<b>{{ title }}</b>\r\n<ul>\r\n  {{ field_dsets_anniv_event_date }}\r\n  <li>{{ \"Subject(s): \" ~ field_dsets_anniv_event_subject }}</li>\r\n  {{ field_dsets_anniv_source }}\r\n  {{ field_dsets_anniv_note }}\r\n</ul>"
             make_link: false
             path: ''
             absolute: false
