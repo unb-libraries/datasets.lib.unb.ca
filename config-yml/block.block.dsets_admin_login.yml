@@ -1,0 +1,22 @@
+uuid: 4d4e4395-5acd-4f1d-ad9b-4806fc2397c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - dsets_admin
+_core:
+  default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
+id: dsets_admin_login
+theme: dsets_admin
+region: content
+weight: 10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: visible
+  provider: user
+visibility: {  }

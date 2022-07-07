@@ -1,0 +1,20 @@
+uuid: 756913a2-1ec4-4b1e-8b02-4374de54f2ad
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dsets_admin
+_core:
+  default_config_hash: HHryZVJbeKi9WnuBGC8FOhBZmBnk2G1H6KxFuy-rC9A
+id: dsets_admin_local_actions
+theme: dsets_admin
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

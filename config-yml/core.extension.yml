@@ -69,4 +69,5 @@ theme:
   seven: 0
   stable: 0
   unb_lib_theme: 0
+  dsets_admin: 0
 profile: minimal

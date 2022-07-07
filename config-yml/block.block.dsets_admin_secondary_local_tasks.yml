@@ -1,0 +1,22 @@
+uuid: aff8c9b6-4abc-4003-b54c-e48118e08d7f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dsets_admin
+_core:
+  default_config_hash: QeZBeCilQfeET3GeW6ZtJkEiwROADTZktFgKWwPieD4
+id: dsets_admin_secondary_local_tasks
+theme: dsets_admin
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

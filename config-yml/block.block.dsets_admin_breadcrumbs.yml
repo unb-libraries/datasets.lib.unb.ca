@@ -1,0 +1,22 @@
+uuid: e73cb668-0ea7-4882-8e5e-ded49211e158
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dsets_admin
+_core:
+  default_config_hash: WWu2OQswgCztl9OeXjD1stexIEMZsSgPMYIdC-JHx9c
+id: dsets_admin_breadcrumbs
+theme: dsets_admin
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
