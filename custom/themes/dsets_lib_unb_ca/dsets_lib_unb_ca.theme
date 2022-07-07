@@ -24,3 +24,17 @@ function dsets_lib_unb_ca_preprocess_menu__toolbar__admin(&$variables) {
     }
   }
 }
+
+ /**
+ * Implements hook_preprocess.
+ */
+function dsets_lib_unb_ca_preprocess(&$variables, $hook) {
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    $variables['is_front'] = FALSE;
+  }
+  // Ensure the cache varies correctly (new in Drupal 8.3).
+  $variables['#cache']['contexts'][] = 'url.path.is_front';
+}
