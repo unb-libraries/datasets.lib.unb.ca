@@ -2,12 +2,9 @@ uuid: 82088464-cb68-4200-ad90-7b2d49a6d9f9
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.basic_html
   module:
     - comment
     - contact
-    - filter
     - fontawesome
     - search
     - system
@@ -26,4 +23,3 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'

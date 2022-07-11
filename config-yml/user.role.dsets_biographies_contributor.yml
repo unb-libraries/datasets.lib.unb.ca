@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.unb_libraries
     - node.type.dsets_biography
   module:
+    - filter
     - node
     - system
     - toolbar
@@ -20,4 +22,5 @@ permissions:
   - 'delete own dsets_biography content'
   - 'edit any dsets_biography content'
   - 'edit own dsets_biography content'
+  - 'use text format unb_libraries'
   - 'view the administration theme'

@@ -1,14 +1,12 @@
-uuid: 57a413ea-87ac-41fc-ac43-c4fb82e1efe2
+uuid: 1cd9fe42-373b-44c7-885b-f0b88daca37e
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.unb_libraries
   module:
     - ckeditor
-_core:
-  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
-format: basic_html
+format: unb_libraries
 editor: ckeditor
 settings:
   toolbar:
@@ -19,6 +17,11 @@ settings:
           items:
             - Bold
             - Italic
+            - Strike
+            - Superscript
+            - Subscript
+            - '-'
+            - RemoveFormat
         -
           name: Linking
           items:
@@ -34,6 +37,8 @@ settings:
           items:
             - Blockquote
             - DrupalImage
+            - Table
+            - HorizontalRule
         -
           name: 'Block Formatting'
           items:
@@ -41,6 +46,7 @@ settings:
         -
           name: Tools
           items:
+            - ShowBlocks
             - Source
   plugins:
     stylescombo:

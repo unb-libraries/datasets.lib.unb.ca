@@ -2,12 +2,9 @@ uuid: 7718e6b4-ccc7-429b-a6bc-64a2a1ad5fa2
 langcode: en
 status: true
 dependencies:
-  config:
-    - filter.format.restricted_html
   module:
     - comment
     - contact
-    - filter
     - samlauth
     - search
     - system
@@ -22,5 +19,4 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'search content'
-  - 'use text format restricted_html'
   - 'view sp metadata'

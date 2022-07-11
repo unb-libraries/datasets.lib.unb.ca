@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.unb_libraries
     - node.type.dsets_anniversary_event
   module:
+    - filter
     - node
     - system
     - toolbar
@@ -18,4 +20,5 @@ permissions:
   - 'create dsets_anniversary_event content'
   - 'delete any dsets_anniversary_event content'
   - 'edit any dsets_anniversary_event content'
+  - 'use text format unb_libraries'
   - 'view the administration theme'
