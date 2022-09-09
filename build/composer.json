@@ -106,7 +106,7 @@
     "drupal/login_return_page": "1.x-dev",
     "drupal/pathauto": "1.11",
     "drupal/redis": "1.5",
-    "drupal/samlauth": "3.6",
+    "drupal/samlauth": "3.8",
     "oomphinc/composer-installers-extender": "^2",
     "unb-libraries/alert_scheduler": "dev-8.x-1.x",
     "unb-libraries/calendar_hours": "dev-9.x-1.x",
