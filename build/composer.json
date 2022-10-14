@@ -51,9 +51,6 @@
     "patches": {
       "drupal/core": {
         "To correct DerivativeDiscoveryDecorator warning": "https://www.drupal.org/files/issues/patch_empty_fix.patch"
-      },
-      "drupal/samlauth": {
-        "Ignore Role Restrictions": "/build/patches/samlauth_rolematch.patch"
       }
     }
   },
@@ -111,7 +108,7 @@
     "unb-libraries/alert_scheduler": "dev-8.x-1.x",
     "unb-libraries/calendar_hours": "dev-9.x-1.x",
     "unb-libraries/drupal-builder": "^9",
-    "unb-libraries/saml_features": "dev-8.x-1.x",
+    "unb-libraries/saml_features": "dev-9.x-1.x",
     "unb-libraries/unb_lib_theme": "dev-9.x-4.x"
   },
   "require-dev": {
