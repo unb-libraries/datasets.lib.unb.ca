@@ -37,7 +37,7 @@ spec:
         vcsRef: dev
     spec:
       nodeSelector:
-        deployenv: dev
+        deploy_dev: 'true'
       containers:
         -
           name: datasets-lib-unb-ca
