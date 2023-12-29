@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_dsets_bio_location
     - field.storage.node.field_dsets_bio_note
     - node.type.dsets_biography
+    - user.role.administrator
     - user.role.dsets_biographies_contributor
     - user.role.dsets_biographies_user
   module:
@@ -373,6 +374,7 @@ display:
         type: role
         options:
           role:
+            administrator: administrator
             dsets_biographies_user: dsets_biographies_user
             dsets_biographies_contributor: dsets_biographies_contributor
       cache:
@@ -526,7 +528,15 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        simple_sitemap_display_extender:
+          variants:
+            views-sitemap:
+              index: true
+              priority: '0.5'
+              changefreq: ''
+              arguments: {  }
+              max_links: 100
       path: biographies
     cache_metadata:
       max-age: -1

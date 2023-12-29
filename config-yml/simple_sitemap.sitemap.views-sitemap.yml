@@ -1,0 +1,11 @@
+uuid: e30da724-d305-4a16-ba77-55ebdde76e3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_sitemap.type.views_sitemap
+id: views-sitemap
+label: 'Views Sitemap'
+description: ''
+type: views_sitemap
+weight: 0
