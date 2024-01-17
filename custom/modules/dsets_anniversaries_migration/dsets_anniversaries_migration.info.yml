@@ -3,7 +3,7 @@ name: Anniversaries Migration
 description: 'Migrate Anniversaries DB to datasets.lib.unb.ca'
 package: DSETS
 core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 dependencies:
   - migrate
   - migrate_tools

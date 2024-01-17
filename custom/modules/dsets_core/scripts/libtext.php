@@ -9,7 +9,7 @@
 
 // Search for all anniversary node ids.
 $nids = Drupal::entityQuery('node')
-  ->condition('type', 'dsets_anniversary_event')->execute();
+  ->condition('type', 'dsets_anniversary_event')->accessCheck(FALSE)->execute();
 
 echo "\nStarting unb_libraries text format override...\n\n";
 $i = 1;
@@ -29,7 +29,7 @@ $i = 1;
 
 // Search for all biography node ids.
 $nids = Drupal::entityQuery('node')
-  ->condition('type', 'dsets_biography')->execute();
+  ->condition('type', 'dsets_biography')->accessCheck(FALSE)->execute();
 
 // Load and update all biographies.
 foreach ($nids as $nid) {

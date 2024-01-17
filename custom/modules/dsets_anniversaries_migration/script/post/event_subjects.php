@@ -10,7 +10,7 @@ use Drupal\node\Entity\Node;
 // Fetch events.
 $query = \Drupal::entityQuery('node')
   ->condition('type', 'dsets_anniversary_event');
-$events = $query->execute();
+$events = $query->accessCheck(FALSE)->execute();
 
 // Iterate through events.
 foreach ($events as $event) {

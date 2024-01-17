@@ -1,28 +1,70 @@
 dockworker:
-  version: '5'
+  version: '6'
   application:
-    name: datasets.lib.unb.ca
-    finish_marker: '99_zz_notify_user_URI'
-    project_prefix: DSETS
-    upstream_images:
-      - ghcr.io/unb-libraries/drupal:9.x-2.x-unblib
-    uuid: 3090
-  deployment:
-    environments:
+    name: UNB Libraries Archives Datasets
+    uri: https://datasets.lib.unb.ca
+    description: >
+      Miscelaneous datasets from UNB Archives & Special Collections. 
+      Currently hosting a database of notable UNB anniversaries.
+    topics:
+      - UNB
+      - archives
+      - collections
+    identifiers:
+      id: datasets.lib.unb.ca
+      slug: datasets-lib-unb-ca
+      short_slug: datasets
+      uuid: 3090
+    framework:
+      name: Drupal
+      version: 10
+      startup_finished_marker: '99_startup_sequence_complete'
+      endpoint:
+        name: http
+        port: 80
+        readiness_timeout: 15
+    license:
+      license: MIT
+      holder: University of New Brunswick Libraries
+    shell:
+      path: /bin/sh
+  endpoints:
+    env:
       - dev
       - prod
-    workflow:
-      source: dockworker-drupal
-      type: deployment-workflow
-  drupal:
-    major: 9
-  github:
-    repo: datasets.lib.unb.ca
-    owner: unb-libraries
-  image:
-    push_branches:
-      - dev
-      - prod
-    name: ghcr.io/unb-libraries/datasets.lib.unb.ca
-    date_tag_image: true
-    repository: ghcr
+    deployments:
+      datasets-lib-unb-ca:
+        default: true
+        managed: true
+        name: datasets-lib-unb-ca
+      drupal-mysql-lib-unb-ca:
+        managed: false
+        name: mysql
+      drupal-redis-lib-unb-ca:
+        managed: false
+        name: redis
+      drupal-solr-lib-unb-ca:
+        managed: false
+        name: solr
+  workflows:
+    vcs:
+      type: github
+      owner: unb-libraries
+      name: datasets.lib.unb.ca
+    jira:
+      project_keys:
+        - DATASETS
+    image:
+      name: ghcr.io/unb-libraries/datasets.lib.unb.ca
+      parent: ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
+      repository: GitHub
+      push-branches:
+        - dev
+        - prod
+    e2e_tests:
+        - id: core
+          frequency: '*/5 * * * *'
+          source_files:
+            - .dockworker/tests/e2e/datasets.lib.unb.ca.yml
+          namespaces:
+            - prod
