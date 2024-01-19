@@ -1,7 +1,7 @@
 core: 8.x
 core_version_requirement: ^9 || ^10
 type: theme
-base theme: seven
+base theme: claro
 
 name: 'dsets_admin'
 description: 'Admin theme for datasets.lib.unb.ca'

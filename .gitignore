@@ -1,7 +1,8 @@
 .gitkeep
 vendor
-composer.lock
+/composer.lock
 tests/behat/features/bootstrap
 scripts/local
 .idea
-config-yml/.htaccess
+configuration/.htaccess
+/build/vendor
