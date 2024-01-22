@@ -18,7 +18,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access fontawesome additional settings'
-  - 'access shortcuts'
   - 'access site-wide contact form'
   - 'post comments'
   - 'search content'
