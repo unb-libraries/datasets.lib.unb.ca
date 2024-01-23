@@ -102,7 +102,7 @@
   ],
   "require": {
     "drupal/admin_toolbar": "^3",
-    "drupal/bootstrap_barrio": "^5",
+    "drupal/bootstrap_barrio": "5.1.*",
     "drupal/color": "^1",
     "drupal/core": "^10",
     "drupal/core-composer-scaffold": "^10",
