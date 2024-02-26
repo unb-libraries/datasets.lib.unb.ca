@@ -7,9 +7,6 @@ dependencies:
     - field.storage.node.field_dsets_bio_location
     - field.storage.node.field_dsets_bio_note
     - node.type.dsets_biography
-    - user.role.administrator
-    - user.role.dsets_biographies_contributor
-    - user.role.dsets_biographies_user
   module:
     - node
     - text
@@ -371,12 +368,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: role
+        type: perm
         options:
-          role:
-            administrator: administrator
-            dsets_biographies_user: dsets_biographies_user
-            dsets_biographies_contributor: dsets_biographies_contributor
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -517,7 +511,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.roles
+        - user.permissions
       tags:
         - 'config:field.storage.node.field_dsets_bio_illus'
         - 'config:field.storage.node.field_dsets_bio_location'
@@ -546,7 +540,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.roles
+        - user.permissions
       tags:
         - 'config:field.storage.node.field_dsets_bio_illus'
         - 'config:field.storage.node.field_dsets_bio_location'

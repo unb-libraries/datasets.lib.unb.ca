@@ -3,7 +3,7 @@ core_version_requirement: ^9 || ^10
 type: theme
 base theme: claro
 
-name: 'dsets_admin'
+name: 'dsets_admin_theme'
 description: 'Admin theme for datasets.lib.unb.ca'
 package: 'DSETS'
 
