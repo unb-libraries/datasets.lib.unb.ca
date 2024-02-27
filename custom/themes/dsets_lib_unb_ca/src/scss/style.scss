@@ -2,13 +2,13 @@
 @import 'import';
 
 // Main container.
-main[role='main'] {
+main {
 
   // Exposed search forms.
   form[id^='views-exposed-form-dsets-browse'] {
 
     fieldset {
-      display: inline-flex;
+      display: inline-block;
       width: 36%;
 
       label {
@@ -22,6 +22,7 @@ main[role='main'] {
         width: -webkit-fill-available;
         width: -moz-available;
         width: fill-available;
+        height: 2.4rem;
       }
     }
 
@@ -68,8 +69,10 @@ main[role='main'] {
     // View content.
     .view-content.row {
       display: block;
-      margin: 0;
       margin-top: 1rem;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      margin-bottom: 0 !important;
     }
 
     // Pagination.
