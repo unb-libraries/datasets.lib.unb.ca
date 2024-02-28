@@ -5,25 +5,34 @@ Please select from the content below:
 
 
 <div id="dsets_intro">
-  <p>
+  <div>
     <a href='/anniversaries'>Browse Anniversaries</a>
       {% if 'dsets_anniversaries_contributor' in user.getroles  %}
-    <span>
-        <a href='/node/add/dsets_anniversary_event'>[Add New]</a>
-    </span>
+        <span>
+            <a href='/node/add/dsets_anniversary_event'>[Add New]</a>
+        </span>
       {% endif %}
-  </p>
-  <p>
+      <p>
+        This dataset contains important dates in UNB history, taken from a variety of sources. 
+        Searching can be done in 5-year increments or can be done for a certain date.
+      </p>
+  </div>
+  <div>
     <a href='/biographies'>Browse Index to Biographies</a>
       {% if 'dsets_biographies_contributor' in user.getroles  %}
-    <span>
-        <a href='/node/add/dsets_biography'>[Add New]</a>
-    </span>
+        <span>
+            <a href='/node/add/dsets_biography'>[Add New]</a>
+        </span>
       {% endif %}
-  </p>
+      <p>
+        This is a dataset that points to the location of information about a UNB-related 
+        person found in various articles and clippings files maintained at Archives & Special Collections, 
+        UNB Libraries. Please contact archives@unb.ca if you would like to access these resources.
+      </p>
+  </div>
 </div>
 
 <p>
-For more information, please visit the <a href='https://lib.unb.ca/archives/'>
-Archives & Special Collections</a> website or <a href='https://lib.unb.ca/contact-unb-libraries-staff?recipient=archives@unb.ca&subject=Anniversaries'>Contact Us</a>.
+  For more information, please visit the <a href='https://lib.unb.ca/archives/'>
+  Archives & Special Collections</a> website or <a href='https://lib.unb.ca/contact-unb-libraries-staff?recipient=archives@unb.ca&subject=Anniversaries'>Contact Us</a>.
 </p>
