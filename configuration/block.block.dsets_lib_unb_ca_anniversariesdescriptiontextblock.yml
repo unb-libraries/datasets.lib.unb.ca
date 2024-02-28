@@ -1,0 +1,30 @@
+uuid: ee88b7fa-3df9-47fc-a948-b55c8fa8a940
+langcode: en
+status: true
+dependencies:
+  module:
+    - dsets_anniversaries
+    - system
+  theme:
+    - dsets_lib_unb_ca
+id: dsets_lib_unb_ca_anniversariesdescriptiontextblock
+theme: dsets_lib_unb_ca
+region: content
+weight: -3
+provider: null
+plugin: anniv_text_block
+settings:
+  id: anniv_text_block
+  label: 'Anniversaries description text block'
+  label_display: '0'
+  provider: dsets_anniversaries
+visibility:
+  response_status:
+    id: response_status
+    negate: false
+    status_codes:
+      - 200
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/anniversaries*'

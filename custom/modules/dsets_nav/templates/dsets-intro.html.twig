@@ -7,19 +7,19 @@ Please select from the content below:
 <div id="dsets_intro">
   <p>
     <a href='/anniversaries'>Browse Anniversaries</a>
-    <span>
       {% if 'dsets_anniversaries_contributor' in user.getroles  %}
+    <span>
         <a href='/node/add/dsets_anniversary_event'>[Add New]</a>
-      {% endif %}
     </span>
+      {% endif %}
   </p>
   <p>
-    <a href='/biographies'>Browse Biographies</a>
-    <span>
+    <a href='/biographies'>Browse Index to Biographies</a>
       {% if 'dsets_biographies_contributor' in user.getroles  %}
+    <span>
         <a href='/node/add/dsets_biography'>[Add New]</a>
-      {% endif %}
     </span>
+      {% endif %}
   </p>
 </div>
 

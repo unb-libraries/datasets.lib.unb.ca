@@ -4,7 +4,10 @@
 // Main container.
 main {
   #dsets_intro {
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
+    p {
+      margin-bottom: .5rem;
+    }
   }
 
   // Exposed search forms.

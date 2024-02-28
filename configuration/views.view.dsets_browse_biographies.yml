@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Browse Biographies'
+      title: 'Browse Index to Biographies'
       fields:
         title:
           id: title

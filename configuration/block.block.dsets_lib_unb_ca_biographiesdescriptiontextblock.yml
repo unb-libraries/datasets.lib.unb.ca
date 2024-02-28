@@ -1,0 +1,30 @@
+uuid: e2e2926a-0121-4d66-a4d9-efeb67321e85
+langcode: en
+status: true
+dependencies:
+  module:
+    - dsets_anniversaries
+    - system
+  theme:
+    - dsets_lib_unb_ca
+id: dsets_lib_unb_ca_biographiesdescriptiontextblock
+theme: dsets_lib_unb_ca
+region: content
+weight: -2
+provider: null
+plugin: bio_text_block
+settings:
+  id: bio_text_block
+  label: 'Biographies description text block'
+  label_display: '0'
+  provider: dsets_anniversaries
+visibility:
+  response_status:
+    id: response_status
+    negate: false
+    status_codes:
+      - 200
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/biographies*'
