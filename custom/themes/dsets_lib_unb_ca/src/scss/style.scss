@@ -3,6 +3,9 @@
 
 // Main container.
 main {
+  #dsets_intro {
+    margin-bottom: 2rem;  
+  }
 
   // Exposed search forms.
   form[id^='views-exposed-form-dsets-browse'] {

@@ -4,28 +4,24 @@ Please select from the content below:
 </p>
 
 
-<table id="dsets_intro_table">
-  <tr>
-    <td>
-      <a href='/anniversaries'>Browse Anniversaries</a>
-    </td>
-    <td>
+<div id="dsets_intro">
+  <p>
+    <a href='/anniversaries'>Browse Anniversaries</a>
+    <span>
       {% if 'dsets_anniversaries_contributor' in user.getroles  %}
         <a href='/node/add/dsets_anniversary_event'>[Add New]</a>
       {% endif %}
-    </td>
-  <tr>
-    <td>
-      <a href='/biographies'>Browse Biographies</a>
-    </td>
-    <td>
+    </span>
+  </p>
+  <p>
+    <a href='/biographies'>Browse Biographies</a>
+    <span>
       {% if 'dsets_biographies_contributor' in user.getroles  %}
         <a href='/node/add/dsets_biography'>[Add New]</a>
       {% endif %}
-    </td>
-  </tr>
-</table>
-<br><br>
+    </span>
+  </p>
+</div>
 
 <p>
 For more information, please visit the <a href='https://lib.unb.ca/archives/'>
