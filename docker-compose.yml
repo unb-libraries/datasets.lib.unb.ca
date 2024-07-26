@@ -68,6 +68,8 @@ services:
       - "4090:8025"
     networks:
       - datasets.lib.unb.ca
+    profiles:
+      - mailhog
 networks:
   datasets.lib.unb.ca:
     name: datasets.lib.unb.ca
