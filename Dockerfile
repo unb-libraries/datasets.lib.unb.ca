@@ -1,5 +1,4 @@
 FROM ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
-MAINTAINER UNB Libraries <libsupport@unb.ca>
 
 # Install additional OS packages.
 ENV ADDITIONAL_OS_PACKAGES="postfix php-ldap php-zip php81-pecl-redis"
@@ -36,4 +35,5 @@ LABEL ca.unb.lib.generator="drupal9" \
   org.label-schema.vcs-url="https://github.com/unb-libraries/datasets.lib.unb.ca" \
   org.label-schema.vendor="University of New Brunswick Libraries" \
   org.label-schema.version=$VERSION \
+  org.opencontainers.image.authors="UNB Libraries <libsupport@unb.ca>" \
   org.opencontainers.image.source="https://github.com/unb-libraries/datasets.lib.unb.ca"
