@@ -1,7 +1,7 @@
 FROM ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
 
 # Install additional OS packages.
-ENV ADDITIONAL_OS_PACKAGES="postfix php-ldap php-zip php81-pecl-redis"
+ENV ADDITIONAL_OS_PACKAGES="postfix php-ldap php-zip php81-pecl-redis php81-xmlreader"
 ENV DRUPAL_SITE_ID="datasets"
 ENV DRUPAL_SITE_URI="datasets.lib.unb.ca"
 ENV DRUPAL_SITE_UUID="977e6269-f41c-44b6-b5bd-d0c1bd5f9053"
