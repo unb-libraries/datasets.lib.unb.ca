@@ -16,8 +16,10 @@
       "cweagans/composer-patches": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "drupal/core-composer-scaffold": true,
+      "oomphinc/composer-installers-extender": true,
+      "php-http/discovery": true,
       "phpstan/extension-installer": true,
-      "oomphinc/composer-installers-extender": true
+      "tbachert/spi": true
     },
     "discard-changes": true,
     "preferred-install": {
@@ -110,7 +112,7 @@
     "drupal/externalauth": "^2",
     "drupal/fontawesome": "^2",
     "drupal/google_analytics": "^4",
-    "drupal/health_check": "^1",
+    "drupal/health_check": "^3",
     "drupal/pathauto": "^1",
     "drupal/quickedit": "^1",
     "drupal/redis": "^1",
