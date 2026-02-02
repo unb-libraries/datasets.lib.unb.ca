@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'DSETS Anniversary Subject'
 vid: dsets_anniversary_subject
-description: ''
+description: null
 weight: 0
+new_revision: false
