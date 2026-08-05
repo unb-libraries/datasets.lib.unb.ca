@@ -1,5 +1,5 @@
 dockworker:
-  version: '6'
+  version: '11'
   application:
     name: UNB Libraries Archives Datasets
     uri: https://datasets.lib.unb.ca
@@ -60,7 +60,7 @@ dockworker:
         - DATASETS
     image:
       name: ghcr.io/unb-libraries/datasets.lib.unb.ca
-      parent: ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
+      parent: ghcr.io/unb-libraries/drupal:11.x-1.x-unblib
       repository: GitHub
       push-branches:
         - dev

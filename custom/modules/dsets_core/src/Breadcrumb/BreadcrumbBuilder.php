@@ -8,7 +8,7 @@ use Drupal\Core\Controller\TitleResolver;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Drupal\Core\Link;
 use Drupal\Core\Path\CurrentPathStack;
-use Drupal\Core\Path\PathMatcher;
+use Drupal\Core\Path\PathMatcherInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
 
@@ -57,7 +57,7 @@ class BreadcrumbBuilder implements BreadcrumbBuilderInterface {
    *   For services dependency injection.
    */
   public function __construct(
-    PathMatcher $path_matcher,
+    PathMatcherInterface $path_matcher,
     TitleResolver $title_resolver,
     CurrentPathStack $path_current,
     RequestStack $request_stack) {

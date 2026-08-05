@@ -15,7 +15,6 @@ module:
   contact: 0
   contextual: 0
   datetime: 0
-  dblog: 0
   dsets_admin: 0
   dsets_anniversaries: 0
   dsets_core: 0
@@ -23,7 +22,6 @@ module:
   dynamic_page_cache: 0
   editor: 0
   field: 0
-  field_ui: 0
   file: 0
   filter: 0
   fontawesome: 0
@@ -53,10 +51,8 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  tour: 0
   update: 0
   user: 0
-  views_ui: 0
   menu_link_content: 1
   pathauto: 1
   externalauth: 10

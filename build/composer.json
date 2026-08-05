@@ -19,7 +19,8 @@
       "oomphinc/composer-installers-extender": true,
       "php-http/discovery": true,
       "phpstan/extension-installer": true,
-      "tbachert/spi": true
+      "tbachert/spi": true,
+      "symfony/runtime": true
     },
     "discard-changes": true,
     "preferred-install": {
@@ -104,11 +105,11 @@
   ],
   "require": {
     "drupal/admin_toolbar": "^3",
-    "drupal/bootstrap_barrio": "5.1.10",
-    "drupal/color": "^1",
-    "drupal/core": "^10",
-    "drupal/core-composer-scaffold": "^10",
-    "drupal/core-recommended": "^10",
+    "drupal/bootstrap_barrio": "5.1.12",
+    "drupal/color": "^2",
+    "drupal/core": "^11",
+    "drupal/core-composer-scaffold": "^11",
+    "drupal/core-recommended": "^11",
     "drupal/externalauth": "^2",
     "drupal/fontawesome": "^2",
     "drupal/google_analytics": "^4",
@@ -116,18 +117,18 @@
     "drupal/pathauto": "^1",
     "drupal/quickedit": "^1",
     "drupal/redis": "^1",
-    "drupal/rdf": "^2",
+    "drupal/rdf": "^4",
     "drupal/samlauth": "^3",
     "drupal/simple_sitemap": "^4",
     "oomphinc/composer-installers-extender": "^2",
-    "unb-libraries/alert_scheduler": "dev-10.x-1.x",
-    "unb-libraries/calendar_hours": "dev-10.x-1.x",
-    "unb-libraries/composer-drupal-scaffold": "^10",
+    "unb-libraries/alert_scheduler": "dev-11.x-1.x",
+    "unb-libraries/calendar_hours": "dev-11.x-1.x",
+    "unb-libraries/composer-drupal-scaffold": "^11",
     "unb-libraries/saml_features": "dev-10.x-1.x",
     "unb-libraries/unb_lib_theme": "dev-11.x-4.x"
   },
   "require-dev": {
-    "unb-libraries/drupal-development-libraries": "^10"
+    "unb-libraries/drupal-development-libraries": "^11"
   },
   "type": "project"
 }
