@@ -37,7 +37,7 @@
       "locations": {
         "web-root": "./"
       }
-    },  
+    },
     "enable-patching": true,
     "installer-paths": {
       "core": [
@@ -73,40 +73,11 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
-    },
-    {
-      "package": {
-        "dist": {
-          "type": "file",
-          "url": "https://malsup.github.io/jquery.cycle.all.js"
-        },
-        "name": "malsup/jquery.cycle",
-        "require": {
-          "composer/installers": "^1.0.20"
-        },
-        "type": "drupal-library",
-        "version": "1.0"
-      },
-      "type": "package"
-    },
-    {
-      "package": {
-        "name": "drupal/login_return_page",
-        "source": {
-          "reference": "8.x-1.x",
-          "type": "git",
-          "url": "https://git.drupalcode.org/sandbox/gnuget-2824414.git"
-        },
-        "type": "drupal-module",
-        "version": "1.x-dev"
-      },
-      "type": "package"
     }
   ],
   "require": {
     "drupal/admin_toolbar": "^3",
     "drupal/bootstrap_barrio": "5.1.12",
-    "drupal/color": "^2",
     "drupal/core": "^11",
     "drupal/core-composer-scaffold": "^11",
     "drupal/core-recommended": "^11",
@@ -117,7 +88,6 @@
     "drupal/pathauto": "^1",
     "drupal/quickedit": "^2",
     "drupal/redis": "^1",
-    "drupal/rdf": "^4",
     "drupal/samlauth": "^3",
     "drupal/simple_sitemap": "^4",
     "oomphinc/composer-installers-extender": "^2",
