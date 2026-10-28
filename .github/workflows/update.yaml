@@ -7,10 +7,6 @@ on:
 
 jobs:
   deploy:
-    uses: unb-libraries/dockworker/.github/workflows/update.yaml@6.x
-    with:
-      add-paths: 'build/composer.*'
-      php-version: '8.4'
-      composer-version: '2.9.5'
+    uses: unb-libraries/github-workflows/.github/workflows/update.yaml@1.x
     secrets:
       PAT_TOKEN: ${{ secrets.UNBLIBBOT_PAT_TOKEN }}
