@@ -7777,12 +7777,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unb-libraries/alert-scheduler.git",
-                "reference": "46d4986fa2816f67f72e944035a031783401d06e"
+                "reference": "4807c928fb5597af5faf5cf75426c5cb64eed043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unb-libraries/alert-scheduler/zipball/46d4986fa2816f67f72e944035a031783401d06e",
-                "reference": "46d4986fa2816f67f72e944035a031783401d06e",
+                "url": "https://api.github.com/repos/unb-libraries/alert-scheduler/zipball/4807c928fb5597af5faf5cf75426c5cb64eed043",
+                "reference": "4807c928fb5597af5faf5cf75426c5cb64eed043",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -7799,7 +7799,7 @@
                 "issues": "https://github.com/unb-libraries/alert-scheduler/issues",
                 "source": "https://github.com/unb-libraries/alert-scheduler"
             },
-            "time": "2026-08-05T15:41:38+00:00"
+            "time": "2026-11-03T18:12:32+00:00"
         },
         {
             "name": "unb-libraries/calendar_hours",
@@ -7807,12 +7807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unb-libraries/calendar_hours.git",
-                "reference": "80178d15e4551cadd31fc9d32faefdbbefa22b9b"
+                "reference": "348f3840cf80be6fa0d30311827c88234d71498d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unb-libraries/calendar_hours/zipball/80178d15e4551cadd31fc9d32faefdbbefa22b9b",
-                "reference": "80178d15e4551cadd31fc9d32faefdbbefa22b9b",
+                "url": "https://api.github.com/repos/unb-libraries/calendar_hours/zipball/348f3840cf80be6fa0d30311827c88234d71498d",
+                "reference": "348f3840cf80be6fa0d30311827c88234d71498d",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -7831,7 +7831,7 @@
                 "issues": "https://github.com/unb-libraries/calendar_hours/issues",
                 "source": "https://github.com/unb-libraries/calendar_hours/tree/11.x-1.x"
             },
-            "time": "2026-08-05T17:13:47+00:00"
+            "time": "2026-11-03T18:12:54+00:00"
         },
         {
             "name": "unb-libraries/composer-drupal-scaffold",
@@ -7911,12 +7911,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unb-libraries/unb_lib_theme.git",
-                "reference": "8a94d2a6b5ec43ba6e4c33c418153f799fc8a08a"
+                "reference": "ca5de38def2a9d4a1c3f1a0d205bb115f685c204"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unb-libraries/unb_lib_theme/zipball/8a94d2a6b5ec43ba6e4c33c418153f799fc8a08a",
-                "reference": "8a94d2a6b5ec43ba6e4c33c418153f799fc8a08a",
+                "url": "https://api.github.com/repos/unb-libraries/unb_lib_theme/zipball/ca5de38def2a9d4a1c3f1a0d205bb115f685c204",
+                "reference": "ca5de38def2a9d4a1c3f1a0d205bb115f685c204",
                 "shasum": ""
             },
             "require-dev": {
@@ -7939,7 +7939,7 @@
                 "issues": "https://github.com/unb-libraries/unb_lib_theme/issues",
                 "source": "https://github.com/unb-libraries/unb_lib_theme/tree/11.x-4.x"
             },
-            "time": "2026-08-06T18:49:13+00:00"
+            "time": "2026-11-03T18:40:08+00:00"
         }
     ],
     "packages-dev": [
