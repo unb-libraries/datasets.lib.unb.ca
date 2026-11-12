@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf686c981274153902d658d86e79e907",
+    "content-hash": "cea976e0ef301be15c989d1020ffffe4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7907,16 +7907,16 @@
         },
         {
             "name": "unb-libraries/unb_lib_theme",
-            "version": "dev-11.x-4.x",
+            "version": "dev-10.x-4.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unb-libraries/unb_lib_theme.git",
-                "reference": "ca5de38def2a9d4a1c3f1a0d205bb115f685c204"
+                "reference": "b130f9b23857130c3499190950d9d953965f992b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unb-libraries/unb_lib_theme/zipball/ca5de38def2a9d4a1c3f1a0d205bb115f685c204",
-                "reference": "ca5de38def2a9d4a1c3f1a0d205bb115f685c204",
+                "url": "https://api.github.com/repos/unb-libraries/unb_lib_theme/zipball/b130f9b23857130c3499190950d9d953965f992b",
+                "reference": "b130f9b23857130c3499190950d9d953965f992b",
                 "shasum": ""
             },
             "require-dev": {
@@ -7937,9 +7937,9 @@
             "homepage": "https://github.com/unb-libraries/unb_lib_theme",
             "support": {
                 "issues": "https://github.com/unb-libraries/unb_lib_theme/issues",
-                "source": "https://github.com/unb-libraries/unb_lib_theme/tree/11.x-4.x"
+                "source": "https://github.com/unb-libraries/unb_lib_theme/tree/10.x-4.x"
             },
-            "time": "2026-11-03T18:40:08+00:00"
+            "time": "2026-11-12T14:25:18+00:00"
         }
     ],
     "packages-dev": [
